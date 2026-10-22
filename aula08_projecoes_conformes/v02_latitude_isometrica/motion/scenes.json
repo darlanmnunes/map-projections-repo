@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; geometria exata no elipsoide GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"quadrilatero","name":"Quadrilátero elementar","dur":12,"desc":"Globo; quadrilátero Δφ = Δλ = 5° perto do Equador; zoom mostra os lados M dφ e N cos φ dλ, quase um quadrado."},
+  {"id":"desliza","name":"Desliza para o sul","dur":12,"desc":"O quadrilátero desliza para φ = −30° e −60°; o lado leste-oeste encolhe com cos φ (0,87 e 0,50)."},
+  {"id":"planifica","name":"Grade em ψ","dur":16,"desc":"Grade com λ e ψ: os paralelos se reposicionam por dψ = M dφ/(N cos φ) e cada célula Δψ = Δλ vira quadrado."},
+  {"id":"grafico","name":"ψ explode no polo","dur":15,"desc":"Gráfico de |ψ| contra |φ| até 85°, reta ψ = φ, Viçosa (21,08°) e ψ → ∞ no polo."}]}

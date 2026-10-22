@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; cone 3D e mapa calculados no GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"tangente","name":"Cone tangente","dur":15,"desc":"Globo e cone tangente em −24°; gráfico de m contra φ com a curva de 1 PP, m ≥ 1."},
+  {"id":"secante","name":"Cone secante","dur":17,"desc":"O cone afunda até cortar o globo em −5° e −42°; a curva desce (× 0,9485) e cruza m = 1 nos PP."},
+  {"id":"vicosa","name":"Viçosa","dur":16,"desc":"Viçosa no globo e na curva: m = 0,94995, distâncias −5 %, áreas −9,8 %."},
+  {"id":"mapa","name":"Convergência","dur":17,"desc":"Mapa da Lambert com λ0 = −60°; meridiano de Viçosa e γ = n(λ − λ0) = −6,96°."}]}

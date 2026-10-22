@@ -4,6 +4,8 @@
 Curso de Engenharia de Agrimensura e Cartográfica · Universidade Federal de Viçosa (UFV)
 Prof. Dr. Darlan M. Nunes
 
+**▶ Assista no navegador: [darlanmnunes.github.io/map-projections-repo](https://darlanmnunes.github.io/map-projections-repo/)**
+
 ---
 
 ## Sobre
@@ -44,6 +46,9 @@ repositório guarda só o código que os gera.
 
 ## Galeria no navegador
 
+A galeria está publicada em
+**https://darlanmnunes.github.io/map-projections-repo/**.
+
 O arquivo [index.html](index.html) é uma galeria com os vídeos: cada cartão mostra uma
 miniatura desenhada ao vivo e abre o vídeo no player, com barra de tempo, reprodução e
 pausa (barra de espaço). Nada é pré-renderizado: o navegador executa o código das cenas e
@@ -51,8 +56,8 @@ lê os dados JSON de cada vídeo.
 
 O workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) publica a galeria no
 GitHub Pages a cada push em `main` (pasta `_site` com `index.html`, `ferramentas/` e as
-pastas das aulas, sem scripts Python nem MP4). Para funcionar, o Pages precisa estar ativado
-no repositório com a fonte "GitHub Actions".
+pastas das aulas, sem scripts Python nem MP4). Um vídeo novo entra na galeria quando é
+acrescentado à lista `VIDEOS` do `index.html`.
 
 ## Estrutura do repositório
 

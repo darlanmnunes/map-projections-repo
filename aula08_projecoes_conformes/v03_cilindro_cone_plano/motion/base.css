@@ -1,0 +1,41 @@
+#stage { --ground:#FFFFFF; --main:#1F3864; --second:#0432FF; --accent:#E8711A; --grid:#9A9A9A; --tissot:#C0392B; color:var(--main); font-family:var(--sans, Arial, sans-serif) }
+.ground { position:absolute; inset:0; background:var(--ground) }
+.words { position:absolute; margin:0; display:flex; flex-direction:column; gap:10px } .words > * { margin:0 }
+.line { font-family:var(--sans, Arial, sans-serif); font-size:52px; line-height:1.12; font-weight:700; color:var(--main); letter-spacing:-0.01em }
+.sub { font-size:32px; line-height:1.3; color:var(--main) }
+.ttl { font-size:34px; line-height:1.2; font-weight:700; color:var(--second) }
+.eq { font-family:var(--serif, Times New Roman, serif); font-size:36px; line-height:1.25; color:var(--main); white-space:nowrap }
+.eq i { font-style:italic }
+.big { font-size:46px }
+.lbl { position:absolute; font-family:var(--serif, Times New Roman, serif); font-size:30px; color:var(--main); white-space:nowrap }
+.tag { position:absolute; padding:10px 16px; background:color-mix(in srgb, var(--ground) 88%, transparent); border:2px solid var(--accent); border-radius:6px }
+.frac { display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.82em; line-height:1.1; margin:0 4px }
+.frac > span:first-child { border-bottom:2px solid currentColor; padding:0 5px 2px }
+.sig { position:absolute; right:56px; bottom:24px; font-size:24px; color:color-mix(in srgb, var(--main) 60%, var(--ground)) }
+.art { position:absolute; inset:0; width:100%; height:100%; overflow:visible }
+.land { fill:color-mix(in srgb, var(--main) 9%, var(--ground)); stroke:color-mix(in srgb, var(--main) 55%, var(--ground)); stroke-width:1.2; stroke-linejoin:round }
+.grat { fill:none; stroke:var(--grid); stroke-width:1 }
+.limb { fill:none; stroke:color-mix(in srgb, var(--main) 45%, var(--ground)); stroke-width:1.5 }
+.mapbg { fill:var(--ground) }
+.frame { fill:none; stroke:var(--main); stroke-width:2 }
+.tis { fill:color-mix(in srgb, var(--tissot) 55%, transparent); stroke:var(--tissot); stroke-width:1.5 }
+.hl { fill:none; stroke:var(--accent); stroke-width:4 }
+.cell { fill:color-mix(in srgb, var(--accent) 22%, transparent); stroke:var(--accent); stroke-width:3 }
+.cellgrid { fill:none; stroke:var(--grid); stroke-width:1.2 }
+.zoomln { fill:none; stroke:var(--accent); stroke-width:1.5; stroke-dasharray:6 6 }
+.box2 { position:absolute; padding:18px 30px; border-radius:10px; background:color-mix(in srgb, var(--ground) 94%, var(--second)) }
+.ghost { fill:none; stroke:var(--accent); stroke-width:2; stroke-dasharray:8 6; opacity:.6 }
+.axis { fill:none; stroke:var(--main); stroke-width:2 }
+.gridl { fill:none; stroke:color-mix(in srgb, var(--grid) 45%, var(--ground)); stroke-width:1 }
+.curve { fill:none; stroke:var(--main); stroke-width:4; stroke-linejoin:round; stroke-linecap:round }
+.ref { fill:none; stroke:var(--grid); stroke-width:2.5; stroke-dasharray:12 9 }
+.lead { fill:none; stroke:var(--accent); stroke-width:2 }
+.dot { fill:var(--ground); stroke:var(--accent); stroke-width:4 }
+.arrow { fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round; stroke-linejoin:round }
+.tick { position:absolute; font-size:24px; color:color-mix(in srgb, var(--main) 75%, var(--ground)); white-space:nowrap }
+.lbl.r { transform:translate(-100%, -50%) } .lbl.c { transform:translate(-50%, 0) }
+.tick.eqt { font-family:var(--serif, Times New Roman, serif); font-size:28px; color:var(--main) }
+.surf { fill:color-mix(in srgb, var(--second) 35%, transparent); stroke:none }
+.surfedge { fill:none; stroke:color-mix(in srgb, var(--second) 70%, var(--ground)); stroke-width:1.6 }
+.mapbg { fill:color-mix(in srgb, var(--second) 5%, var(--ground)) }
+.counter { position:absolute; font-family:var(--serif, Times New Roman, serif); font-size:56px; color:var(--main); white-space:nowrap; font-variant-numeric:tabular-nums }

@@ -1,0 +1,10 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; superfícies 3D semitransparentes calculadas",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"cone","name":"Cone tangente","dur":12,"desc":"Globo de lado, polo sul embaixo; cone tangente ao paralelo −30°, linha de contato em laranja e indicatrizes."},
+  {"id":"desenrola","name":"Cone desenrolado","dur":12,"desc":"O cone é cortado numa geratriz e desenrolado num setor de 180° (n = sen 30° = 0,5)."},
+  {"id":"mercator","name":"n tende a 0","dur":16,"desc":"n diminui até perto de 0: o vértice vai ao infinito, o cone vira cilindro e o setor vira a Mercator."},
+  {"id":"estereo","name":"n chega a 1","dur":15,"desc":"n cresce de 0,5 a 1: o cone se achata num plano tangente no polo sul e o setor fecha um disco."},
+  {"id":"familia","name":"A família","dur":10,"desc":"Os três mapas lado a lado; mesma condição de conformidade, n escolhe a superfície; m = nρ/(N cos φ)."}]}

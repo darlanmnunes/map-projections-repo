@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; construção perspectiva calculada",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"corte","name":"Perspectiva","dur":15,"desc":"Globo em corte meridiano, plano tangente no polo sul, raios a partir do polo norte; ρ = 2R tan(c/2)."},
+  {"id":"circulo","name":"Círculos","dur":13,"desc":"Globo completo; um círculo de 10° em torno de 50° S é projetado e continua círculo no plano."},
+  {"id":"secante","name":"Plano secante","dur":17,"desc":"O plano sobe e corta o globo em 81°06′52″ S; gráfico de m com k0 = 1 e k0 = 0,994."},
+  {"id":"polar","name":"UPS","dur":15,"desc":"Vista polar com a Antártida, indicatrizes, círculo de m = 1 e limite do UPS em 80° S."}]}

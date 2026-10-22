@@ -42,6 +42,18 @@ Cada pasta tem um README com o objetivo didático, as cenas, as equações usada
 de conferência dos números. Os MP4 finais ficam no Google Drive da disciplina; o
 repositório guarda só o código que os gera.
 
+## Galeria no navegador
+
+O arquivo [index.html](index.html) é uma galeria com os vídeos: cada cartão mostra uma
+miniatura desenhada ao vivo e abre o vídeo no player, com barra de tempo, reprodução e
+pausa (barra de espaço). Nada é pré-renderizado: o navegador executa o código das cenas e
+lê os dados JSON de cada vídeo.
+
+O workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) publica a galeria no
+GitHub Pages a cada push em `main` (pasta `_site` com `index.html`, `ferramentas/` e as
+pastas das aulas, sem scripts Python nem MP4). Para funcionar, o Pages precisa estar ativado
+no repositório com a fonte "GitHub Actions".
+
 ## Estrutura do repositório
 
 ```
@@ -58,8 +70,10 @@ aula08_projecoes_conformes/      uma pasta por aula
       scene-<id>.js              uma cena por arquivo: init() monta, render(t) desenha o instante t
       v1-dados.json              dados gerados pelo Python
     export/                      MP4 renderizado (fora do controle de versão)
+index.html                       galeria dos vídeos (página inicial do GitHub Pages)
+.github/workflows/pages.yml      publicação da galeria no GitHub Pages
 ferramentas/
-  preview/index.html             pré-visualização no navegador, com barra de tempo
+  preview/index.html             player no navegador, com barra de tempo
   renderizar_mp4.py              renderização quadro a quadro em MP4
   empacotar_motion.py            empacota a pasta motion/ para o editor de revisão
 ```
@@ -81,7 +95,8 @@ Requisitos: Python 3.9 ou mais recente com `numpy`, `scipy`, `shapely`, `pyogrio
    python -m http.server 8000
    ```
 
-   e abrir `http://localhost:8000/ferramentas/preview/?v=aula08_projecoes_conformes/v07_mercator_tm_utm`.
+   e abrir `http://localhost:8000/` (galeria) ou
+   `http://localhost:8000/ferramentas/preview/?v=aula08_projecoes_conformes/v07_mercator_tm_utm`.
 
 3. Renderizar o MP4 (1920 × 1080, 30 fps), gravado em `export/`:
 

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projeções Cartográficas em movimento</title>
+<meta name="description" content="Animações didáticas da disciplina EAM 431, Projeções Cartográficas (UFV), geradas no navegador a partir do código.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">
+<style>
+  :root { --ground:#FFFFFF; --main:#1F3864; --second:#0432FF; --accent:#E8711A; --grid:#9A9A9A; --panel:#F2F5FA; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--ground); color:var(--main); font-family:Arimo, Arial, sans-serif; line-height:1.45; }
+  header, main, footer { max-width:1200px; margin:0 auto; padding:0 24px; }
+  header { padding-top:48px; padding-bottom:28px; }
+  .eyebrow { margin:0 0 6px; font-size:15px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  h1 { margin:0; font-size:clamp(30px, 5vw, 46px); line-height:1.1; letter-spacing:-.01em; }
+  .lead { margin:14px 0 0; max-width:760px; font-size:18px; }
+  .who { margin:10px 0 0; font-size:15px; color:#56607a; }
+  h2 { margin:36px 0 4px; font-size:24px; color:var(--second); }
+  .aula-sub { margin:0 0 18px; color:#56607a; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:22px; padding-bottom:12px; }
+  .card { display:flex; flex-direction:column; border:1px solid #dfe4ee; border-radius:12px; overflow:hidden; text-decoration:none; color:inherit; background:var(--ground); transition:border-color .15s, box-shadow .15s; }
+  .card:hover, .card:focus-visible { border-color:var(--accent); box-shadow:0 6px 20px rgba(31,56,100,.12); outline:none; }
+  .thumb { position:relative; aspect-ratio:16 / 9; overflow:hidden; background:var(--panel); border-bottom:1px solid #dfe4ee; }
+  .thumb iframe { position:absolute; left:0; top:0; width:1920px; height:1080px; border:0; transform-origin:0 0; pointer-events:none; }
+  .play { position:absolute; right:12px; bottom:12px; width:44px; height:44px; border-radius:50%; background:var(--main); display:grid; place-items:center; box-shadow:0 2px 8px rgba(0,0,0,.2); }
+  .play::before { content:""; margin-left:4px; border-style:solid; border-width:9px 0 9px 15px; border-color:transparent transparent transparent #fff; }
+  .info { padding:14px 16px 18px; }
+  .meta { margin:0 0 4px; font-size:13px; font-weight:700; color:var(--accent); letter-spacing:.03em; }
+  .info h3 { margin:0 0 6px; font-size:18px; line-height:1.25; }
+  .info p { margin:0; font-size:15px; color:#3d4864; }
+  .how { margin:40px 0 0; padding:22px 26px; background:var(--panel); border-radius:12px; }
+  .how h2 { margin-top:0; }
+  .how ul { margin:8px 0 0; padding-left:20px; }
+  .how li { margin:6px 0; }
+  footer { padding-top:28px; padding-bottom:40px; font-size:14px; color:#56607a; }
+  @media (max-width:520px) { header { padding-top:32px; } .grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">EAM 431 · Projeções Cartográficas · UFV</p>
+  <h1>Projeções Cartográficas em movimento</h1>
+  <p class="lead">Animações curtas das aulas teóricas. Cada vídeo roda aqui no navegador, desenhado a partir do código e das equações das projeções: use a barra de tempo para avançar, voltar e pausar onde quiser.</p>
+  <p class="who">Prof. Dr. Darlan M. Nunes · Engenharia de Agrimensura e Cartográfica · Universidade Federal de Viçosa</p>
+</header>
+
+<main>
+  <h2>Aula 08 · Projeções Conformes</h2>
+  <p class="aula-sub">Sete vídeos, de 50 s a 72 s.</p>
+  <div class="grid" id="grid"></div>
+
+  <section class="how">
+    <h2>Como estes vídeos são feitos</h2>
+    <ul>
+      <li><strong>Geometria exata:</strong> curvas, reticulados e indicatrizes são calculados pelas equações (esfera ou elipsoide GRS80), nunca desenhados à mão.</li>
+      <li><strong>Números conferidos:</strong> cada vídeo tem um script em Python que recalcula os valores mostrados na tela.</li>
+      <li><strong>Sem arquivos de vídeo:</strong> o que você vê é o código rodando; cada instante é uma função do tempo.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>Linhas de costa: Natural Earth 1:110m (domínio público).</footer>
+
+<script>
+// Vídeos da galeria: pasta, instante da miniatura (s), slides, duração e resumo
+const VIDEOS = [
+  { v: 'aula08_projecoes_conformes/v01_conforme_x_equivalente', t: 31, n: 'V1', slides: '3 e 4', dur: '50 s',
+    title: 'Conforme × equivalente: o que acontece com um círculo infinitesimal',
+    desc: 'Na Mercator o círculo só muda de tamanho; na Lambert cilíndrica, de forma. Conformidade é escala igual em todas as direções, não escala igual a 1.' },
+  { v: 'aula08_projecoes_conformes/v02_latitude_isometrica', t: 37, n: 'V2', slides: '5', dur: '55 s',
+    title: 'Latitude isométrica: do retângulo ao quadrado',
+    desc: 'Por que trocar φ por ψ, e por que ψ explode perto do polo.' },
+  { v: 'aula08_projecoes_conformes/v03_cilindro_cone_plano', t: 64, n: 'V3', slides: '8 e 9', dur: '65 s',
+    title: 'Uma família, três superfícies: cilindro, cone e plano',
+    desc: 'Mercator, Lambert e estereográfica polar são o mesmo modelo ρ = C·e^(−nψ); só a constante n muda.' },
+  { v: 'aula08_projecoes_conformes/v04_lambert_1pp_2pp', t: 47, n: 'V4', slides: '11 a 13', dur: '65 s',
+    title: 'Lambert com 1 e 2 paralelos padrão: do cone tangente ao secante',
+    desc: 'Por que o cone secante distribui melhor a distorção, e de onde vem m = 0,94995 em Viçosa.' },
+  { v: 'aula08_projecoes_conformes/v05_loxodromia_ortodromia', t: 30, n: 'V5', slides: '17 e 18', dur: '60 s',
+    title: 'Loxodromia × ortodromia: São Paulo → Joanesburgo',
+    desc: 'Rumo constante não é caminho mais curto: a Mercator endireita uma linha, a gnomônica a outra.' },
+  { v: 'aula08_projecoes_conformes/v06_estereografica_ups', t: 59, n: 'V6', slides: '20 e 21', dur: '60 s',
+    title: 'Estereográfica: perspectiva do antípoda e o plano secante do UPS',
+    desc: 'A construção perspectiva, a preservação de círculos e o efeito de k₀ = 0,994.' },
+  { v: 'aula08_projecoes_conformes/v07_mercator_tm_utm', t: 8, n: 'V7', slides: '22 a 24', dur: '72 s',
+    title: 'Da Mercator à Transversa de Mercator e ao UTM',
+    desc: 'O giro do cilindro, o fuso de 6° e o efeito de k₀ = 0,9996.' },
+];
+const grid = document.getElementById('grid');
+for (const d of VIDEOS) {
+  const href = 'ferramentas/preview/?v=' + d.v;
+  const a = document.createElement('a');
+  a.className = 'card';
+  a.href = href;
+  a.innerHTML =
+    '<div class="thumb"><iframe loading="lazy" tabindex="-1" aria-hidden="true" title=""></iframe><span class="play" aria-hidden="true"></span></div>' +
+    '<div class="info"><p class="meta"></p><h3></h3><p></p></div>';
+  a.querySelector('iframe').src = href + '&t=' + d.t + '&still=1';
+  a.querySelector('.meta').textContent = d.n + ' · slides ' + d.slides + ' · ' + d.dur;
+  a.querySelector('h3').textContent = d.title;
+  a.querySelector('.info p:last-child').textContent = d.desc;
+  grid.append(a);
+}
+// Miniaturas: o quadro de 1920 × 1080 do player, reduzido à largura do cartão
+const ro = new ResizeObserver(entries => {
+  for (const e of entries) e.target.querySelector('iframe').style.transform = 'scale(' + e.target.clientWidth / 1920 + ')';
+});
+document.querySelectorAll('.thumb').forEach(el => ro.observe(el));
+</script>
+</body>
+</html>

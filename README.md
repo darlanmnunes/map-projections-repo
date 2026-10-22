@@ -11,7 +11,7 @@ numa pasta própria; os MP4 renderizados não são versionados.
 
 | Aula | Pasta | Vídeos |
 |---|---|---|
-| 08. Projeções Conformes | [aula08_projecoes_conformes](aula08_projecoes_conformes/) | V1 a V4 prontos; V5 a V7 a fazer |
+| 08. Projeções Conformes | [aula08_projecoes_conformes](aula08_projecoes_conformes/) | V1 a V5 prontos; V6 e V7 a fazer |
 
 ### Estrutura de um vídeo
 
@@ -34,7 +34,7 @@ aulaNN_tema/vNN_tema/
 Fundo branco; azul-marinho `#1F3864` (elementos principais e equações); laranja
 `#E8711A` (destaques); azul `#0432FF` (títulos); cinza `#9A9A9A` (reticulado);
 vermelho `#C0392B` a 55 % (indicatrizes de Tissot). Texto em Arimo (métrica do
-Arial dos slides), equações em STIX Two Text. Nome do professor em todas as cenas.
+Arial dos slides), equações em STIX Two Text. Nome do professor em todas as cenas ("Prof. Dr. Darlan M. Nunes" a partir do V5).
 
 ### Ferramentas
 
@@ -51,7 +51,7 @@ python -m http.server 8000
 python ferramentas/renderizar_mp4.py aula08_projecoes_conformes/v01_conforme_x_equivalente
 ```
 
-Requisitos: Python 3.9+ com `numpy`, `scipy`, `shapely` e `pyogrio` (só para gerar dados),
+Requisitos: Python 3.9+ com `numpy`, `scipy`, `shapely`, `pyogrio` e `pyproj` (só para gerar dados),
 Google Chrome e ffmpeg.
 
 ## Licença

@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; rotas calculadas no GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"globo","name":"As duas rotas","dur":18,"desc":"Globo no Atlântico Sul: geodésica (109,71° a 74,09°, até 30,4° S) e loxodromia (92,23°), com os ângulos nos meridianos."},
+  {"id":"mercator","name":"Mercator","dur":14,"desc":"O globo vira a Mercator (x = λ, y = ψ): a loxodromia fica reta e a geodésica desce para o sul."},
+  {"id":"gnomonica","name":"Gnomônica","dur":14,"desc":"Da Mercator à gnomônica centrada no meio da rota: a geodésica fica reta e a loxodromia se curva para o norte."},
+  {"id":"placar","name":"Placar","dur":14,"desc":"Loxodromia 7 551 km, geodésica 7 442 km, diferença +109 km (1,5 %); frase final."}]}

@@ -1,0 +1,10 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; globo e cilindro calculados",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"cilindro","name":"O cilindro gira","dur":15,"desc":"Cilindro tangente ao Equador gira 90° e passa a tocar o globo no meridiano −45° (MC)."},
+  {"id":"fuso","name":"Fuso 23","dur":13,"desc":"Fuso 23 (−48° a −42°), Viçosa e indicatrizes da TM ao longo do paralelo de Viçosa; m ≈ 1 + x²/(2R²)."},
+  {"id":"grafico","name":"k0 = 0,9996","dur":18,"desc":"m contra x no paralelo de Viçosa: TM tangente (1 a 1,0012) desce × 0,9996; m = 1 em ±180 km; Viçosa m = 1,000210."},
+  {"id":"secante","name":"Cilindro secante","dur":16,"desc":"Zoom no fuso 23: o cilindro encolhe e corta o globo em duas linhas a ~180 km do MC."},
+  {"id":"final","name":"Viçosa em UTM","dur":10,"desc":"E = 722 120,59 m; N = 7 704 054,61 m; próxima aula: UTM, RTM e LTM."}]}

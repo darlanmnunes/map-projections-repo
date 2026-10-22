@@ -11,7 +11,7 @@ numa pasta própria; os MP4 renderizados não são versionados.
 
 | Aula | Pasta | Vídeos |
 |---|---|---|
-| 08. Projeções Conformes | [aula08_projecoes_conformes](aula08_projecoes_conformes/) | V1 a V6 prontos; V7 a fazer |
+| 08. Projeções Conformes | [aula08_projecoes_conformes](aula08_projecoes_conformes/) | V1 a V7 prontos |
 
 ### Estrutura de um vídeo
 

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Pré-visualização Motion</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=STIX+Two+Text:ital,wght@0,400;0,700;1,400&display=block">
+<style>
+  html, body { margin:0; background:#ddd; }
+  #wrap { position:relative; width:1920px; height:1080px; overflow:hidden; background:#fff; transform-origin:0 0; }
+  #stage { position:absolute; inset:0; overflow:hidden; --sans:Arimo, Arial, sans-serif; --serif:'STIX Two Text', 'Times New Roman', serif; }
+  #ui { position:fixed; left:8px; bottom:8px; font:14px system-ui; background:#fff; padding:6px 10px; border-radius:6px; }
+</style>
+</head>
+<body>
+<div id="wrap"><div id="stage"></div></div>
+<div id="ui"><input id="rng" type="range" min="0" step="0.0333" style="width:600px"> <span id="lab"></span>
+  <button id="play">play</button></div>
+<script>
+// Emulação mínima do kit do Motion, suficiente para as cenas deste repositório.
+// Uso: servir a raiz do repositório e abrir
+//   /ferramentas/preview/?v=<pasta_do_video>&t=<segundos>[&still=1]
+const Q = new URLSearchParams(location.search);
+const VIDEO = '/' + Q.get('v').replace(/^\/|\/$/g, '') + '/motion/';
+const clamp01 = x => Math.max(0, Math.min(1, x));
+const base = {
+  seg: (t, a, b) => clamp01((t - a) / (b - a)),
+  lerp: (a, b, u) => a + (b - a) * u,
+  clamp01,
+  eo: x => 1 - Math.pow(1 - x, 3),
+  ei: x => x * x * x,
+  eio: x => x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2,
+  eob: (x, s = 1.4) => 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2),
+  h(html) { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; },
+  TextFx: {
+    fadeFromRight(el, t, t0, o = {}) {
+      const st = o.stagger ?? 0.11, du = o.dur ?? 0.5, dx = o.dx ?? 26;
+      if (!el._w) {
+        const words = el.textContent.split(' ');
+        el.textContent = '';
+        el._w = words.map((w, i) => {
+          const s = document.createElement('span'); s.textContent = w; s.style.display = 'inline-block';
+          el.append(s); if (i < words.length - 1) el.append(' '); return s;
+        });
+      }
+      el._w.forEach((s, i) => {
+        const p = base.eo(clamp01((t - t0 - i * st) / du));
+        s.style.opacity = p; s.style.transform = 'translateX(' + (1 - p) * dx + 'px)';
+      });
+      return t0 + (el._w.length - 1) * st + du;
+    },
+  },
+};
+const files = {};
+const scenes = {};
+let list, total = 0;
+
+async function boot() {
+  const meta = await (await fetch(VIDEO + 'scenes.json')).json();
+  list = meta.scenes;
+  const stage = document.getElementById('stage');
+  document.getElementById('wrap').style.background = meta.background;
+  const names = ['base.css', 'shared.js', ...list.map(s => 'scene-' + s.id + '.js')];
+  for (const n of names) files[n] = await (await fetch(VIDEO + n)).text();
+  // módulos de dados (*.json exceto scenes.json) descobertos pelo código das cenas
+  const dataNames = new Set((Object.values(files).join('\n').match(/kit\.json\('([^']+)'\)/g) || []).map(m => m.slice(10, -2)));
+  for (const n of dataNames) files[n] = await (await fetch(VIDEO + n)).text();
+  const st = document.createElement('style'); st.textContent = files['base.css']; stage.append(st);
+  const filmKit = Object.assign({}, base, { json: n => JSON.parse(files[n]), module: n => files[n] ?? null });
+  new Function('kit', files['shared.js'])(filmKit);
+  let t0 = 0;
+  for (const s of list) {
+    const box = document.createElement('div');
+    box.style.cssText = 'position:absolute;inset:0;overflow:hidden';
+    stage.append(box);
+    const kit = Object.assign({}, filmKit, { stage: box, dur: s.dur, start: t0,
+      scene: (id, def) => { scenes[id] = { def, box, start: kit.start, dur: s.dur }; } });
+    new Function('kit', files['scene-' + s.id + '.js'])(kit);
+    await scenes[s.id].def.init?.call(scenes[s.id].def, kit);
+    t0 += s.dur;
+  }
+  total = t0;
+  await document.fonts.ready;
+  const rng = document.getElementById('rng'); rng.max = total;
+  rng.oninput = () => render(+rng.value);
+  let playing = false, startAt = 0, from = 0;
+  document.getElementById('play').onclick = () => {
+    playing = !playing; startAt = performance.now(); from = +rng.value;
+    const loop = () => { if (!playing) return; const t = Math.min(total, from + (performance.now() - startAt) / 1000); rng.value = t; render(t); if (t < total) requestAnimationFrame(loop); };
+    loop();
+  };
+  const t = +(Q.get('t') || 0); rng.value = t; render(t);
+  if (Q.get('still')) document.getElementById('ui').remove();
+  else { const fit = () => document.getElementById('wrap').style.transform = 'scale(' + Math.min(innerWidth / 1920, (innerHeight - 50) / 1080) + ')'; fit(); onresize = fit; }
+  document.title = 'pronto';
+}
+function render(T) {
+  let cur = null;
+  for (const s of list) { const sc = scenes[s.id]; if (T >= sc.start && T < sc.start + sc.dur) cur = s.id; }
+  if (!cur) cur = list[list.length - 1].id;
+  for (const s of list) {
+    const sc = scenes[s.id];
+    sc.box.style.display = s.id === cur ? '' : 'none';
+    if (s.id === cur) sc.def.render.call(sc.def, T - sc.start, sc.kit);
+  }
+  document.getElementById('lab').textContent = T.toFixed(2) + ' s / ' + total + ' s · ' + cur;
+}
+boot().catch(e => { document.title = 'erro'; document.body.insertAdjacentHTML('beforeend', '<pre style="color:red">' + e.stack + '</pre>'); });
+</script>
+</body>
+</html>

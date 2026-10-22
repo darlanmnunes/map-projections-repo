@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, Tissot vermelho translúcido; geometria exata calculada",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"globo","name":"Três círculos","dur":8,"desc":"Globo gira até centrar a América do Sul; três círculos de 7° surgem sobre λ = −45°."},
+  {"id":"desenrola","name":"Globo desenrola","dur":14,"desc":"O globo se divide e se desenrola na Mercator e na Lambert cilíndrica; círculos viram círculos maiores e elipses."},
+  {"id":"rotulos","name":"Conforme e equivalente","dur":13,"desc":"Títulos de cada mapa e etiquetas do círculo de −60°: m = 2, σ = 4; semieixos 2 e 0,5, σ = 1."},
+  {"id":"quadrado","name":"O quadradinho","dur":15,"desc":"Um quadradinho da esfera vira quadrado maior na Mercator e retângulo de mesma área na Lambert; condição de conformidade e frase final."}]}

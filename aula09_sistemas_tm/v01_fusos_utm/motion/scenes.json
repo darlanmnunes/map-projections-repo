@@ -4,7 +4,7 @@
  "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":5},
  "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
  "scenes":[
-  {"id":"globo","name":"60 fusos","dur":17,"desc":"O globo gira para leste e os fusos de 6° aparecem numerados a partir de 180°; destaque para os fusos 18 a 25 do Brasil."},
+  {"id":"globo","name":"60 fusos","dur":19,"desc":"O cilindro transverso secante gira 6° por vez em torno do eixo polar; a cada parada aparece um fuso, numerado para leste a partir de 180°; destaque para os fusos 18 a 25 do Brasil."},
   {"id":"mundo","name":"Do mundo ao Brasil","dur":14,"desc":"Mapa-múndi com os 60 fusos, de 80° S a 84° N; zoom no Brasil (fusos 18 a 25) e em Minas Gerais (22, 23 e 24)."},
   {"id":"regra","name":"A regra do fuso","dur":21,"desc":"λ + 180° = 137,13° contado em blocos de 6°: 22 inteiros, então F = 23; MC = −45°; Δλ = +2°08′; Hemisfério Sul."},
   {"id":"final","name":"Viçosa: 23S","dur":8,"desc":"Fuso 23, MC −45°, SIRGAS 2000 / UTM 23S, EPSG:31983; banda MGRS K."}]}

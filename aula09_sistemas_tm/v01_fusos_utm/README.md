@@ -1,6 +1,6 @@
 # V1. 60 fusos: do globo ao fuso de Viçosa
 
-Aula 09, slides 7, 8, 9, 12 e 13. Duração: 60 s.
+Aula 09, slides 7, 8, 9, 12 e 13. Duração: 62 s.
 
 ## Objetivo didático
 
@@ -12,15 +12,17 @@ longitude, mais um. Com isso, a eq. (3) do slide 12 deixa de ser uma fórmula pa
 
 | Cena | Tempo | Conteúdo |
 |---|---|---|
-| `globo` | 0 a 17 s | Globo girando para leste; fusos 1 a 60 numerados; Brasil nos fusos 18 a 25 |
-| `mundo` | 17 a 31 s | Mapa-múndi com as 60 faixas de 80° S a 84° N; zoom no Brasil, em Minas Gerais e em Viçosa |
-| `regra` | 31 a 52 s | λ + 180° = 137,13° preenchido em blocos de 6°: 22 inteiros, F = 23; MC, Δλ e hemisfério |
-| `final` | 52 a 60 s | Viçosa: fuso 23, MC −45°, UTM 23S, EPSG:31983 |
+| `globo` | 0 a 19 s | Cilindro transverso secante girando 6° por vez; a cada parada surge um fuso, de 1 a 60; Brasil nos fusos 18 a 25 |
+| `mundo` | 19 a 33 s | Mapa-múndi com as 60 faixas de 80° S a 84° N; zoom no Brasil, em Minas Gerais e em Viçosa |
+| `regra` | 33 a 54 s | λ + 180° = 137,13° preenchido em blocos de 6°: 22 inteiros, F = 23; MC, Δλ e hemisfério |
+| `final` | 54 a 62 s | Viçosa: fuso 23, MC −45°, UTM 23S, EPSG:31983 |
 
 ## Geometria e equações
 
 - Fuso F: de 6F − 186° a 6F − 180°, meridiano central λMC = 6F − 183°; limites de latitude 80° S e 84° N.
 - Número do fuso (slide 12, eq. 3): F = ⌊(λ + 180°)/6°⌋ + 1, com λ em graus decimais, negativo a oeste.
+- Cilindro transverso secante: eixo no plano do Equador, perpendicular ao MC, raio k₀ = 0,9996 (esfera R = 1);
+  corta a esfera em dois círculos a ±arccos k₀ = ±1°37′ do MC (linhas de secância), desenhados na tela.
 - Globo: projeção ortográfica da esfera, com o hemisfério oculto descartado (polígonos levados ao limbo).
 - Mapa-múndi e zoom: coordenadas (λ, φ) em escala linear (equiretangular), janela interpolada.
 - Contornos: Natural Earth 1:50m (países, Brasil continental e Minas Gerais), simplificados.

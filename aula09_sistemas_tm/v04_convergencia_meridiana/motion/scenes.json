@@ -1,0 +1,9 @@
+{"v":1,"stage":"final","title":"Aula 09, V4: convergência meridiana","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; grade TM e meridianos calculados no GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":190},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"grade","name":"NQ × NG","dur":17,"desc":"Grade TM (retas) com meridianos e paralelos projetados (curvas); em P (Δλ = 35°, φ = −40°, esquema exagerado), norte de quadrícula, norte geográfico e o ângulo γ."},
+  {"id":"quadrantes","name":"Quatro quadrantes","dur":21,"desc":"P percorre os quatro quadrantes; γ exato e Δλ sen φ ao vivo; quadro de sinais; γ = 0 no MC e no Equador."},
+  {"id":"fuso","name":"Fuso 23","dur":15,"desc":"γ no fuso 23 (GRS80): mapa, γ contra φ para Δλ fixo, Viçosa γ = −0°45′22″; borda em 33°45′ S: 1°40′."},
+  {"id":"pratica","name":"Azimute de quadrícula","dur":13,"desc":"Visada de 1 km em Viçosa: ignorar 45′ desloca o ponto 13 m; Az = 145°33′25″ → Az_Q = Az − γ = 146°18′47″."}]}

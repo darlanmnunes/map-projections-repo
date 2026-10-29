@@ -1,0 +1,10 @@
+{"v":1,"stage":"final","title":"Coordenadas planas do fuso: origem, falso leste e falso norte",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; fuso 23 calculado na TM (GRS80)",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":70},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"fuso","name":"O plano do fuso","dur":18,"desc":"Fuso 23 em x e y (km) da TM, de 80° S a 84° N; origem no Equador × MC; x < 0 a oeste, y < 0 ao sul; ±334 km no Equador."},
+  {"id":"falsa","name":"Falsa origem","dur":20,"desc":"A origem desce 500 km a oeste e 10 000 km ao sul: E = 500 000 + 0,9996x, N = 10 000 000 + 0,9996y; Viçosa E = 722 120,59 m, N = 7 704 054,61 m."},
+  {"id":"brasil","name":"Um par não basta","dur":15,"desc":"O mesmo (E, N) de Viçosa cai em oito lugares do Brasil, um em cada fuso de 18 a 25, sempre a 2°08′ a leste do MC."},
+  {"id":"final","name":"Forma completa","dur":9,"desc":"SIRGAS 2000 / UTM 23S (EPSG:31983); 23S é o hemisfério; no MGRS, Viçosa é 23K."}]}

@@ -1,0 +1,8 @@
+{"v":1,"stage":"final","title":"Fator de escala no fuso UTM e linhas de secância","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; mapa do fuso 23 calculado no GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":130},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"corte","name":"Corte perpendicular ao MC","dur":20,"desc":"Elipsoide × cilindro secante (fora de escala): redução entre as linhas de secância, ampliação fora delas; 0,9996, 1,0000 e 1,00098."},
+  {"id":"secancia","name":"Linhas de secância","dur":26,"desc":"Fuso 23 com a distorção em ppm: na vista (φ, λ) Δλs cresce para o sul e encosta na borda perto de 57°; na grade (E, N) a linha fica a ≈ 180 km do MC."},
+  {"id":"vicosa","name":"Viçosa","dur":19,"desc":"Viçosa a 222 km do MC: m = 1,000210; 1 000,000 m no elipsoide viram 1 000,210 m na grade."}]}

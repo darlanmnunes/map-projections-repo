@@ -1,0 +1,8 @@
+{"v":1,"stage":"final","title":"UTM, RTM e LTM: a mesma TM com outros parâmetros","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; curvas e fusos calculados no GRS80",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":250},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "scenes":[
+  {"id":"parametros","name":"Cinco parâmetros","dur":22,"desc":"Eq. (1) e tabela de parâmetros que passa de UTM a RTM e LTM; faixa de longitude em torno de Viçosa dividida em fusos de 6°, 2° e 1°."},
+  {"id":"parabolas","name":"Distorção × distância ao MC","dur":22,"desc":"ppm contra a distância ao MC no paralelo de Viçosa: UTM de −400 a +800; RTM e LTM, mesma parábola rasa (mínimo −5); zoom: o LTM é o trecho central do RTM."},
+  {"id":"minas","name":"Minas Gerais","dur":21,"desc":"Fusos UTM, RTM e LTM sobre Minas Gerais (3, 7 e 13), com o fuso de Viçosa em destaque: menos distorção, mais limites de fuso."}]}

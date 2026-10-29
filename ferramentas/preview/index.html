@@ -28,6 +28,8 @@
 //   ferramentas/preview/?v=<pasta_do_video>&t=<segundos>[&still=1]
 // Os caminhos são relativos a esta página, para funcionar também num subdiretório.
 const Q = new URLSearchParams(location.search);
+// Miniaturas e renderizador (still=1): sem barra de controle desde o primeiro quadro
+if (Q.get('still')) document.getElementById('ui').style.display = 'none';
 const VIDEO = '../../' + Q.get('v').replace(/^\/|\/$/g, '') + '/motion/';
 // Identidade da disciplina, comum a todos os vídeos (ferramentas/identidade/moldura.css)
 const DISCIPLINA = 'EAM 431 | Projeções Cartográficas | 2026', PROFESSOR = 'Prof. Dr. Darlan M. Nunes';

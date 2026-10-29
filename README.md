@@ -40,6 +40,16 @@ Três princípios guiam todos os vídeos:
 | [V6](aula08_projecoes_conformes/v06_estereografica_ups/) | Estereográfica: perspectiva do antípoda e o plano secante do UPS | 20 e 21 | 60 s |
 | [V7](aula08_projecoes_conformes/v07_mercator_tm_utm/) | Da Mercator à Transversa de Mercator e ao UTM | 22 a 24 | 72 s |
 
+### Aula 09 · Sistemas de Projeção Transversa de Mercator (TM, UTM, RTM e LTM)
+
+| Vídeo | Tema | Slides | Duração |
+|---|---|---|---|
+| [V1](aula09_sistemas_tm/v01_fusos_utm/) | 60 fusos: do globo ao fuso de Viçosa | 7 a 13 | 60 s |
+| [V2](aula09_sistemas_tm/v02_coordenadas_planas/) | Coordenadas planas do fuso: origem, falso leste e falso norte | 10 e 11 | 62 s |
+| [V3](aula09_sistemas_tm/v03_fator_escala/) | Fator de escala no fuso UTM e linhas de secância | 15 a 17 | 65 s |
+| [V4](aula09_sistemas_tm/v04_convergencia_meridiana/) | Convergência meridiana: norte de quadrícula × norte geográfico | 19 e 20 | 66 s |
+| [V5](aula09_sistemas_tm/v05_utm_rtm_ltm/) | UTM, RTM e LTM: a mesma TM com outros parâmetros | 24 a 27 | 65 s |
+
 Cada pasta tem um README com o objetivo didático, as cenas, as equações usadas e a tabela
 de conferência dos números. Os MP4 finais ficam no Google Drive da disciplina; o
 repositório guarda só o código que os gera.
@@ -49,27 +59,28 @@ repositório guarda só o código que os gera.
 A galeria está publicada em
 **https://darlanmnunes.github.io/map-projections-repo/**.
 
-O arquivo [index.html](index.html) é uma galeria com os vídeos: cada cartão mostra uma
-miniatura desenhada ao vivo e abre o vídeo no player, com barra de tempo, reprodução e
-pausa (barra de espaço). Nada é pré-renderizado: o navegador executa o código das cenas e
+O arquivo [index.html](index.html) é uma galeria com os vídeos, organizada por aula (com
+atalhos no topo): cada cartão mostra uma miniatura desenhada ao vivo e abre o vídeo no
+player, com barra de tempo, reprodução e pausa (barra de espaço) e a trilha sonora, que pode
+ser desligada. Nada é pré-renderizado: o navegador executa o código das cenas e
 lê os dados JSON de cada vídeo.
 
 O workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) publica a galeria no
 GitHub Pages a cada push em `main` (pasta `_site` com `index.html`, `ferramentas/` e as
 pastas das aulas, sem scripts Python nem MP4). Um vídeo novo entra na galeria quando é
-acrescentado à lista `VIDEOS` do `index.html`.
+acrescentado à lista `AULAS` do `index.html` (uma aula nova é um item novo da lista).
 
 ## Estrutura do repositório
 
 ```
-aula08_projecoes_conformes/      uma pasta por aula
+aula08_projecoes_conformes/      uma pasta por aula (aula09_sistemas_tm/, ...)
   README.md                      lista dos vídeos da aula
   v01_conforme_x_equivalente/    uma pasta por vídeo
     README.md                    objetivo, cenas, geometria e conferência dos números
     roteiro.md                   roteiro original do vídeo
     python/gerar_dados.py        dados geométricos (linhas de costa, curvas) e conferência
     motion/
-      scenes.json                cenas, durações, paleta e fontes
+      scenes.json                cenas, durações, paleta, fontes e início do trecho da trilha
       base.css                   identidade visual
       shared.js                  projeções e desenho comuns às cenas
       scene-<id>.js              uma cena por arquivo: init() monta, render(t) desenha o instante t
@@ -78,8 +89,10 @@ aula08_projecoes_conformes/      uma pasta por aula
 index.html                       galeria dos vídeos (página inicial do GitHub Pages)
 .github/workflows/pages.yml      publicação da galeria no GitHub Pages
 ferramentas/
-  preview/index.html             player no navegador, com barra de tempo
-  renderizar_mp4.py              renderização quadro a quadro em MP4
+  preview/index.html             player no navegador, com barra de tempo e som
+  identidade/moldura.css         moldura comum a todos os vídeos (identidade dos slides)
+  audio/trilha_eam431.mp3        trilha da série (CC0; ver audio/CREDITOS.md)
+  renderizar_mp4.py              renderização quadro a quadro em MP4, com a trilha mixada
   empacotar_motion.py            empacota a pasta motion/ para o editor de revisão
 ```
 
@@ -103,22 +116,30 @@ Requisitos: Python 3.9 ou mais recente com `numpy`, `scipy`, `shapely`, `pyogrio
    e abrir `http://localhost:8000/` (galeria) ou
    `http://localhost:8000/ferramentas/preview/?v=aula08_projecoes_conformes/v07_mercator_tm_utm`.
 
-3. Renderizar o MP4 (1920 × 1080, 30 fps), gravado em `export/`:
+3. Renderizar o MP4 (1920 × 1080, 30 fps, com a trilha; `--sem-som` para vídeo mudo), gravado em `export/`:
 
    ```bash
    python ferramentas/renderizar_mp4.py aula08_projecoes_conformes/v07_mercator_tm_utm
    ```
 
-As linhas de costa vêm do Natural Earth 1:110m (domínio público).
+As linhas de costa e os limites vêm do Natural Earth 1:110m e 1:50m (domínio público).
 
-## Identidade visual
+## Identidade visual e som
 
-Os vídeos seguem a identidade dos slides da disciplina: fundo branco, azul-marinho
+Todo vídeo leva a moldura dos slides da disciplina, desenhada pelo player por cima das cenas
+(`ferramentas/identidade/moldura.css`): no canto superior esquerdo, três traços nas cores da
+UFV (azul-marinho `#1F3864`, vermelho `#8C1A1D` e dourado `#C9A227`); no canto superior
+direito, "EAM 431 | Projeções Cartográficas | 2026" e, abaixo, "Prof. Dr. Darlan M. Nunes".
+Dentro das cenas: fundo branco, azul-marinho
 `#1F3864` para elementos principais e equações, laranja `#E8711A` para destaques, azul
 `#0432FF` para títulos, cinza `#9A9A9A` para meridianos e paralelos e vermelho `#C0392B` a
 55 % para as indicatrizes de Tissot. Texto em Arimo (mesma métrica do Arial dos slides) e
 equações em STIX Two Text. Notação da disciplina: φ, λ, λ₀, ψ, m, σ, ϖ, k₀, ρ e γ; "sen"
 em vez de "sin"; x para leste e y para norte.
+
+A trilha é uma só para a série, um ambiente sóbrio de piano e guitarra sem sons de natureza
+("Ambient Piano Guitar Texture E", deadrobotmusic, Freesound, CC0); cada vídeo usa um trecho
+diferente. Detalhes em [ferramentas/audio/CREDITOS.md](ferramentas/audio/CREDITOS.md).
 
 ## Autor
 

@@ -18,7 +18,6 @@ kit.scene('cone', {
     this.t2 = p(420, 'sub', 'Linha de contato: paralelo −30°');
     this.t3 = p(510, 'sub', 'Indicatrizes em φ = −10°, −30°, −50° e −70°');
     kit.stage.querySelectorAll('.sub')[1].style.color = 'var(--accent)';
-    V3.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -0.9);

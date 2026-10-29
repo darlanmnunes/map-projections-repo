@@ -1,6 +1,6 @@
 {"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; superfícies 3D semitransparentes calculadas",
  "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
- "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":115},
  "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
  "scenes":[
   {"id":"cone","name":"Cone tangente","dur":12,"desc":"Globo de lado, polo sul embaixo; cone tangente ao paralelo −30°, linha de contato em laranja e indicatrizes."},

@@ -46,7 +46,6 @@ kit.scene('grafico', {
     kit.stage.append(kit.h('<div class="words" style="left:1360px;top:240px;width:480px">' +
       '<h2 class="line grafico-fin" style="font-size:42px">ψ → ∞ no polo: a Mercator não representa os polos</h2></div>'));
     this.fin = kit.stage.querySelector('.grafico-fin').style;
-    V2.sig(kit);
   },
   render(t) {
     const show = eo(seg(t, 0.4, 1.2));

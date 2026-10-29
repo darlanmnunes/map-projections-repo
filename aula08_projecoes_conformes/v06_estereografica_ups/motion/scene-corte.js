@@ -28,7 +28,6 @@ kit.scene('corte', {
     this.t1 = p(250, '<p class="sub">Globo em corte meridiano. Ponto de vista no polo norte; plano tangente no polo sul.</p>');
     this.t2 = p(470, '<p class="eq big"><i>ρ</i> = 2<i>R</i> tan(<i>c</i>/2)</p>');
     this.t3 = p(560, '<p class="sub"><i>c</i>: distância angular ao polo sul</p>');
-    V6.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -0.9);

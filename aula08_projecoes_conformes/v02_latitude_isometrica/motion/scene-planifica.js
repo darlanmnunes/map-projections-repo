@@ -47,7 +47,6 @@ kit.scene('planifica', {
     this.e2 = block(470, '<p class="eq big">d<i>s</i>² = <i>N</i>² cos²<i>φ</i> (d<i>ψ</i>² + d<i>λ</i>²)</p>');
     this.e3 = block(580, '<p class="sub">Coordenadas isométricas: o quadrilátero elementar é um quadrado</p>');
     this.e4 = block(740, '<p class="ttl">Esta grade é o reticulado da Mercator</p>');
-    V2.sig(kit);
   },
   render(t) {
     const u = eio(seg(t, 3.4, 7.0));

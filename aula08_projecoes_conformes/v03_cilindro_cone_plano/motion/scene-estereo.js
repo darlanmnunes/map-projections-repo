@@ -27,7 +27,6 @@ kit.scene('estereo', {
     };
     this.e1 = p(860, '<h2 class="line" style="font-size:46px">|n| = 1: plano, estereográfica</h2>');
     this.e2 = p(940, '<p class="sub">Em todas as etapas, as indicatrizes continuam círculos</p>');
-    V3.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

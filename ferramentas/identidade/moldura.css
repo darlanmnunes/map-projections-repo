@@ -1,0 +1,8 @@
+/* Moldura comum a todos os vídeos da EAM 431, desenhada por cima das cenas no quadro de 1920 × 1080.
+   Canto superior esquerdo: três traços nas cores da UFV. Canto superior direito: disciplina e professor. */
+.moldura { position:absolute; inset:0; pointer-events:none; z-index:10; font-family:Arimo, Arial, sans-serif }
+.moldura .tracos { position:absolute; left:64px; top:30px; display:flex; gap:5px }
+.moldura .tracos i { display:block; width:32px; height:6px }
+.moldura .disc { position:absolute; right:56px; top:24px; text-align:right; line-height:1.25 }
+.moldura .disc b { display:block; font-size:23px; font-weight:700; color:#1F3864 }
+.moldura .disc span { display:block; font-size:20px; color:#5B6573; margin-top:3px }

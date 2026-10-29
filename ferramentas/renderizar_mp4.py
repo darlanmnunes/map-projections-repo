@@ -1,13 +1,16 @@
 """
 Renderiza um vídeo do repositório em MP4, quadro a quadro, sem depender da
 página do Motion: Chrome headless abre ferramentas/preview/ e cada quadro é
-capturado pelo DevTools Protocol e enviado ao ffmpeg.
+capturado pelo DevTools Protocol e enviado ao ffmpeg. Em seguida entra a trilha
+da série (ferramentas/audio/trilha_eam431.mp3), a partir de scenes.json → trilha.inicio,
+com fade na entrada e na saída e loudness normalizado em duas passadas
+(−16 LUFS, pico real ≤ −1,5 dBTP).
 
 Requisitos: Google Chrome e ffmpeg instalados; só biblioteca padrão do Python.
 
 Uso (na raiz do repositório):
     python ferramentas/renderizar_mp4.py aula08_projecoes_conformes/v01_conforme_x_equivalente \
-        [--fps 30] [--saida video.mp4]
+        [--fps 30] [--saida video.mp4] [--sem-som]
 """
 
 import argparse
@@ -27,6 +30,8 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
+TRILHA = RAIZ / "ferramentas" / "audio" / "trilha_eam431.mp3"
+LUFS, PICO, ENTRA, SAI = -16, -1.5, 1.5, 3.0
 
 
 class CDP:
@@ -81,6 +86,12 @@ class CDP:
                 return r["result"]
 
 
+def porta_livre():
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        return s.getsockname()[1]
+
+
 def servidor():
     h = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(RAIZ))
     http.server.SimpleHTTPRequestHandler.log_message = lambda *a: None
@@ -89,22 +100,41 @@ def servidor():
     return srv.server_address[1]
 
 
+def mixar_trilha(mudo, saida, inicio, total):
+    """Junta o vídeo mudo à trilha: recorte, fades e loudnorm em duas passadas."""
+    filtro = (f"afade=t=in:d={ENTRA},afade=t=out:st={total - SAI}:d={SAI},"
+              f"loudnorm=I={LUFS}:TP={PICO}:LRA=11")
+    entrada = ["-ss", str(inicio), "-t", str(total), "-i", str(TRILHA)]
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", *entrada,
+                        "-af", filtro + ":print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True, check=True)
+    m = json.loads(r.stderr[r.stderr.rindex("{"):])
+    filtro += (f":measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
+               f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mudo), *entrada,
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", filtro + ",aresample=48000",
+                    "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(saida)],
+                   check=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video")
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--saida")
+    ap.add_argument("--sem-som", action="store_true")
     a = ap.parse_args()
     video = a.video.strip("/")
-    cenas = json.loads((RAIZ / video / "motion" / "scenes.json").read_text(encoding="utf-8"))["scenes"]
-    total = sum(s["dur"] for s in cenas)
+    meta = json.loads((RAIZ / video / "motion" / "scenes.json").read_text(encoding="utf-8"))
+    total = sum(s["dur"] for s in meta["scenes"])
     saida = Path(a.saida or RAIZ / video / "export" / (Path(video).name + ".mp4"))
     saida.parent.mkdir(parents=True, exist_ok=True)
+    mudo = saida if a.sem_som else saida.with_suffix(".mudo.mp4")
 
-    porta_http = servidor()
+    porta_http, porta_cdp = servidor(), porta_livre()
     perfil = tempfile.mkdtemp()
     chrome = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars",
-                               "--remote-debugging-port=9333", f"--user-data-dir={perfil}",
+                               f"--remote-debugging-port={porta_cdp}", f"--user-data-dir={perfil}",
                                "--window-size=1920,1080", "about:blank"],
                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     try:
@@ -112,7 +142,7 @@ def main():
         alvos = []
         for _ in range(150):
             try:
-                alvos = [t for t in json.load(sem_proxy.open("http://127.0.0.1:9333/json")) if t["type"] == "page"]
+                alvos = [t for t in json.load(sem_proxy.open(f"http://127.0.0.1:{porta_cdp}/json")) if t["type"] == "page"]
                 if alvos:
                     break
             except OSError:
@@ -133,7 +163,7 @@ def main():
 
         ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(a.fps),
                                "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "16",
-                               "-preset", "slow", "-movflags", "+faststart", str(saida)], stdin=subprocess.PIPE)
+                               "-preset", "slow", "-movflags", "+faststart", str(mudo)], stdin=subprocess.PIPE)
         n = round(total * a.fps)
         for i in range(n):
             cdp("Runtime.evaluate", expression=f"render({i / a.fps})")
@@ -143,6 +173,9 @@ def main():
                 print(f"\r{i / a.fps:5.1f} s / {total} s", end="", flush=True)
         ff.stdin.close()
         ff.wait()
+        if not a.sem_som:
+            mixar_trilha(mudo, saida, meta.get("trilha", {}).get("inicio", 0), total)
+            mudo.unlink()
         print(f"\n{saida.relative_to(RAIZ) if saida.is_relative_to(RAIZ) else saida}")
     finally:
         chrome.terminate()

@@ -19,7 +19,6 @@ kit.scene('final', {
     this.foot = kit.h('<div style="position:absolute;left:0;top:820px;width:1920px;display:flex;justify-content:center">' +
       '<p class="ttl" style="font-size:44px;margin:0">Próxima aula: UTM, RTM e LTM</p></div>');
     kit.stage.append(this.foot);
-    V7.sig(kit);
   },
   render(t) {
     V7.paint(this.r, CZ, { th: 90, rc: V7.K0, body: 0.18, contact: 1, zone: 1, zedge: 1, vic: 1, tis: 0, sec: 1 });

@@ -22,7 +22,6 @@ kit.scene('gnomonica', {
     kit.stage.append(kit.h('<div class="words gnomonica-sub" style="left:1240px;top:80px;width:600px;align-items:flex-end">' +
       '<p class="sub">Centro no meio da rota</p></div>'));
     this.sub = kit.stage.querySelector('.gnomonica-sub').style;
-    V5.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

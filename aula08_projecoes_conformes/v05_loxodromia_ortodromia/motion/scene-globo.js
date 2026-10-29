@@ -15,7 +15,6 @@ kit.scene('globo', {
     this.t2 = p(500, '<p class="sub"><span class="key" style="color:var(--accent)"></span>Loxodromia</p>' +
       '<p class="eq">rumo constante de 92,23°</p>');
     this.t3 = p(660, '<p class="sub">Ângulo com o meridiano: na laranja é sempre o mesmo; na azul, muda.</p>');
-    V5.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -0.9);

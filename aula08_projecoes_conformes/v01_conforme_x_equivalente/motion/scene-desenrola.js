@@ -35,7 +35,6 @@ kit.scene('desenrola', {
       '<p class="sub desenrola-c2">Lambert: viram elipses, semieixo leste-oeste sec φ e norte-sul cos φ.</p></div>'));
     this.c1 = kit.stage.querySelector('.desenrola-c1').style;
     this.c2 = kit.stage.querySelector('.desenrola-c2').style;
-    V1.sig(kit);
   },
   render(t) {
     this.old.opacity = 1 - seg(t, 0, 0.6);

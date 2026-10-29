@@ -84,7 +84,6 @@ kit.scene('quadrado', {
     }
     this.tiny.setAttribute('d', d + 'Z');
     this.tb = { x: (x0 + x1) / 2, y: (y0 + y1) / 2, w: x1 - x0, h: y1 - y0 };
-    V1.sig(kit);
   },
   render(t) {
     const out = 1 - seg(t, 0, 0.8);

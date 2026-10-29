@@ -124,7 +124,5 @@ window.V7 = (function () {
     return out;
   }
 
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Dr. Darlan M. Nunes</div>')); }
-
-  return { D, lerp, L0, K0, VIC, cam, vec, build, paint, sig };
+  return { D, lerp, L0, K0, VIC, cam, vec, build, paint };
 })();

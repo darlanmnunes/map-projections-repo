@@ -45,7 +45,6 @@ kit.scene('polar', {
     kit.stage.append(kit.h('<div class="words polar-fin" style="left:1080px;top:250px;width:760px">' +
       '<h2 class="line" style="font-size:44px">UPS: k₀ = 0,994; λ₀ = 0°; FE = FN = 2&nbsp;000&nbsp;000 m; complementa o UTM</h2></div>'));
     this.fin = kit.stage.querySelector('.polar-fin').style;
-    V6.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, 0.2);

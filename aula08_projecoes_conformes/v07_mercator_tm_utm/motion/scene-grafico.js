@@ -58,7 +58,6 @@ kit.scene('grafico', {
     this.gw.append(kit.h('<div class="words" style="left:110px;top:56px;width:1300px">' +
       '<h2 class="line grafico-hd">Do cilindro tangente ao secante: <i>k</i><sub>0</sub> = 0,9996</h2></div>'));
     this.hd = this.gw.querySelector('.grafico-hd').style;
-    V7.sig(kit);
   },
   render(t) {
     V7.paint(this.r, C1, { th: 90, rc: 1, body: 0.3, contact: 1, zone: 1, zedge: 1, vic: 1, tis: 1 });

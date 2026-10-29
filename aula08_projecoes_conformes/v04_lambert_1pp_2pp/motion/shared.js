@@ -174,8 +174,6 @@ window.V4 = (function () {
     return [r * Math.sin(g), -(RHO(P0) - r * Math.cos(g))];
   }
 
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Darlan M. Nunes</div>')); }
-
   return { D, lerp, fmt, V, VICOSA, coneTangent, coneSecant, cuts, svg3d, paintCone,
-    G, GX, GY, graph, curveD, ppD, m2At, lcc, N, L0, ringD, lineD, sig };
+    G, GX, GY, graph, curveD, ppD, m2At, lcc, N, L0, ringD, lineD };
 })();

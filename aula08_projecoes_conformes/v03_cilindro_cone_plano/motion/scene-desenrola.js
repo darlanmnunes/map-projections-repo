@@ -25,7 +25,6 @@ kit.scene('desenrola', {
     this.e1 = p(660, '<p class="eq big"><i>ρ</i> = <i>C</i>·e<sup>−<i>nψ</i></sup>&emsp;&emsp;<i>γ</i> = <i>n</i>(<i>λ</i> − <i>λ</i><sub>0</sub>)</p>');
     this.e2 = p(760, '<p class="sub">Setor de 180°: abertura 360°·<i>n</i>, com <i>n</i> = sen 30° = 0,5</p>');
     this.e3 = p(830, '<p class="sub">Meridianos viram raios; paralelos, arcos concêntricos</p>');
-    V3.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

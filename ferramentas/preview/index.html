@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Projeções Cartográficas em movimento</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=STIX+Two+Text:ital,wght@0,400;0,700;1,400&display=block">
+<link rel="stylesheet" href="../identidade/moldura.css">
 <style>
   html, body { margin:0; background:#eef1f6; overflow:hidden; }
   #wrap { position:relative; width:1920px; height:1080px; overflow:hidden; background:#fff; transform-origin:0 0; }
@@ -11,6 +12,7 @@
   #ui { position:fixed; left:0; right:0; bottom:0; display:flex; align-items:center; gap:12px; font:15px Arimo, Arial, sans-serif; color:#1F3864; background:#fff; padding:10px 16px; border-top:1px solid #d9dee8; }
   #ui a { color:#0432FF; text-decoration:none; font-weight:700; white-space:nowrap; }
   #ui button { font:inherit; color:#fff; background:#1F3864; border:0; border-radius:6px; padding:6px 14px; cursor:pointer; min-width:80px; }
+  #ui button.som { color:#1F3864; background:#fff; border:1px solid #c9d1e0; min-width:0; }
   #rng { flex:1; accent-color:#E8711A; }
   #lab { min-width:120px; text-align:right; font-variant-numeric:tabular-nums; }
 </style>
@@ -18,7 +20,8 @@
 <body>
 <div id="wrap"><div id="stage"></div></div>
 <div id="ui"><a href="../../">← Galeria</a><button id="play">Reproduzir</button>
-  <input id="rng" type="range" min="0" step="0.0333" aria-label="Tempo"> <span id="lab"></span></div>
+  <input id="rng" type="range" min="0" step="0.0333" aria-label="Tempo"> <span id="lab"></span>
+  <button id="som" class="som" aria-pressed="true">Som: ligado</button></div>
 <script>
 // Emulação mínima do kit do Motion, suficiente para as cenas deste repositório.
 // Uso: servir a raiz do repositório (ou o GitHub Pages) e abrir
@@ -26,6 +29,11 @@
 // Os caminhos são relativos a esta página, para funcionar também num subdiretório.
 const Q = new URLSearchParams(location.search);
 const VIDEO = '../../' + Q.get('v').replace(/^\/|\/$/g, '') + '/motion/';
+// Identidade da disciplina, comum a todos os vídeos (ferramentas/identidade/moldura.css)
+const DISCIPLINA = 'EAM 431 | Projeções Cartográficas | 2026', PROFESSOR = 'Prof. Dr. Darlan M. Nunes';
+const CORES_UFV = ['#1F3864', '#8C1A1D', '#C9A227'];
+// Trilha da série: o trecho começa em scenes.json → trilha.inicio (s); entra e sai em fade
+const TRILHA = { arquivo: '../audio/trilha_eam431.mp3', volume: 0.55, entra: 1.5, sai: 3 };
 const clamp01 = x => Math.max(0, Math.min(1, x));
 const base = {
   seg: (t, a, b) => clamp01((t - a) / (b - a)),
@@ -84,29 +92,45 @@ async function boot() {
     t0 += s.dur;
   }
   total = t0;
+  if (meta.moldura !== false) stage.append(base.h('<div class="moldura"><div class="tracos">' +
+    CORES_UFV.map(c => '<i style="background:' + c + '"></i>').join('') + '</div>' +
+    '<div class="disc"><b>' + DISCIPLINA + '</b><span>' + PROFESSOR + '</span></div></div>'));
   await document.fonts.ready;
   const rng = document.getElementById('rng'); rng.max = total;
   rng.oninput = () => render(+rng.value);
   let playing = false, startAt = 0, from = 0;
   const btn = document.getElementById('play');
+  // O áudio só é criado no player (as miniaturas e o renderizador usam still=1)
+  const audio = Q.get('still') ? null : new Audio(TRILHA.arquivo), inicio = meta.trilha?.inicio ?? 0;
+  const somBtn = document.getElementById('som');
+  somBtn.onclick = () => {
+    audio.muted = !audio.muted;
+    somBtn.textContent = audio.muted ? 'Som: desligado' : 'Som: ligado';
+    somBtn.setAttribute('aria-pressed', String(!audio.muted));
+  };
+  const stop = () => { playing = false; btn.textContent = 'Reproduzir'; audio.pause(); };
   const toggle = () => {
-    playing = !playing; btn.textContent = playing ? 'Pausar' : 'Reproduzir';
-    if (playing && +rng.value >= total) rng.value = 0;
+    if (playing) { stop(); return; }
+    playing = true; btn.textContent = 'Pausar';
+    if (+rng.value >= total) rng.value = 0;
     startAt = performance.now(); from = +rng.value;
+    audio.currentTime = inicio + from;
+    audio.play().catch(() => {});
     const loop = () => {
       if (!playing) return;
       const t = Math.min(total, from + (performance.now() - startAt) / 1000);
       rng.value = t; render(t);
-      if (t < total) requestAnimationFrame(loop); else { playing = false; btn.textContent = 'Reproduzir'; }
+      audio.volume = TRILHA.volume * Math.min(1, t / TRILHA.entra, (total - t) / TRILHA.sai);
+      if (t < total) requestAnimationFrame(loop); else stop();
     };
     loop();
   };
   btn.onclick = toggle;
-  rng.addEventListener('input', () => { if (playing) { playing = false; btn.textContent = 'Reproduzir'; } });
-  onkeydown = e => { if (e.code === 'Space') { e.preventDefault(); toggle(); } };
+  rng.addEventListener('input', () => { if (playing) stop(); });
   const t = +(Q.get('t') || 0); rng.value = t; render(t);
   if (Q.get('still')) document.getElementById('ui').remove();
   else {
+    onkeydown = e => { if (e.code === 'Space') { e.preventDefault(); toggle(); } };
     // Centraliza o quadro 16:9 acima da barra de controle
     const fit = () => {
       const s = Math.min(innerWidth / 1920, (innerHeight - 60) / 1080), w = document.getElementById('wrap').style;

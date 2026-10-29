@@ -60,7 +60,6 @@ kit.scene('secante', {
     for (const e of old) this.w.append(e);
     this.old = old.map(e => e.style);
     this.pts = V6.smallCircle(35, -50, 10, 72);
-    V6.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

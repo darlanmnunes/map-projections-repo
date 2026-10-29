@@ -15,7 +15,6 @@ kit.scene('cilindro', {
     this.t3 = p(540, '<h2 class="line" style="font-size:44px">Transversa de Mercator: o contato passa a ser um meridiano</h2>');
     this.mc = kit.h('<div class="lbl" style="color:var(--accent)">MC: <i>λ</i><sub>0</sub> = −45°</div>');
     kit.stage.append(this.mc);
-    V7.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -0.9);

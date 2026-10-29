@@ -196,7 +196,5 @@ window.V3 = (function () {
   const blendT = (A, B, u) => P => { const a = A(P), b = B(P); return [lerp(a[0], b[0], u), lerp(a[1], b[1], u), u > 0.5 ? 1 : a[2]]; };
 
   const fmt = (v, k) => v.toFixed(k).replace('.', ',');
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Darlan M. Nunes</div>')); }
-
-  return { D, L0, V, MAP, family, rho, scaleM, globe, paintSurface, mapLayer, paintMap, mapT, coneT, blendT, fmt, sig, lerp, NMIN };
+  return { D, L0, V, MAP, family, rho, scaleM, globe, paintSurface, mapLayer, paintMap, mapT, coneT, blendT, fmt, lerp, NMIN };
 })();

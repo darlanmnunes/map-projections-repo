@@ -1,6 +1,6 @@
 {"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; geometria exata no elipsoide GRS80",
  "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
- "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":60},
  "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
  "scenes":[
   {"id":"quadrilatero","name":"Quadrilátero elementar","dur":12,"desc":"Globo; quadrilátero Δφ = Δλ = 5° perto do Equador; zoom mostra os lados M dφ e N cos φ dλ, quase um quadrado."},

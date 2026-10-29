@@ -25,7 +25,6 @@ kit.scene('fuso', {
     this.t1 = p(280, '<p class="eq">Viçosa: <i>φ</i> = −20°45′,&emsp;<i>λ</i> = −42°52′</p>');
     this.t2 = p(380, '<p class="sub">Indicatrizes da TM ao longo do paralelo de Viçosa: crescem para longe do MC</p>');
     this.t3 = p(520, '<p class="eq big"><i>m</i> ≈ 1 + <span class="frac"><span><i>x</i>²</span><span>2<i>R</i>²</span></span></p>');
-    V7.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

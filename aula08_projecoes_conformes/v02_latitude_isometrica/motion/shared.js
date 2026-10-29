@@ -124,8 +124,6 @@ window.V2 = (function () {
     Object.assign(r.h.style, { left: b.x + 'px', top: (b.y + b.h / 2 + 14) + 'px', opacity: o.h });
   }
 
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Darlan M. Nunes</div>')); }
-
   return { D, A, M, N, psi, phiOf, ortho, globe, paintGlobe, quadD, quadBox, inset, paintInset,
-    G, INSET, rect, QLON, QD, sig };
+    G, INSET, rect, QLON, QD };
 })();

@@ -17,7 +17,6 @@ kit.scene('tangente', {
     this.st = kit.stage.querySelector('.tangente-st').style;
     this.lbl = kit.h('<div class="lbl" style="left:' + (V4.GX(-24) - 34) + 'px;top:' + (V4.G.y1 - 44) + 'px;color:var(--accent)">−24°</div>');
     kit.stage.append(this.lbl);
-    V4.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -0.9);

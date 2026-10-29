@@ -27,7 +27,6 @@ kit.scene('circulo', {
     kit.stage.append(kit.h('<div class="words circulo-t2" style="left:1190px;top:440px;width:660px">' +
       '<p class="sub">Visto de frente, o plano mostra um círculo perfeito</p></div>'));
     this.t2 = kit.stage.querySelector('.circulo-t2').style;
-    V6.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

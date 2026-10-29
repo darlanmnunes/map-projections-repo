@@ -14,7 +14,6 @@ kit.scene('quadrilatero', {
     kit.stage.append(kit.h('<div class="words" style="left:1140px;top:860px;width:620px;align-items:center;text-align:center">' +
       '<p class="sub quadrilatero-cap">Perto do Equador: quase um quadrado</p></div>'));
     this.cap = kit.stage.querySelector('.quadrilatero-cap').style;
-    V2.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -1.0);

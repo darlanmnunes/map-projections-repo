@@ -107,7 +107,5 @@ window.V6 = (function () {
     return { N, S, O };
   }
 
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Dr. Darlan M. Nunes</div>')); }
-
-  return { D, lerp, K0, ZSEC, RP, cam, geo, ray, smallCircle, ringD, lineD, build, paint, sig };
+  return { D, lerp, K0, ZSEC, RP, cam, geo, ray, smallCircle, ringD, lineD, build, paint };
 })();

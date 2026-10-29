@@ -40,7 +40,6 @@ kit.scene('familia', {
     this.e2 = c(850, '<div class="box2" style="position:relative;display:flex;gap:70px;align-items:center">' +
       '<div class="eq big"><i>ρ</i> = <i>C</i>·e<sup>−<i>nψ</i></sup></div>' +
       '<div class="eq big"><i>m</i> = <span class="frac"><span><i>n ρ</i></span><span><i>N</i> cos <i>φ</i></span></span></div></div>');
-    V3.sig(kit);
   },
   render(t) {
     const out = 1 - seg(t, 0, 0.7);

@@ -20,14 +20,13 @@ kit.scene('mercator', {
     kit.stage.append(kit.h('<div class="words" style="left:110px;top:60px;width:1200px">' +
       '<h2 class="line mercator-hd">Mercator: a loxodromia é reta</h2></div>'));
     this.hd = kit.stage.querySelector('.mercator-hd');
-    kit.stage.append(kit.h('<div class="words mercator-eq" style="left:1240px;top:72px;width:600px;align-items:flex-end">' +
+    kit.stage.append(kit.h('<div class="words mercator-eq" style="left:1240px;top:112px;width:600px;align-items:flex-end">' +
       '<p class="eq big"><i>x</i> = <i>λ</i>,&emsp;<i>y</i> = <i>ψ</i></p></div>'));
     this.eq = kit.stage.querySelector('.mercator-eq').style;
     kit.stage.append(kit.h('<div class="mercator-leg" style="position:absolute;left:0;top:950px;width:1920px;display:flex;justify-content:center;gap:60px">' +
       '<p class="sub" style="margin:0"><span class="key" style="color:var(--main)"></span>Geodésica</p>' +
       '<p class="sub" style="margin:0"><span class="key" style="color:var(--accent)"></span>Loxodromia</p></div>'));
     this.leg = kit.stage.querySelector('.mercator-leg').style;
-    V5.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

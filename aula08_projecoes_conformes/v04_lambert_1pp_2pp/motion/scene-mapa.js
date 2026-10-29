@@ -70,7 +70,6 @@ kit.scene('mapa', {
     this.e2 = p(330, '<p class="eq big"><i>γ</i> = <i>n</i>(<i>λ</i> − <i>λ</i><sub>0</sub>) = −6,96°</p>');
     this.e3 = p(420, '<p class="sub">Ângulo entre o meridiano de Viçosa e o norte da grade</p>');
     this.e4 = p(620, '<h2 class="line" style="font-size:44px">Na Lambert, a convergência meridiana é exatamente n(λ&nbsp;−&nbsp;λ₀)</h2>');
-    V4.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.hd, t, 0.2);

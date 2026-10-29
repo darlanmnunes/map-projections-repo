@@ -15,7 +15,6 @@ kit.scene('globo', {
       kit.stage.append(el);
       return el.style;
     });
-    V1.sig(kit);
   },
   render(t) {
     TextFx.fadeFromRight(this.line, t, -1.0);

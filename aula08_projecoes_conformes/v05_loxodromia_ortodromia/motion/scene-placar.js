@@ -26,7 +26,6 @@ kit.scene('placar', {
     kit.stage.append(kit.h('<div style="position:absolute;left:0;top:800px;width:1920px;display:flex;justify-content:center">' +
       '<h2 class="line placar-fin" style="font-size:48px">Rumo constante facilita a navegação, mas não é o caminho mais curto</h2></div>'));
     this.fin = kit.stage.querySelector('.placar-fin').style;
-    V5.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

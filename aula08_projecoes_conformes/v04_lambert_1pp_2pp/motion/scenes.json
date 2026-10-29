@@ -1,6 +1,6 @@
 {"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; cone 3D e mapa calculados no GRS80",
  "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
- "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":180},
  "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
  "scenes":[
   {"id":"tangente","name":"Cone tangente","dur":15,"desc":"Globo e cone tangente em −24°; gráfico de m contra φ com a curva de 1 PP, m ≥ 1."},

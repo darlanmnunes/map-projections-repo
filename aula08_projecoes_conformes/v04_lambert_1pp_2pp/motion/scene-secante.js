@@ -36,7 +36,6 @@ kit.scene('secante', {
       '<p class="eq" style="font-size:28px;color:var(--accent)">- - 1 PP (−24°)</p>' +
       '<p class="eq" style="font-size:28px">— 2 PP (−5° e −42°)</p></div>'));
     this.leg = kit.stage.querySelector('.secante-leg').style;
-    V4.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

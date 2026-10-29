@@ -29,7 +29,6 @@ kit.scene('desliza', {
     };
     this.c30 = cos('<i>φ</i> = −30°:&emsp;cos <i>φ</i> = 0,87');
     this.c60 = cos('<i>φ</i> = −60°:&emsp;cos <i>φ</i> = 0,50');
-    V2.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

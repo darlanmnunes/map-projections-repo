@@ -178,10 +178,6 @@ window.V1 = (function () {
     return { merc: s('merc'), lamb: s('lamb') };
   }
 
-  function sig(kit) {
-    kit.stage.append(kit.h('<div class="sig">Prof. Darlan M. Nunes</div>'));
-  }
-
-  return { D, S, R0, EQ, X0, CIRC, CLON, map, ortho, orthoFill, mount, paint, sig,
+  return { D, S, R0, EQ, X0, CIRC, CLON, map, ortho, orthoFill, mount, paint,
     GLOBE_END, SPLIT, mapsState, lerp };
 })();

@@ -1,6 +1,6 @@
 {"v":1,"stage":"final","look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, Tissot vermelho translúcido; geometria exata calculada",
  "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],"theirs":1,
- "width":1920,"height":1080,"fps":30,"background":"#FFFFFF",
+ "width":1920,"height":1080,"fps":30,"background":"#FFFFFF","trilha":{"inicio":10},
  "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
  "scenes":[
   {"id":"globo","name":"Três círculos","dur":8,"desc":"Globo gira até centrar a América do Sul; três círculos de 7° surgem sobre λ = −45°."},

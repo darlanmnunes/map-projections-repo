@@ -28,7 +28,6 @@ kit.scene('mercator', {
     };
     this.e1 = p(680, '<h2 class="line" style="font-size:46px">n → 0: cilindro, Mercator</h2>');
     this.e2 = p(770, '<p class="sub">O vértice vai ao infinito; as indicatrizes continuam círculos</p>');
-    V3.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

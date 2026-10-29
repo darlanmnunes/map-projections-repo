@@ -37,7 +37,6 @@ kit.scene('rotulos', {
     kit.stage.append(kit.h('<div class="words" style="left:995px;top:700px;width:780px">' +
       '<p class="sub rotulos-cap">Mesmo círculo na esfera: a Mercator muda o tamanho, a Lambert muda a forma.</p></div>'));
     this.cap = kit.stage.querySelector('.rotulos-cap').style;
-    V1.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

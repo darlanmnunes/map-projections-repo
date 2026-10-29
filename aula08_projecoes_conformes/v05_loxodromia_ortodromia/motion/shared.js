@@ -173,7 +173,5 @@ window.V5 = (function () {
     });
   }
 
-  function sig(kit) { kit.stage.append(kit.h('<div class="sig">Prof. Dr. Darlan M. Nunes</div>')); }
-
-  return { mount, paint, sig, lerp, fmtDeg };
+  return { mount, paint, lerp, fmtDeg };
 })();

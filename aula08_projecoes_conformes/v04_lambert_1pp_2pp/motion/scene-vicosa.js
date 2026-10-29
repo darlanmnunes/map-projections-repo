@@ -48,7 +48,6 @@ kit.scene('vicosa', {
     this.w.append(kit.h('<div class="words" style="left:1060px;top:116px;width:800px">' +
       '<p class="ttl vicosa-st" style="font-size:36px">PP afastados 37°: distorção maior no centro da faixa</p></div>'));
     this.st = kit.stage.querySelector('.vicosa-st').style;
-    V4.sig(kit);
   },
   render(t) {
     for (const s of this.old) s.opacity = 1 - seg(t, 0, 0.6);

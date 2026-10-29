@@ -17,7 +17,6 @@ kit.scene('secante', {
     this.hd = kit.stage.querySelector('.line').style;
     kit.stage.append(kit.h('<div class="words box2 secante-z" style="left:1300px;top:180px;width:520px;padding:16px 24px"><p class="sub">Zoom no fuso 23. O raio do cilindro passa de <i>R</i> a 0,9996 <i>R</i>.</p></div>'));
     this.z = kit.stage.querySelector('.secante-z').style;
-    V7.sig(kit);
   },
   render(t) {
     const u = eio(seg(t, 1.4, 4.4)), L = V7.lerp;

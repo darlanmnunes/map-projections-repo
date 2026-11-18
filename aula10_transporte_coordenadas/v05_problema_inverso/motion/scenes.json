@@ -1,0 +1,18 @@
+{"v":1,
+ "stage":"final",
+ "title":"Aula 10, V5: problema inverso",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; narração e trilha da série",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],
+ "theirs":1,
+ "width":1920,
+ "height":1080,
+ "fps":30,
+ "background":"#FFFFFF",
+ "trilha":{"inicio":180},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "audio":"audio.mp3",
+ "scenes":[
+  {"id":"roteiro","name":"O roteiro","dur":47.1,"desc":"Slide 15: (E1, N1), (E2, N2) → Dc e AzC (27) → ψ12 e γ1 → Az12 (28) → De = Dc/m12 → Dh = De/Fh; quadrantes do arco tangente.","falas":[{"id":"a1","pausa":0.8,"t":0.8},{"id":"a2","pausa":0.3,"t":14.11},{"id":"a3","pausa":0.3,"t":26.07},{"id":"a4","pausa":0.3,"t":35.9}],"cauda":1.0,"sons":[{"s":"passo","em":["a1","coordenadas"],"g":-18},{"s":"traco","em":["a2","corda"],"g":-20},{"s":"passo","em":["a2","corda"],"d":0.2,"g":-19},{"s":"entrada","em":["a2","sinais"],"g":-18},{"s":"passo","em":["a3","psi"],"g":-18},{"s":"passo","em":["a3","somando"],"g":-18},{"s":"realce","em":["a3","geodesico"],"g":-20},{"s":"passo","em":["a4","dividindo"],"g":-18},{"s":"passo","em":["a4","dividindo",2],"g":-18}]},
+  {"id":"conferencia","name":"Conferência em Viçosa","dur":23.28,"desc":"Slide 18: γ2, Az23, De, Dh e o ponto 3 na grade e no elipsoide (pyproj Geod); Dh volta a 2 850,000 m; diferença < 0,005 mm.","falas":[{"id":"b1","pausa":0.8,"t":0.8},{"id":"b2","pausa":0.3,"t":11.66}],"cauda":1.2,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"tique","em":["b1","aplicando"],"d":0.4,"g":-15},{"s":"tique","em":["b1","aplicando"],"d":0.9,"g":-15},{"s":"tique","em":["b1","aplicando"],"d":1.4,"g":-15},{"s":"tique","em":["b1","volta"],"d":-0.4,"g":-15},{"s":"confere","em":["b1","volta"],"d":0.8,"g":-17},{"s":"tique","em":["b2","ponto"],"d":-0.3,"g":-15},{"s":"confere","em":["b2","diferenca"],"g":-17}]},
+  {"id":"contra","name":"Contra-azimute","dur":33.29,"desc":"Az23 = 70°24′35,9″ e Az32 = 250°24′03,1″: faltam 33″ para 180°, a convergência dos meridianos entre 2 e 3 (≈ Δλ sen φ); esquema exagerado.","falas":[{"id":"c1","pausa":0.8,"t":0.8},{"id":"c2","pausa":0.3,"t":9.0},{"id":"c3","pausa":0.3,"t":21.3}],"cauda":1.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","t":0.4,"g":-20},{"s":"entrada","em":["c1","contra"],"g":-18},{"s":"entrada","em":["c1","azimute"],"g":-18},{"s":"entrada","em":["c2","indo"],"g":-18},{"s":"traco","em":["c2","faltam"],"g":-20},{"s":"realce","em":["c2","faltam"],"d":0.5,"g":-20},{"s":"traco","em":["c3","convergencia"],"g":-20},{"s":"realce","em":["c3","convergencia"],"d":0.6,"g":-21}]},
+  {"id":"arcos","name":"Três linhas da UFPR","dur":62.96,"desc":"Delazari (2022), slide 24: arco do equador (Az 90°, γ = ψ = 0), linha sobre o MC (Az 180°, m = 0,9996) e trecho do meridiano de 42° O (AzC 181°16′, γ −1°16′, ψ −4,3″, Az 180°, m 1,00073).","falas":[{"id":"d1","pausa":0.8,"t":0.8},{"id":"d2","pausa":0.3,"t":10.1},{"id":"d3","pausa":0.3,"t":23.77},{"id":"d4","pausa":0.3,"t":34.1},{"id":"d5","pausa":0.3,"t":48.61}],"cauda":3.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"entrada","em":["d1","primeira"],"g":-17},{"s":"tique","em":["d2","gama"],"g":-15},{"s":"tique","em":["d2","psi"],"g":-15},{"s":"tique","em":["d2","escala"],"g":-15},{"s":"entrada","em":["d3","segunda"],"g":-17},{"s":"tique","em":["d3","gamma"],"g":-15},{"s":"tique","em":["d3","fator"],"g":-15},{"s":"entrada","em":["d4","terceira"],"g":-17},{"s":"confere","em":["d4","devolve"],"g":-17},{"s":"realce","em":["d4","meridiano",2],"g":-20},{"s":"tique","em":["d5","inclina"],"g":-15},{"s":"tique","em":["d5","fator"],"g":-15}]}]}

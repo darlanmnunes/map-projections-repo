@@ -1,0 +1,21 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "Uma equipe de topografia trabalha em Viçosa. O receptor GNSS deu as coordenadas UTM de dois marcos. Agora, a estação total vai medir um ângulo e uma distância até um ponto novo.",
+  "a2": "A pergunta da aula é simples: com essas medidas, quais são as coordenadas UTM do ponto novo?",
+  "b1": "O problema é que as medidas e as coordenadas não estão na mesma superfície. O ângulo e a distância foram medidos no terreno.",
+  "b2": "As coordenadas geodésicas estão no elipsoide, a superfície de referência. E as coordenadas UTM estão no plano da projeção.",
+  "b3": "Antes de calcular, cada medida precisa passar do terreno para a grade. Essa passagem se chama redução.",
+  "c1": "Comece pela distância. O distanciômetro mede uma distância inclinada, entre o instrumento e o prisma.",
+  "c2": "Reduzida ao horizonte, ela vira a distância horizontal.",
+  "c3": "Levada ao elipsoide, fica um pouco menor, porque as verticais de A e de B não são paralelas: elas convergem para o centro da Terra. Essa redução é o fator de altitude, efe agá.",
+  "c4": "Por fim, a projeção aplica o fator de escala da linha, eme um dois. No plano, a distância pode ficar maior ou menor do que no elipsoide. Depende de onde a linha está no fuso.",
+  "d1": "Agora, as direções. A projeção UTM é conforme: preserva o ângulo entre duas curvas. Mas a geodésica, a linha mais curta no elipsoide, vira uma curva no plano.",
+  "d2": "As coordenadas, porém, são calculadas pela reta entre os pontos: a corda. O pequeno ângulo entre a tangente à curva e a corda é a redução angular, psi.",
+  "d3": "E, se a orientação vier do norte geográfico, entra também a convergência meridiana, gama, que você já viu na aula nove.",
+  "e1": "Com essas reduções, resolvemos dois problemas. No problema direto, partimos de pontos conhecidos e das medidas de campo, e chegamos às coordenadas do ponto novo.",
+  "e2": "No problema inverso, partimos de duas coordenadas UTM e voltamos ao azimute geodésico e às distâncias no elipsoide e no terreno.",
+  "e3": "Nos próximos vídeos, vamos ver cada redução, quanto ela vale em Viçosa e o roteiro completo de cálculo."
+ }
+}

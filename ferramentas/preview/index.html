@@ -37,6 +37,7 @@ const CORES_UFV = ['#1F3864', '#8C1A1D', '#C9A227'];
 // Trilha da série: o trecho começa em scenes.json → trilha.inicio (s); entra e sai em fade
 const TRILHA = { arquivo: '../audio/trilha_eam431.mp3', volume: 0.55, entra: 1.5, sai: 3 };
 const clamp01 = x => Math.max(0, Math.min(1, x));
+const norm = x => x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9ψγ]/g, '');
 const base = {
   seg: (t, a, b) => clamp01((t - a) / (b - a)),
   lerp: (a, b, u) => a + (b - a) * u,
@@ -79,6 +80,8 @@ async function boot() {
   // módulos de dados (*.json exceto scenes.json) descobertos pelo código das cenas
   const dataNames = new Set((Object.values(files).join('\n').match(/kit\.json\('([^']+)'\)/g) || []).map(m => m.slice(10, -2)));
   for (const n of dataNames) files[n] = await (await fetch(VIDEO + n)).text();
+  // Narração: durações e palavras de cada fala (motion/voz/falas.json), quando o vídeo tem voz
+  const falas = list.some(s => s.falas) ? await (await fetch(VIDEO + 'voz/falas.json')).json() : {};
   const st = document.createElement('style'); st.textContent = files['base.css']; stage.append(st);
   const filmKit = Object.assign({}, base, { json: n => JSON.parse(files[n]), module: n => files[n] ?? null });
   new Function('kit', files['shared.js'])(filmKit);
@@ -87,7 +90,22 @@ async function boot() {
     const box = document.createElement('div');
     box.style.cssText = 'position:absolute;inset:0;overflow:hidden';
     stage.append(box);
-    const kit = Object.assign({}, filmKit, { stage: box, dur: s.dur, start: t0,
+    // Falas da narração na cena: kit.F[id] = { t0, t1, w: [{ x, a, b }] } em segundos da cena;
+    // kit.em(id, 'palavra', n) devolve o instante em que a n-ésima palavra que começa assim é dita.
+    const F = {};
+    for (const f of s.falas || []) {
+      const d = falas[f.id];
+      if (!d) throw new Error('fala sem áudio: ' + f.id);
+      F[f.id] = { t0: f.t, t1: f.t + d.dur, w: d.words.map(w => ({ x: norm(w.text), a: f.t + w.start, b: f.t + w.end })) };
+    }
+    const em = (id, palavra, n = 1) => {
+      const f = F[id], alvo = norm(palavra);
+      if (!f) throw new Error('fala inexistente na cena ' + s.id + ': ' + id);
+      const hits = f.w.filter(w => w.x.startsWith(alvo));
+      if (hits.length < n) throw new Error('palavra "' + palavra + '" (' + n + 'ª) não está na fala ' + id);
+      return hits[n - 1].a;
+    };
+    const kit = Object.assign({}, filmKit, { stage: box, dur: s.dur, start: t0, F, em,
       scene: (id, def) => { scenes[id] = { def, box, start: kit.start, dur: s.dur }; } });
     new Function('kit', files['scene-' + s.id + '.js'])(kit);
     await scenes[s.id].def.init?.call(scenes[s.id].def, kit);
@@ -103,7 +121,10 @@ async function boot() {
   let playing = false, startAt = 0, from = 0;
   const btn = document.getElementById('play');
   // O áudio só é criado no player (as miniaturas e o renderizador usam still=1)
-  const audio = Q.get('still') ? null : new Audio(TRILHA.arquivo), inicio = meta.trilha?.inicio ?? 0;
+  // Vídeos narrados trazem a faixa já mixada (scenes.json → audio); os demais tocam a trilha da série
+  const mixado = !!meta.audio;
+  const audio = Q.get('still') ? null : new Audio(mixado ? VIDEO + meta.audio : TRILHA.arquivo);
+  const inicio = mixado ? 0 : meta.trilha?.inicio ?? 0;
   const somBtn = document.getElementById('som');
   somBtn.onclick = () => {
     audio.muted = !audio.muted;
@@ -122,7 +143,7 @@ async function boot() {
       if (!playing) return;
       const t = Math.min(total, from + (performance.now() - startAt) / 1000);
       rng.value = t; render(t);
-      audio.volume = TRILHA.volume * Math.min(1, t / TRILHA.entra, (total - t) / TRILHA.sai);
+      if (!mixado) audio.volume = TRILHA.volume * Math.min(1, t / TRILHA.entra, (total - t) / TRILHA.sai);
       if (t < total) requestAnimationFrame(loop); else stop();
     };
     loop();
@@ -151,7 +172,8 @@ function render(T) {
     sc.box.style.display = s.id === cur ? '' : 'none';
     if (s.id === cur) sc.def.render.call(sc.def, T - sc.start, sc.kit);
   }
-  document.getElementById('lab').textContent = T.toFixed(1).replace('.', ',') + ' s / ' + total + ' s';
+  const lab = document.getElementById('lab');
+  if (lab) lab.textContent = T.toFixed(1).replace('.', ',') + ' s / ' + total + ' s';
 }
 boot().catch(e => { document.title = 'erro'; document.body.insertAdjacentHTML('beforeend', '<pre style="color:red">' + e.stack + '</pre>'); });
 </script>

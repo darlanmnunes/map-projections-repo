@@ -1,0 +1,20 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "No problema inverso, o caminho é o contrário. Temos as coordenadas UTM de dois pontos e queremos o azimute geodésico e as distâncias no elipsoide e no terreno.",
+  "a2": "Das coordenadas saem a corda e o seu azimute. O arco tangente usa os sinais de delta E e de delta N, para cair no quadrante certo.",
+  "a3": "Depois, psi e gama no ponto inicial. Somando os dois ao azimute da corda, voltamos ao azimute geodésico.",
+  "a4": "Dividindo a corda pelo fator de escala da linha, temos a distância no elipsoide. E dividindo pelo fator de altitude, a distância no terreno.",
+  "b1": "Aplicando o inverso à linha dois três do exemplo de Viçosa, a distância no terreno volta exatamente aos dois mil oitocentos e cinquenta metros medidos.",
+  "b2": "E o mesmo transporte, refeito inteiramente sobre o elipsoide, chega ao mesmo ponto três. A diferença é de cinco milésimos de milímetro.",
+  "c1": "Um detalhe que costuma confundir: o contra-azimute geodésico não é o azimute mais cento e oitenta graus.",
+  "c2": "Indo de três para dois, o azimute é de duzentos e cinquenta graus, vinte e quatro minutos e três segundos. Faltam trinta e três segundos para completar cento e oitenta.",
+  "c3": "Esses trinta e três segundos são a convergência dos meridianos entre os dois pontos. O norte geográfico em três não é paralelo ao norte geográfico em dois.",
+  "d1": "As notas da UFPR propõem três linhas para analisar. A primeira é um arco do equador, a leste do meridiano central.",
+  "d2": "No equador, gama é zero. E a linha é leste oeste, então psi também é zero. Só a escala atua: três quilômetros na grade são três mil e um vírgula dois metros no elipsoide.",
+  "d3": "A segunda está sobre o meridiano central. Gama e psi são zero, e o fator de escala é exatamente zero vírgula nove nove nove seis.",
+  "d4": "A terceira parece inclinada na grade. Mas o problema inverso devolve um azimute geodésico de cento e oitenta graus: ela corre ao longo de um meridiano, o meridiano de quarenta e dois graus oeste, a borda do fuso.",
+  "d5": "Na grade, ela se inclina um grau e dezesseis minutos: é a convergência meridiana na borda do fuso. E ali o fator de escala já passa de um vírgula zero zero zero sete."
+ }
+}

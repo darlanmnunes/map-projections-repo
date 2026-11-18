@@ -1,0 +1,17 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "Quanto vale cada correção? Vamos refazer o exemplo de Viçosa esquecendo uma correção de cada vez, e medir quanto o ponto três se desloca.",
+  "a2": "Esquecer gama, quando a orientação vem de um azimute geodésico, é o pior erro: quarenta e cinco minutos de arco em dois vírgula oito quilômetros deslocam o ponto trinta e oito metros.",
+  "a3": "Esquecer o fator de escala ou o fator de altitude custa dezenas de centímetros. Em Viçosa, metade de um compensa o outro.",
+  "a4": "Usar o fator de escala do ponto, em vez do fator da linha: vinte e um milímetros. E esquecer psi: sete milímetros, da ordem da precisão de uma estação total.",
+  "b1": "Psi e a diferença entre o fator do ponto e o da linha crescem com o quadrado do comprimento e com a distância ao meridiano central.",
+  "b2": "O erro cabe numa fórmula simples: d é aproximadamente D ao quadrado vezes E linha, sobre duas vezes R ao quadrado.",
+  "b3": "Em Viçosa, a duzentos e vinte e dois quilômetros do meridiano central: três milímetros num quilômetro, vinte e cinco milímetros em três quilômetros, e vinte e sete centímetros em dez quilômetros.",
+  "c1": "Então, antes de simplificar, faça três perguntas. A orientação vem de uma ré com coordenadas UTM? Se vem, gama não entra.",
+  "c2": "O erro de esquecer psi e de usar o fator do ponto está abaixo da sua tolerância? Se está, use o fator no ponto médio da linha e dispense psi.",
+  "c3": "E o fator de escala e o fator de altitude? Esses quase nunca podem ser desprezados: valem de dez a sessenta centímetros por quilômetro.",
+  "d1": "O transporte leva as medidas do terreno até a grade UTM. Na próxima aula, o caminho continua: da grade UTM para um sistema local, em que a distância calculada é igual à distância medida."
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "No elipsoide, a linha mais curta entre dois pontos é a geodésica. Levada para a grade UTM, ela não fica reta: vira uma curva, com a concavidade voltada para o meridiano central.",
+  "a2": "No desenho, a curvatura está muito exagerada. Numa linha de três quilômetros em Viçosa, a curva se afasta da reta só seis milímetros.",
+  "b1": "Para a mesma linha, existem três azimutes. O azimute geodésico, Az, contado a partir do norte geográfico.",
+  "b2": "O azimute de quadrícula da tangente, Az Q, contado a partir do norte de quadrícula. Ele difere do geodésico pela convergência meridiana, gama.",
+  "b3": "E o azimute da corda, Az C, a reta entre os dois pontos. É esse que entra nas fórmulas de E e de N.",
+  "b4": "A diferença entre a tangente e a corda é a redução angular, psi. Então, o azimute da corda é igual a Az, menos gama, menos psi.",
+  "c1": "Psi pode ser calculado direto pelas coordenadas de grade. Depende da diferença de N entre os pontos, da distância ao meridiano central e dos raios de curvatura.",
+  "c2": "Repare no comportamento. Sobre o meridiano central, psi é zero. Numa linha leste oeste, também é zero, porque a diferença de N se anula.",
+  "c3": "Afastando a linha do meridiano central, psi cresce. E cresce também com o comprimento da linha.",
+  "d1": "Em Viçosa, a duzentos e vinte e dois quilômetros do meridiano central, uma linha norte sul de três quilômetros tem psi de um vírgula sete segundo.",
+  "d2": "Parece pouco. Mas, se psi for esquecido, o ponto final se desloca vinte e cinco milímetros para o lado. É mais do que a precisão de uma boa estação total.",
+  "d3": "A fórmula foi conferida com a geodésica calculada numericamente sobre o elipsoide: a diferença é de um milésimo de segundo."
+ }
+}

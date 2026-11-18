@@ -1,0 +1,20 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "Vamos resolver o problema direto com o exemplo da aula. Em Viçosa, a estação total está no ponto dois, de coordenadas UTM conhecidas. Ela visa a ré, o ponto um, também conhecido.",
+  "a2": "Da ré até o ponto novo, mede o ângulo horário alfa, de cento e dezoito graus, vinte e quatro minutos e trinta e seis segundos. E mede a distância horizontal: dois mil oitocentos e cinquenta metros.",
+  "a3": "A altitude média da linha é de seiscentos e sessenta e oito metros. Queremos E e N do ponto três.",
+  "b1": "Passo um. Das coordenadas de um e de dois, sai o azimute da corda de dois para um.",
+  "b2": "Mas o ângulo alfa foi medido entre as tangentes às geodésicas, não entre as cordas. Então somamos psi dois um, de zero vírgula seis três segundo, e obtemos o azimute da tangente da ré.",
+  "b3": "Somando alfa, temos o azimute de quadrícula da tangente da vante. Repare: gama não entrou. A orientação veio de uma ré com coordenadas UTM, e já está na grade.",
+  "c1": "Passo dois. A distância horizontal vai ao elipsoide com o fator de altitude: dois mil oitocentos e quarenta e nove vírgula setenta metros.",
+  "c2": "Passo três. Com o fator de escala do ponto dois, calculamos uma posição aproximada do ponto três. Ela é aproximada porque ainda não conhecemos psi nem o fator de escala da nova linha.",
+  "d1": "Passo quatro. Com o ponto três aproximado, calculamos psi dois três, de zero vírgula cinco dois segundo, e o azimute da corda da vante.",
+  "d2": "E o fator de escala da linha dois três, pela regra de Simpson. A corda projetada fica com dois mil oitocentos e cinquenta vírgula trinta e dois metros: trinta e dois centímetros a mais do que a medida.",
+  "d3": "Passo cinco. Com a corda e o seu azimute, E três e N três saem pelo seno e pelo cosseno.",
+  "d4": "Uma segunda iteração muda o ponto três em menos de um décimo de milímetro. Em linhas topográficas, uma iteração basta.",
+  "e1": "O mesmo roteiro reproduz o exemplo das notas da UFPR, calculado com o programa TRANSPUTM. Os quatro pontos irradiados, de A até D, coincidem com os publicados a menos de um milímetro.",
+  "e2": "Numa poligonal, o ponto três vira estação, o dois vira ré, e o roteiro se repete, lado a lado."
+ }
+}

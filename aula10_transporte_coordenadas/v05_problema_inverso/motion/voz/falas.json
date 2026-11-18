@@ -1,0 +1,1727 @@
+{
+"a1": {
+"dur": 13.008,
+"words": [
+{
+"text": "No",
+"start": 0.15,
+"end": 0.23
+},
+{
+"text": "problema",
+"start": 0.23,
+"end": 0.78
+},
+{
+"text": "inverso,",
+"start": 0.78,
+"end": 1.47
+},
+{
+"text": "o",
+"start": 1.47,
+"end": 1.54
+},
+{
+"text": "caminho",
+"start": 1.54,
+"end": 2.09
+},
+{
+"text": "é",
+"start": 2.09,
+"end": 2.16
+},
+{
+"text": "o",
+"start": 2.16,
+"end": 2.23
+},
+{
+"text": "contrário.",
+"start": 2.23,
+"end": 3.24
+},
+{
+"text": "Temos",
+"start": 3.88,
+"end": 4.0
+},
+{
+"text": "as",
+"start": 4.0,
+"end": 4.11
+},
+{
+"text": "coordenadas",
+"start": 4.11,
+"end": 5.18
+},
+{
+"text": "UTM",
+"start": 5.18,
+"end": 5.72
+},
+{
+"text": "de",
+"start": 5.72,
+"end": 5.72
+},
+{
+"text": "dois",
+"start": 5.72,
+"end": 6.15
+},
+{
+"text": "pontos",
+"start": 6.15,
+"end": 6.85
+},
+{
+"text": "e",
+"start": 6.85,
+"end": 6.96
+},
+{
+"text": "queremos",
+"start": 6.96,
+"end": 7.78
+},
+{
+"text": "o",
+"start": 7.78,
+"end": 7.85
+},
+{
+"text": "azimute",
+"start": 7.85,
+"end": 8.52
+},
+{
+"text": "geodésico",
+"start": 8.52,
+"end": 9.44
+},
+{
+"text": "e",
+"start": 9.44,
+"end": 9.54
+},
+{
+"text": "as",
+"start": 9.54,
+"end": 9.75
+},
+{
+"text": "distâncias",
+"start": 9.75,
+"end": 10.81
+},
+{
+"text": "no",
+"start": 10.81,
+"end": 11.14
+},
+{
+"text": "elipsoide",
+"start": 11.14,
+"end": 11.7
+},
+{
+"text": "e",
+"start": 11.7,
+"end": 11.76
+},
+{
+"text": "no",
+"start": 11.76,
+"end": 11.89
+},
+{
+"text": "terreno.",
+"start": 11.89,
+"end": 12.56
+}
+]
+},
+"a2": {
+"dur": 11.664,
+"words": [
+{
+"text": "Das",
+"start": 0.27,
+"end": 0.36
+},
+{
+"text": "coordenadas,",
+"start": 0.36,
+"end": 1.62
+},
+{
+"text": "saem",
+"start": 1.62,
+"end": 1.8
+},
+{
+"text": "a",
+"start": 1.8,
+"end": 1.89
+},
+{
+"text": "corda",
+"start": 1.89,
+"end": 2.34
+},
+{
+"text": "e",
+"start": 2.34,
+"end": 2.43
+},
+{
+"text": "o",
+"start": 2.43,
+"end": 2.54
+},
+{
+"text": "seu",
+"start": 2.54,
+"end": 2.85
+},
+{
+"text": "azimute.",
+"start": 2.85,
+"end": 3.74
+},
+{
+"text": "O",
+"start": 4.66,
+"end": 4.66
+},
+{
+"text": "arco",
+"start": 4.66,
+"end": 5.01
+},
+{
+"text": "tangente",
+"start": 5.01,
+"end": 5.82
+},
+{
+"text": "usa",
+"start": 5.82,
+"end": 6.31
+},
+{
+"text": "os",
+"start": 6.31,
+"end": 6.63
+},
+{
+"text": "sinais",
+"start": 6.63,
+"end": 7.6
+},
+{
+"text": "de",
+"start": 7.6,
+"end": 7.92
+},
+{
+"text": "ΔE",
+"start": 7.92,
+"end": 8.24
+},
+{
+"text": "e",
+"start": 8.24,
+"end": 8.39
+},
+{
+"text": "de",
+"start": 8.39,
+"end": 8.72
+},
+{
+"text": "ΔN",
+"start": 8.72,
+"end": 9.39
+},
+{
+"text": "para",
+"start": 9.39,
+"end": 9.42
+},
+{
+"text": "cair",
+"start": 9.42,
+"end": 9.78
+},
+{
+"text": "no",
+"start": 9.78,
+"end": 9.91
+},
+{
+"text": "quadrante",
+"start": 9.91,
+"end": 10.67
+},
+{
+"text": "certo.",
+"start": 10.67,
+"end": 11.16
+}
+]
+},
+"a3": {
+"dur": 9.528,
+"words": [
+{
+"text": "Depois,",
+"start": 0.39,
+"end": 0.82
+},
+{
+"text": "psi",
+"start": 0.82,
+"end": 1.23
+},
+{
+"text": "e",
+"start": 1.23,
+"end": 1.28
+},
+{
+"text": "gama",
+"start": 1.28,
+"end": 1.83
+},
+{
+"text": "no",
+"start": 1.83,
+"end": 1.85
+},
+{
+"text": "ponto",
+"start": 1.85,
+"end": 2.51
+},
+{
+"text": "inicial.",
+"start": 2.51,
+"end": 3.46
+},
+{
+"text": "Somando",
+"start": 4.26,
+"end": 4.27
+},
+{
+"text": "os",
+"start": 4.27,
+"end": 4.65
+},
+{
+"text": "dois",
+"start": 4.65,
+"end": 4.9
+},
+{
+"text": "ao",
+"start": 4.9,
+"end": 5.02
+},
+{
+"text": "azimute",
+"start": 5.02,
+"end": 5.74
+},
+{
+"text": "da",
+"start": 5.74,
+"end": 6.09
+},
+{
+"text": "corda,",
+"start": 6.09,
+"end": 6.77
+},
+{
+"text": "voltamos",
+"start": 6.77,
+"end": 7.36
+},
+{
+"text": "ao",
+"start": 7.36,
+"end": 7.51
+},
+{
+"text": "azimute",
+"start": 7.51,
+"end": 8.08
+},
+{
+"text": "geodésico.",
+"start": 8.08,
+"end": 9.06
+}
+]
+},
+"a4": {
+"dur": 10.2,
+"words": [
+{
+"text": "Dividindo",
+"start": 0.0,
+"end": 0.73
+},
+{
+"text": "a",
+"start": 0.73,
+"end": 0.8
+},
+{
+"text": "corda",
+"start": 0.8,
+"end": 1.2
+},
+{
+"text": "pelo",
+"start": 1.2,
+"end": 1.57
+},
+{
+"text": "fator",
+"start": 1.57,
+"end": 2.02
+},
+{
+"text": "de",
+"start": 2.02,
+"end": 2.08
+},
+{
+"text": "escala",
+"start": 2.08,
+"end": 2.56
+},
+{
+"text": "da",
+"start": 2.56,
+"end": 2.72
+},
+{
+"text": "linha,",
+"start": 2.72,
+"end": 3.69
+},
+{
+"text": "temos",
+"start": 3.69,
+"end": 3.75
+},
+{
+"text": "a",
+"start": 3.75,
+"end": 3.83
+},
+{
+"text": "distância",
+"start": 3.83,
+"end": 4.55
+},
+{
+"text": "no",
+"start": 4.55,
+"end": 4.7
+},
+{
+"text": "elipsoide.",
+"start": 4.7,
+"end": 5.44
+},
+{
+"text": "E",
+"start": 5.44,
+"end": 5.82
+},
+{
+"text": "dividindo",
+"start": 5.82,
+"end": 6.22
+},
+{
+"text": "pelo",
+"start": 6.22,
+"end": 6.55
+},
+{
+"text": "fator",
+"start": 6.55,
+"end": 7.0
+},
+{
+"text": "de",
+"start": 7.0,
+"end": 7.07
+},
+{
+"text": "altitude,",
+"start": 7.07,
+"end": 7.85
+},
+{
+"text": "a",
+"start": 7.85,
+"end": 7.97
+},
+{
+"text": "distância",
+"start": 7.97,
+"end": 8.63
+},
+{
+"text": "no",
+"start": 8.63,
+"end": 9.01
+},
+{
+"text": "terreno.",
+"start": 9.01,
+"end": 9.66
+}
+]
+},
+"b1": {
+"dur": 10.56,
+"words": [
+{
+"text": "Aplicando",
+"start": 0.01,
+"end": 0.78
+},
+{
+"text": "o",
+"start": 0.78,
+"end": 0.84
+},
+{
+"text": "inverso",
+"start": 0.84,
+"end": 1.43
+},
+{
+"text": "à",
+"start": 1.43,
+"end": 1.52
+},
+{
+"text": "linha",
+"start": 1.52,
+"end": 1.93
+},
+{
+"text": "23",
+"start": 1.93,
+"end": 2.44
+},
+{
+"text": "do",
+"start": 2.44,
+"end": 2.62
+},
+{
+"text": "exemplo",
+"start": 2.62,
+"end": 3.2
+},
+{
+"text": "de",
+"start": 3.2,
+"end": 3.38
+},
+{
+"text": "Viçosa,",
+"start": 3.38,
+"end": 4.1
+},
+{
+"text": "a",
+"start": 4.1,
+"end": 4.56
+},
+{
+"text": "distância",
+"start": 4.56,
+"end": 5.02
+},
+{
+"text": "no",
+"start": 5.02,
+"end": 5.2
+},
+{
+"text": "terreno",
+"start": 5.2,
+"end": 5.85
+},
+{
+"text": "volta",
+"start": 5.85,
+"end": 6.34
+},
+{
+"text": "exatamente",
+"start": 6.34,
+"end": 7.06
+},
+{
+"text": "aos",
+"start": 7.06,
+"end": 7.39
+},
+{
+"text": "2850",
+"start": 7.39,
+"end": 8.49
+},
+{
+"text": "metros",
+"start": 8.49,
+"end": 9.08
+},
+{
+"text": "medidos.",
+"start": 9.08,
+"end": 10.08
+}
+]
+},
+"b2": {
+"dur": 10.416,
+"words": [
+{
+"text": "E",
+"start": 0.01,
+"end": 0.07
+},
+{
+"text": "o",
+"start": 0.07,
+"end": 0.36
+},
+{
+"text": "mesmo",
+"start": 0.36,
+"end": 0.53
+},
+{
+"text": "transporte,",
+"start": 0.53,
+"end": 1.51
+},
+{
+"text": "refeito",
+"start": 1.51,
+"end": 1.99
+},
+{
+"text": "inteiramente",
+"start": 1.99,
+"end": 2.92
+},
+{
+"text": "sobre",
+"start": 2.92,
+"end": 3.31
+},
+{
+"text": "o",
+"start": 3.31,
+"end": 3.38
+},
+{
+"text": "elipsoide,",
+"start": 3.38,
+"end": 4.36
+},
+{
+"text": "chega",
+"start": 4.36,
+"end": 4.78
+},
+{
+"text": "ao",
+"start": 4.78,
+"end": 4.94
+},
+{
+"text": "mesmo",
+"start": 4.94,
+"end": 5.36
+},
+{
+"text": "ponto",
+"start": 5.36,
+"end": 5.78
+},
+{
+"text": "3.",
+"start": 5.78,
+"end": 6.3
+},
+{
+"text": "A",
+"start": 7.06,
+"end": 7.07
+},
+{
+"text": "diferença",
+"start": 7.07,
+"end": 7.2
+},
+{
+"text": "é",
+"start": 7.2,
+"end": 7.42
+},
+{
+"text": "de",
+"start": 7.42,
+"end": 7.47
+},
+{
+"text": "5",
+"start": 7.47,
+"end": 7.74
+},
+{
+"text": "milésimos",
+"start": 7.74,
+"end": 8.57
+},
+{
+"text": "de",
+"start": 8.57,
+"end": 9.0
+},
+{
+"text": "milímetro.",
+"start": 9.0,
+"end": 9.84
+}
+]
+},
+"c1": {
+"dur": 7.896,
+"words": [
+{
+"text": "Um",
+"start": 0.01,
+"end": 0.47
+},
+{
+"text": "detalhe",
+"start": 0.47,
+"end": 0.69
+},
+{
+"text": "que",
+"start": 0.69,
+"end": 0.92
+},
+{
+"text": "costuma",
+"start": 0.92,
+"end": 1.53
+},
+{
+"text": "confundir,",
+"start": 1.53,
+"end": 2.47
+},
+{
+"text": "o",
+"start": 2.47,
+"end": 2.81
+},
+{
+"text": "contra-azimute",
+"start": 2.81,
+"end": 3.76
+},
+{
+"text": "geodésico",
+"start": 3.76,
+"end": 4.64
+},
+{
+"text": "não",
+"start": 4.64,
+"end": 4.88
+},
+{
+"text": "é",
+"start": 4.88,
+"end": 4.96
+},
+{
+"text": "o",
+"start": 4.96,
+"end": 5.04
+},
+{
+"text": "azimute",
+"start": 5.04,
+"end": 5.6
+},
+{
+"text": "mais",
+"start": 5.6,
+"end": 5.93
+},
+{
+"text": "180",
+"start": 5.93,
+"end": 6.67
+},
+{
+"text": "graus.",
+"start": 6.67,
+"end": 7.38
+}
+]
+},
+"c2": {
+"dur": 12.0,
+"words": [
+{
+"text": "Indo",
+"start": 0.39,
+"end": 0.41
+},
+{
+"text": "de",
+"start": 0.41,
+"end": 0.58
+},
+{
+"text": "3",
+"start": 0.58,
+"end": 0.92
+},
+{
+"text": "para",
+"start": 0.92,
+"end": 1.28
+},
+{
+"text": "2,",
+"start": 1.28,
+"end": 1.76
+},
+{
+"text": "o",
+"start": 1.76,
+"end": 2.04
+},
+{
+"text": "azimuth",
+"start": 2.04,
+"end": 2.52
+},
+{
+"text": "é",
+"start": 2.52,
+"end": 2.61
+},
+{
+"text": "de",
+"start": 2.61,
+"end": 2.8
+},
+{
+"text": "250",
+"start": 2.8,
+"end": 3.67
+},
+{
+"text": "graus,",
+"start": 3.67,
+"end": 4.33
+},
+{
+"text": "24",
+"start": 4.33,
+"end": 4.92
+},
+{
+"text": "minutos",
+"start": 4.92,
+"end": 5.6
+},
+{
+"text": "e",
+"start": 5.6,
+"end": 5.69
+},
+{
+"text": "3",
+"start": 5.69,
+"end": 6.02
+},
+{
+"text": "segundos.",
+"start": 6.02,
+"end": 7.12
+},
+{
+"text": "Faltam",
+"start": 7.96,
+"end": 7.97
+},
+{
+"text": "33",
+"start": 7.97,
+"end": 8.37
+},
+{
+"text": "segundos",
+"start": 8.37,
+"end": 8.88
+},
+{
+"text": "para",
+"start": 8.88,
+"end": 9.23
+},
+{
+"text": "completar",
+"start": 9.23,
+"end": 10.14
+},
+{
+"text": "180.",
+"start": 10.14,
+"end": 11.12
+}
+]
+},
+"c3": {
+"dur": 10.992,
+"words": [
+{
+"text": "Esses",
+"start": 0.0,
+"end": 0.51
+},
+{
+"text": "33",
+"start": 0.51,
+"end": 0.82
+},
+{
+"text": "segundos",
+"start": 0.82,
+"end": 1.42
+},
+{
+"text": "são",
+"start": 1.42,
+"end": 1.64
+},
+{
+"text": "a",
+"start": 1.64,
+"end": 1.71
+},
+{
+"text": "convergência",
+"start": 1.71,
+"end": 2.61
+},
+{
+"text": "dos",
+"start": 2.61,
+"end": 2.83
+},
+{
+"text": "meridianos",
+"start": 2.83,
+"end": 3.58
+},
+{
+"text": "entre",
+"start": 3.58,
+"end": 3.96
+},
+{
+"text": "os",
+"start": 3.96,
+"end": 4.11
+},
+{
+"text": "dois",
+"start": 4.11,
+"end": 4.4
+},
+{
+"text": "pontos.",
+"start": 4.4,
+"end": 5.18
+},
+{
+"text": "O",
+"start": 5.88,
+"end": 5.88
+},
+{
+"text": "norte",
+"start": 5.88,
+"end": 5.88
+},
+{
+"text": "geográfico",
+"start": 5.88,
+"end": 6.57
+},
+{
+"text": "em",
+"start": 6.57,
+"end": 6.78
+},
+{
+"text": "3",
+"start": 6.78,
+"end": 7.0
+},
+{
+"text": "não",
+"start": 7.0,
+"end": 7.26
+},
+{
+"text": "é",
+"start": 7.26,
+"end": 7.35
+},
+{
+"text": "paralelo",
+"start": 7.35,
+"end": 8.11
+},
+{
+"text": "ao",
+"start": 8.11,
+"end": 8.22
+},
+{
+"text": "norte",
+"start": 8.22,
+"end": 8.66
+},
+{
+"text": "geográfico",
+"start": 8.66,
+"end": 9.52
+},
+{
+"text": "em",
+"start": 9.52,
+"end": 9.69
+},
+{
+"text": "2.",
+"start": 9.69,
+"end": 10.36
+}
+]
+},
+"d1": {
+"dur": 9.0,
+"words": [
+{
+"text": "As",
+"start": 0.0,
+"end": 0.43
+},
+{
+"text": "notas",
+"start": 0.43,
+"end": 0.6
+},
+{
+"text": "da",
+"start": 0.6,
+"end": 0.77
+},
+{
+"text": "UFPR",
+"start": 0.77,
+"end": 1.1
+},
+{
+"text": "propõem",
+"start": 1.1,
+"end": 1.7
+},
+{
+"text": "três",
+"start": 1.7,
+"end": 2.06
+},
+{
+"text": "linhas",
+"start": 2.06,
+"end": 2.56
+},
+{
+"text": "para",
+"start": 2.56,
+"end": 2.91
+},
+{
+"text": "analisar.",
+"start": 2.91,
+"end": 3.96
+},
+{
+"text": "A",
+"start": 4.58,
+"end": 4.58
+},
+{
+"text": "primeira",
+"start": 4.58,
+"end": 4.78
+},
+{
+"text": "é",
+"start": 4.78,
+"end": 5.04
+},
+{
+"text": "um",
+"start": 5.04,
+"end": 5.05
+},
+{
+"text": "arco",
+"start": 5.05,
+"end": 5.46
+},
+{
+"text": "do",
+"start": 5.46,
+"end": 5.63
+},
+{
+"text": "Equador,",
+"start": 5.63,
+"end": 6.44
+},
+{
+"text": "a",
+"start": 6.44,
+"end": 6.51
+},
+{
+"text": "leste",
+"start": 6.51,
+"end": 6.87
+},
+{
+"text": "do",
+"start": 6.87,
+"end": 7.02
+},
+{
+"text": "meridiano",
+"start": 7.02,
+"end": 7.67
+},
+{
+"text": "central.",
+"start": 7.67,
+"end": 8.46
+}
+]
+},
+"d2": {
+"dur": 13.368,
+"words": [
+{
+"text": "No",
+"start": 0.0,
+"end": 0.45
+},
+{
+"text": "Equador,",
+"start": 0.45,
+"end": 1.09
+},
+{
+"text": "gama",
+"start": 1.09,
+"end": 1.44
+},
+{
+"text": "é",
+"start": 1.44,
+"end": 1.53
+},
+{
+"text": "zero,",
+"start": 1.53,
+"end": 2.1
+},
+{
+"text": "e",
+"start": 2.1,
+"end": 2.25
+},
+{
+"text": "a",
+"start": 2.25,
+"end": 2.33
+},
+{
+"text": "linha",
+"start": 2.33,
+"end": 2.63
+},
+{
+"text": "é",
+"start": 2.63,
+"end": 2.7
+},
+{
+"text": "leste-oeste,",
+"start": 2.7,
+"end": 3.72
+},
+{
+"text": "então",
+"start": 3.72,
+"end": 4.18
+},
+{
+"text": "psi",
+"start": 4.18,
+"end": 4.46
+},
+{
+"text": "também",
+"start": 4.46,
+"end": 5.06
+},
+{
+"text": "é",
+"start": 5.06,
+"end": 5.11
+},
+{
+"text": "zero.",
+"start": 5.11,
+"end": 5.78
+},
+{
+"text": "Só",
+"start": 6.56,
+"end": 6.56
+},
+{
+"text": "a",
+"start": 6.56,
+"end": 6.56
+},
+{
+"text": "escala",
+"start": 6.56,
+"end": 7.01
+},
+{
+"text": "atua.",
+"start": 7.01,
+"end": 7.66
+},
+{
+"text": "Três",
+"start": 8.24,
+"end": 8.24
+},
+{
+"text": "quilômetros",
+"start": 8.24,
+"end": 8.81
+},
+{
+"text": "na",
+"start": 8.81,
+"end": 8.96
+},
+{
+"text": "grade",
+"start": 8.96,
+"end": 9.35
+},
+{
+"text": "são",
+"start": 9.35,
+"end": 9.58
+},
+{
+"text": "3.001,2",
+"start": 9.58,
+"end": 11.12
+},
+{
+"text": "metros",
+"start": 11.12,
+"end": 11.59
+},
+{
+"text": "no",
+"start": 11.59,
+"end": 11.73
+},
+{
+"text": "elipsoide.",
+"start": 11.73,
+"end": 12.8
+}
+]
+},
+"d3": {
+"dur": 10.032,
+"words": [
+{
+"text": "A",
+"start": 0.0,
+"end": 0.48
+},
+{
+"text": "segunda",
+"start": 0.48,
+"end": 0.58
+},
+{
+"text": "está",
+"start": 0.58,
+"end": 0.87
+},
+{
+"text": "sobre",
+"start": 0.87,
+"end": 1.23
+},
+{
+"text": "o",
+"start": 1.23,
+"end": 1.3
+},
+{
+"text": "meridiano",
+"start": 1.3,
+"end": 1.94
+},
+{
+"text": "central.",
+"start": 1.94,
+"end": 2.7
+},
+{
+"text": "Gamma",
+"start": 3.32,
+"end": 3.32
+},
+{
+"text": "e",
+"start": 3.32,
+"end": 3.78
+},
+{
+"text": "psi",
+"start": 3.78,
+"end": 3.8
+},
+{
+"text": "são",
+"start": 3.8,
+"end": 4.14
+},
+{
+"text": "zero",
+"start": 4.14,
+"end": 4.66
+},
+{
+"text": "e",
+"start": 4.66,
+"end": 4.75
+},
+{
+"text": "o",
+"start": 4.75,
+"end": 4.84
+},
+{
+"text": "fator",
+"start": 4.84,
+"end": 5.32
+},
+{
+"text": "de",
+"start": 5.32,
+"end": 5.51
+},
+{
+"text": "escala",
+"start": 5.51,
+"end": 6.18
+},
+{
+"text": "é",
+"start": 6.18,
+"end": 6.58
+},
+{
+"text": "exatamente",
+"start": 6.58,
+"end": 7.16
+},
+{
+"text": "0,9996.",
+"start": 7.16,
+"end": 9.18
+}
+]
+},
+"d4": {
+"dur": 14.208,
+"words": [
+{
+"text": "A",
+"start": 0.0,
+"end": 0.45
+},
+{
+"text": "terceira",
+"start": 0.45,
+"end": 0.68
+},
+{
+"text": "parece",
+"start": 0.68,
+"end": 1.2
+},
+{
+"text": "inclinada",
+"start": 1.2,
+"end": 1.83
+},
+{
+"text": "na",
+"start": 1.83,
+"end": 1.98
+},
+{
+"text": "grade,",
+"start": 1.98,
+"end": 2.56
+},
+{
+"text": "mas",
+"start": 2.56,
+"end": 2.86
+},
+{
+"text": "o",
+"start": 2.86,
+"end": 2.97
+},
+{
+"text": "problema",
+"start": 2.97,
+"end": 3.49
+},
+{
+"text": "inverso",
+"start": 3.49,
+"end": 4.03
+},
+{
+"text": "devolve",
+"start": 4.03,
+"end": 4.57
+},
+{
+"text": "um",
+"start": 4.57,
+"end": 4.72
+},
+{
+"text": "azimute",
+"start": 4.72,
+"end": 5.32
+},
+{
+"text": "geodésico",
+"start": 5.32,
+"end": 6.02
+},
+{
+"text": "de",
+"start": 6.02,
+"end": 6.22
+},
+{
+"text": "180",
+"start": 6.22,
+"end": 6.82
+},
+{
+"text": "graus.",
+"start": 6.82,
+"end": 7.36
+},
+{
+"text": "Ela",
+"start": 7.9,
+"end": 7.9
+},
+{
+"text": "corre",
+"start": 7.9,
+"end": 8.03
+},
+{
+"text": "ao",
+"start": 8.03,
+"end": 8.4
+},
+{
+"text": "longo",
+"start": 8.4,
+"end": 8.61
+},
+{
+"text": "de",
+"start": 8.61,
+"end": 8.78
+},
+{
+"text": "um",
+"start": 8.78,
+"end": 8.94
+},
+{
+"text": "meridiano,",
+"start": 8.94,
+"end": 9.83
+},
+{
+"text": "o",
+"start": 9.83,
+"end": 9.91
+},
+{
+"text": "meridiano",
+"start": 9.91,
+"end": 10.81
+},
+{
+"text": "de",
+"start": 10.81,
+"end": 10.87
+},
+{
+"text": "42",
+"start": 10.87,
+"end": 11.31
+},
+{
+"text": "graus",
+"start": 11.31,
+"end": 11.72
+},
+{
+"text": "oeste,",
+"start": 11.72,
+"end": 12.31
+},
+{
+"text": "à",
+"start": 12.31,
+"end": 12.37
+},
+{
+"text": "borda",
+"start": 12.37,
+"end": 12.78
+},
+{
+"text": "do",
+"start": 12.78,
+"end": 12.94
+},
+{
+"text": "fuso.",
+"start": 12.94,
+"end": 13.7
+}
+]
+},
+"d5": {
+"dur": 10.848,
+"words": [
+{
+"text": "Na",
+"start": 0.0,
+"end": 0.44
+},
+{
+"text": "grade",
+"start": 0.44,
+"end": 0.51
+},
+{
+"text": "ela",
+"start": 0.51,
+"end": 0.73
+},
+{
+"text": "se",
+"start": 0.73,
+"end": 0.87
+},
+{
+"text": "inclina",
+"start": 0.87,
+"end": 1.38
+},
+{
+"text": "a",
+"start": 1.38,
+"end": 1.46
+},
+{
+"text": "1",
+"start": 1.46,
+"end": 1.67
+},
+{
+"text": "grau",
+"start": 1.67,
+"end": 1.96
+},
+{
+"text": "e",
+"start": 1.96,
+"end": 2.03
+},
+{
+"text": "16",
+"start": 2.03,
+"end": 2.47
+},
+{
+"text": "minutos.",
+"start": 2.47,
+"end": 3.26
+},
+{
+"text": "É",
+"start": 3.7,
+"end": 3.7
+},
+{
+"text": "a",
+"start": 3.7,
+"end": 3.7
+},
+{
+"text": "convergência",
+"start": 3.7,
+"end": 4.29
+},
+{
+"text": "meridiana",
+"start": 4.29,
+"end": 4.96
+},
+{
+"text": "na",
+"start": 4.96,
+"end": 5.11
+},
+{
+"text": "borda",
+"start": 5.11,
+"end": 5.48
+},
+{
+"text": "do",
+"start": 5.48,
+"end": 5.63
+},
+{
+"text": "fuso.",
+"start": 5.63,
+"end": 6.2
+},
+{
+"text": "E",
+"start": 6.72,
+"end": 6.72
+},
+{
+"text": "ali",
+"start": 6.72,
+"end": 6.72
+},
+{
+"text": "o",
+"start": 6.72,
+"end": 6.72
+},
+{
+"text": "fator",
+"start": 6.72,
+"end": 7.16
+},
+{
+"text": "de",
+"start": 7.16,
+"end": 7.3
+},
+{
+"text": "escala",
+"start": 7.3,
+"end": 7.86
+},
+{
+"text": "já",
+"start": 7.86,
+"end": 8.04
+},
+{
+"text": "passa",
+"start": 8.04,
+"end": 8.5
+},
+{
+"text": "de",
+"start": 8.5,
+"end": 8.68
+},
+{
+"text": "1,0007.",
+"start": 8.68,
+"end": 10.6
+}
+]
+}
+}

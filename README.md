@@ -11,7 +11,8 @@ Prof. Dr. Darlan M. Nunes
 ## Sobre
 
 Este repositório reúne os vídeos animados curtos usados nas aulas teóricas de EAM 431.
-Cada vídeo dura de 50 s a 75 s e foi feito para entrar num slide e mostrar, em movimento,
+Os vídeos das aulas 08 e 09 duram de 50 s a 75 s; os da aula 10, narrados, de 2 a 3 min. Cada um
+foi feito para entrar num slide ou acompanhar a aula e mostrar, em movimento,
 uma ideia que é difícil de ver numa figura parada: um cilindro que gira até virar a
 Transversa de Mercator, um cone que se desenrola num setor, um círculo da esfera que
 continua círculo no plano.
@@ -49,6 +50,17 @@ Três princípios guiam todos os vídeos:
 | [V3](aula09_sistemas_tm/v03_fator_escala/) | Fator de escala no fuso UTM e linhas de secância | 15 a 17 | 65 s |
 | [V4](aula09_sistemas_tm/v04_convergencia_meridiana/) | Convergência meridiana: norte de quadrícula × norte geográfico | 19 e 20 | 66 s |
 | [V5](aula09_sistemas_tm/v05_utm_rtm_ltm/) | UTM, RTM e LTM: a mesma TM com outros parâmetros | 24 a 27 | 65 s |
+
+### Aula 10 · Transporte de coordenadas UTM (problemas direto e inverso) · vídeos narrados
+
+| Vídeo | Tema | Slides | Duração |
+|---|---|---|---|
+| [V1](aula10_transporte_coordenadas/v01_terreno_grade/) | Do terreno à grade: por que transportar coordenadas | 3 e 5 | 2 min 47 s |
+| [V2](aula10_transporte_coordenadas/v02_reducoes_lineares/) | Reduções lineares: Fₕ, m₁₂ e o fator combinado | 6 a 8 | 2 min 31 s |
+| [V3](aula10_transporte_coordenadas/v03_geodesica_corda_psi/) | Geodésica projetada, corda e a redução angular ψ | 9 e 10 | 2 min 08 s |
+| [V4](aula10_transporte_coordenadas/v04_problema_direto/) | Problema direto, passo a passo (Viçosa e UFPR) | 12, 14, 16, 17 e 20 | 2 min 37 s |
+| [V5](aula10_transporte_coordenadas/v05_problema_inverso/) | Problema inverso, contra-azimute e os três arcos da UFPR | 11, 15 e 18 | 2 min 47 s |
+| [V6](aula10_transporte_coordenadas/v06_quanto_vale/) | Quanto vale cada correção e quando simplificar | 19, 22 e 23 | 2 min 20 s |
 
 Cada pasta tem um README com o objetivo didático, as cenas, as equações usadas e a tabela
 de conferência dos números. Os MP4 finais ficam no Google Drive da disciplina; o
@@ -92,6 +104,8 @@ ferramentas/
   preview/index.html             player no navegador, com barra de tempo e som
   identidade/moldura.css         moldura comum a todos os vídeos (identidade dos slides)
   audio/trilha_eam431.mp3        trilha da série (CC0; ver audio/CREDITOS.md)
+  audio/sons/                    efeitos sonoros curtos (Aula 10 em diante)
+  montar_audio.py                faixa dos vídeos narrados: narração, trilha e efeitos
   renderizar_mp4.py              renderização quadro a quadro em MP4, com a trilha mixada
   empacotar_motion.py            empacota a pasta motion/ para o editor de revisão
 ```

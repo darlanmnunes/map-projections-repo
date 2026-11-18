@@ -4,7 +4,8 @@ página do Motion: Chrome headless abre ferramentas/preview/ e cada quadro é
 capturado pelo DevTools Protocol e enviado ao ffmpeg. Em seguida entra a trilha
 da série (ferramentas/audio/trilha_eam431.mp3), a partir de scenes.json → trilha.inicio,
 com fade na entrada e na saída e loudness normalizado em duas passadas
-(−16 LUFS, pico real ≤ −1,5 dBTP).
+(−16 LUFS, pico real ≤ −1,5 dBTP). Nos vídeos narrados (scenes.json → audio), a faixa
+já mixada por ferramentas/montar_audio.py entra como está.
 
 Requisitos: Google Chrome e ffmpeg instalados; só biblioteca padrão do Python.
 
@@ -174,7 +175,14 @@ def main():
         ff.stdin.close()
         ff.wait()
         if not a.sem_som:
-            mixar_trilha(mudo, saida, meta.get("trilha", {}).get("inicio", 0), total)
+            if meta.get("audio"):
+                # Vídeo narrado: a faixa já vem mixada e normalizada por ferramentas/montar_audio.py
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mudo),
+                                "-i", str(RAIZ / video / "motion" / meta["audio"]), "-map", "0:v", "-map", "1:a",
+                                "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest",
+                                "-movflags", "+faststart", str(saida)], check=True)
+            else:
+                mixar_trilha(mudo, saida, meta.get("trilha", {}).get("inicio", 0), total)
             mudo.unlink()
         print(f"\n{saida.relative_to(RAIZ) if saida.is_relative_to(RAIZ) else saida}")
     finally:

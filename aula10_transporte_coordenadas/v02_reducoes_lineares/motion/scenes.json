@@ -1,0 +1,17 @@
+{"v":1,
+ "stage":"final",
+ "title":"Aula 10, V2: reduções lineares",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; narração e trilha da série",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],
+ "theirs":1,
+ "width":1920,
+ "height":1080,
+ "fps":30,
+ "background":"#FFFFFF",
+ "trilha":{"inicio":60},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "audio":"audio.mp3",
+ "scenes":[
+  {"id":"altitude","name":"Fator de altitude","dur":57.18,"desc":"Linha horizontal a h = 668 m desce pelas verticais convergentes até o elipsoide e encolhe; Fh = Rα/(Rα + hm), Rα de Euler, h geométrica; perda de 15,7, 105 e 314 mm/km para h = 100, 668 e 2 000 m.","falas":[{"id":"a1","pausa":0.8,"t":0.8},{"id":"a2","pausa":0.3,"t":14.52},{"id":"a3","pausa":0.3,"t":26.99},{"id":"a4","pausa":0.3,"t":42.79}],"cauda":1.0,"sons":[{"s":"traco","em":["a1","horizontal"],"g":-20},{"s":"entrada","em":["a1","altitude"],"g":-19},{"s":"traco","em":["a2","verticais"],"g":-20},{"s":"traco","em":["a2","encolhe"],"g":-20},{"s":"realce","em":["a3","fator"],"g":-20},{"s":"entrada","em":["a3","raio"],"g":-19},{"s":"entrada","em":["a3","geometrica"],"g":-19},{"s":"passo","em":["a4","vicosa"],"g":-18},{"s":"tique","em":["a4","cada"],"d":-0.6,"g":-15},{"s":"tique","em":["a4","quilometro"],"g":-15},{"s":"tique","em":["a4","2000"],"g":-15}]},
+  {"id":"escala","name":"Fator de escala da linha","dur":46.21,"desc":"Perfil de m ao longo de E′ na latitude de Viçosa (0,9996 no MC, 1 nas secâncias, 1,00095 na borda); linha de 5 km para leste com m1, mm e m2; regra de Simpson (19) e (20); erro de 14 mm/km com m1 e < 0,002 mm/km com Simpson.","falas":[{"id":"b1","pausa":0.8,"t":0.8},{"id":"b2","pausa":0.3,"t":14.71},{"id":"b3","pausa":0.3,"t":22.71},{"id":"b4","pausa":0.3,"t":32.97}],"cauda":1.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","em":["b1","aula"],"g":-19},{"s":"entrada","em":["b1","0,9996"],"g":-18},{"s":"entrada","em":["b2","ponto"],"g":-18},{"s":"entrada","em":["b2","linha"],"d":0.3,"g":-19},{"s":"tique","em":["b3","inicio"],"g":-15},{"s":"tique","em":["b3","meio"],"g":-15},{"s":"tique","em":["b3","fim"],"g":-15},{"s":"realce","em":["b3","simpson"],"g":-20},{"s":"passo","em":["b4","erra"],"g":-18},{"s":"confere","em":["b4","simpson"],"g":-18}]},
+  {"id":"combinado","name":"Fator combinado","dur":47.97,"desc":"k = m12 · Fh (21); barras de Viçosa: m +210, Fh −105, k +105 mm/km; mapa de k − 1 sobre E′ × h com o contorno k = 1 e o mínimo de −713 mm/km; 1 ha vira 10 002,1 m².","falas":[{"id":"c1","pausa":0.8,"t":0.8},{"id":"c2","pausa":0.3,"t":12.5},{"id":"c3","pausa":0.3,"t":25.45},{"id":"c4","pausa":0.3,"t":35.61}],"cauda":3.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"realce","em":["c1","combinado"],"g":-20},{"s":"entrada","em":["c1","sempre"],"g":-19},{"s":"tique","em":["c2","210"],"g":-15},{"s":"tique","em":["c2","tira"],"g":-15},{"s":"passo","em":["c2","sobram"],"g":-18},{"s":"traco","em":["c3","perto"],"g":-19},{"s":"entrada","em":["c3","chega"],"g":-17},{"s":"realce","em":["c4","hectare"],"g":-20}]}]}

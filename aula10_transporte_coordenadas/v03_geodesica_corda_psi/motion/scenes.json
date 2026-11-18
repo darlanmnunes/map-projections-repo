@@ -1,0 +1,18 @@
+{"v":1,
+ "stage":"final",
+ "title":"Aula 10, V3: geodésica projetada, corda e redução angular ψ",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; narração e trilha da série",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],
+ "theirs":1,
+ "width":1920,
+ "height":1080,
+ "fps":30,
+ "background":"#FFFFFF",
+ "trilha":{"inicio":100},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "audio":"audio.mp3",
+ "scenes":[
+  {"id":"curva","name":"A geodésica na grade","dur":25.12,"desc":"Grade com o MC: a geodésica projetada é uma curva com a concavidade voltada para o MC; a corda; detalhe da flecha real de 6,2 mm numa linha de 3 km em Viçosa.","falas":[{"id":"a1","pausa":0.8,"t":0.8},{"id":"a2","pausa":0.3,"t":14.59}],"cauda":1.0,"sons":[{"s":"traco","em":["a1","grade"],"g":-20},{"s":"traco","em":["a1","vira"],"g":-19},{"s":"entrada","em":["a1","concavidade"],"g":-18},{"s":"entrada","em":["a2","numa"],"g":-17},{"s":"realce","em":["a2","milimetros"],"g":-20}]},
+  {"id":"azimutes","name":"Três azimutes","dur":41.47,"desc":"No ponto 1: NG, NQ, tangente e corda; Az (do NG à tangente), AzQ = Az − γ (12), AzC = Az − γ − ψ (22); valores reais para a linha norte-sul de 3 km em Viçosa.","falas":[{"id":"b1","pausa":0.8,"t":0.8},{"id":"b2","pausa":0.3,"t":9.88},{"id":"b3","pausa":0.3,"t":20.81},{"id":"b4","pausa":0.3,"t":29.65}],"cauda":1.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"entrada","em":["b1","geodesico"],"g":-18},{"s":"entrada","em":["b2","quadricula"],"g":-18},{"s":"tique","em":["b2","convergencia"],"g":-15},{"s":"traco","em":["b3","corda"],"g":-20},{"s":"realce","em":["b4","reducao"],"g":-20},{"s":"passo","em":["b4","entao"],"g":-19}]},
+  {"id":"comportamento","name":"De que depende ψ","dur":30.11,"desc":"Eq. (23); uma linha percorre o fuso com ψ ao vivo: no MC e em leste-oeste ψ = 0; afastando-se do MC e crescendo, ψ aumenta (2,30″ a 300 km; 7,65″ com 10 km).","falas":[{"id":"c1","pausa":0.8,"t":0.8},{"id":"c2","pausa":0.3,"t":11.54},{"id":"c3","pausa":0.3,"t":21.68}],"cauda":2.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"tique","em":["c1","diferenca"],"g":-15},{"s":"tique","em":["c1","distancia"],"g":-15},{"s":"tique","em":["c1","raios"],"g":-15},{"s":"entrada","em":["c2","sobre"],"g":-18},{"s":"traco","em":["c2","leste"],"g":-20},{"s":"traco","em":["c3","afastando"],"g":-20},{"s":"traco","em":["c3","comprimento"],"g":-20}]},
+  {"id":"vicosa","name":"ψ em Viçosa","dur":31.35,"desc":"Linha norte-sul de 3 km a E′ = 222 km: ψ = 1,70″; sem ψ, o fim desloca 24,7 mm; geodésica numérica: diferença de 0,001″.","falas":[{"id":"d1","pausa":0.8,"t":0.8},{"id":"d2","pausa":0.3,"t":10.53},{"id":"d3","pausa":0.3,"t":20.29}],"cauda":3.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","em":["d1","linha"],"g":-20},{"s":"realce","em":["d1","psi"],"g":-20},{"s":"traco","em":["d2","esquecido"],"g":-20},{"s":"entrada","em":["d2","desloca"],"g":-17},{"s":"confere","em":["d3","diferenca"],"g":-19}]}]}

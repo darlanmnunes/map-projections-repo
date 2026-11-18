@@ -1,0 +1,18 @@
+{"v":1,
+ "stage":"final",
+ "title":"Aula 10, V6: quanto vale cada correção",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; narração e trilha da série",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],
+ "theirs":1,
+ "width":1920,
+ "height":1080,
+ "fps":30,
+ "background":"#FFFFFF",
+ "trilha":{"inicio":230},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "audio":"audio.mp3",
+ "scenes":[
+  {"id":"erros","name":"Quanto vale cada correção","dur":51.87,"desc":"Deslocamento do ponto 3 do exemplo de Viçosa quando uma correção é esquecida, em escala logarítmica: γ 37,6 m; sem m 62 cm; sem Fh 30 cm; sem os dois 32 cm; m do ponto 21 mm; sem ψ23 7 mm; estação total ≈ 8 mm.","falas":[{"id":"a1","pausa":0.8,"t":0.8},{"id":"a2","pausa":0.3,"t":12.81},{"id":"a3","pausa":0.3,"t":27.41},{"id":"a4","pausa":0.3,"t":38.46}],"cauda":1.0,"sons":[{"s":"entrada","em":["a1","exemplo"],"g":-19},{"s":"tique","em":["a2","gama"],"g":-15},{"s":"realce","em":["a2","pior"],"g":-20},{"s":"tique","em":["a3","escala"],"g":-15},{"s":"tique","em":["a3","altitude"],"g":-15},{"s":"tique","em":["a3","metade"],"g":-15},{"s":"tique","em":["a4","21"],"g":-15},{"s":"tique","em":["a4","psi"],"g":-15},{"s":"traco","em":["a4","precisao"],"g":-20}]},
+  {"id":"regra","name":"A regra D²E′/2R²","dur":35.74,"desc":"Curvas d(D) = D²E′/(2R²) para E′ = 100, 222 (Viçosa) e 300 km; em Viçosa, 1 km → 3 mm, 3 km → 25 mm, 10 km → 27 cm.","falas":[{"id":"b1","pausa":0.8,"t":0.8},{"id":"b2","pausa":0.3,"t":11.16},{"id":"b3","pausa":0.3,"t":21.25}],"cauda":1.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","em":["b1","quadrado"],"g":-19},{"s":"traco","em":["b1","distancia"],"g":-21},{"s":"realce","em":["b2","formula"],"g":-20},{"s":"entrada","em":["b3","3"],"g":-18},{"s":"entrada","em":["b3","25"],"g":-18},{"s":"entrada","em":["b3","27"],"g":-18}]},
+  {"id":"decisao","name":"Quando simplificar","dur":34.9,"desc":"As três perguntas do slide 22: orientação por ré (γ), D²E′/2R² e tolerância (ψ e m da linha), Fh e m (quase nunca desprezíveis).","falas":[{"id":"c1","pausa":0.8,"t":0.8},{"id":"c2","pausa":0.3,"t":11.66},{"id":"c3","pausa":0.3,"t":23.5}],"cauda":1.2,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"passo","em":["c1","orientacao"],"g":-18},{"s":"entrada","em":["c1","gama"],"g":-18},{"s":"passo","em":["c2","erro"],"g":-18},{"s":"entrada","em":["c2","use"],"g":-18},{"s":"passo","em":["c3","fator"],"g":-18},{"s":"realce","em":["c3","quase"],"g":-20}]},
+  {"id":"ponte","name":"Do UTM ao sistema local","dur":17.72,"desc":"Medidas no terreno → (× Fh e m12; ψ) → grade UTM → ? → coordenadas locais (Aula 11); a pergunta do slide 23.","falas":[{"id":"d1","pausa":0.8,"t":0.8}],"cauda":3.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"entrada","em":["d1","terreno"],"g":-18},{"s":"traco","em":["d1","terreno"],"d":0.2,"g":-20},{"s":"entrada","em":["d1","grade"],"g":-18},{"s":"traco","em":["d1","proxima"],"g":-20},{"s":"entrada","em":["d1","sistema"],"g":-18},{"s":"realce","em":["d1","local"],"g":-19}]}]}

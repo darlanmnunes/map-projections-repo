@@ -1,0 +1,18 @@
+{"v":1,
+ "stage":"final",
+ "title":"Aula 11, V1: por que coordenadas locais",
+ "look":"Identidade dos slides da EAM 431: fundo branco, azul-marinho, títulos azuis, destaques laranja; narração e trilha da série",
+ "palettes":[["#FFFFFF","#1F3864","#0432FF","#E8711A"]],
+ "theirs":1,
+ "width":1920,
+ "height":1080,
+ "fps":30,
+ "background":"#FFFFFF",
+ "trilha":{"inicio":260},
+ "fonts":{"sans":{"family":"Arimo","or":"instrument-sans"},"serif":{"family":"STIX Two Text","or":"fraunces"}},
+ "audio":"audio.mp3",
+ "scenes":[
+  {"id":"grade","name":"Projeto na grade, obra no terreno","dur":61.66,"desc":"Linha de 1 km no terreno e na grade UTM; erro (k − 1)·L; k − 1 de UTM, RTM, LTM, TM municipal e plano local em Viçosa.","falas":[{"id":"a1","pausa":0.8,"t":0.8},{"id":"a2","pausa":0.3,"t":11.37},{"id":"a3","pausa":0.3,"t":24.17},{"id":"a4","pausa":0.3,"t":39.83}],"cauda":1.0,"sons":[{"s":"traco","em":["a1","estacao"],"g":-20},{"s":"traco","em":["a1","grade"],"g":-20},{"s":"realce","em":["a2","86"],"g":-19},{"s":"entrada","em":["a3","erra"],"g":-19},{"s":"tique","em":["a3","quadra"],"g":-20},{"s":"tique","em":["a3","alinhamento"],"g":-20},{"s":"entrada","em":["a4","rtm"],"g":-19},{"s":"confere","em":["a4","zera"],"g":-18}]},
+  {"id":"familias","name":"Três famílias","dur":41.41,"desc":"Cartões do SGL (z na normal), STL (z na vertical) e projeções locais (TM com MC na cidade).","falas":[{"id":"b1","pausa":0.8,"t":0.8},{"id":"b2","pausa":0.3,"t":9.6},{"id":"b3","pausa":0.3,"t":21.18},{"id":"b4","pausa":0.3,"t":30.98}],"cauda":1.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"entrada","em":["b2","sistema"],"g":-19},{"s":"entrada","em":["b3","sistema"],"g":-19},{"s":"entrada","em":["b4","projecoes"],"g":-19},{"s":"realce","em":["b3","vertical"],"g":-20}]},
+  {"id":"plano","name":"O plano topográfico local","dur":39.17,"desc":"Corte: elipsoide, plano tangente em O elevado a hL = 700 m, terreno; fator de elevação FL; planta com (150 000; 250 000).","falas":[{"id":"c1","pausa":0.8,"t":0.8},{"id":"c2","pausa":0.3,"t":11.04},{"id":"c3","pausa":0.3,"t":29.27}],"cauda":1.0,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","em":["c1","tangente"],"g":-20},{"s":"realce","em":["c1","elevado"],"g":-18},{"s":"traco","em":["c2","distancia"],"g":-20},{"s":"entrada","em":["c2","fator"],"g":-19},{"s":"entrada","em":["c3","origem"],"g":-19}]},
+  {"id":"limites","name":"Até onde vale o plano","dur":51.3,"desc":"Corte com a superfície caindo abaixo do plano; tabela s − d e zL; NBR 13133:2021 (35 km, 150 m); faixa de altitude com o plano no meio (11,8 mm/km).","falas":[{"id":"d1","pausa":0.8,"t":0.8},{"id":"d2","pausa":0.3,"t":14.44},{"id":"d3","pausa":0.3,"t":25.4},{"id":"d4","pausa":0.3,"t":35.66}],"cauda":1.5,"sons":[{"s":"passagem","t":0.0,"g":-13},{"s":"traco","em":["d1","curvatura"],"g":-20},{"s":"tique","em":["d1","24"],"g":-19},{"s":"tique","em":["d2","22"],"g":-19},{"s":"entrada","em":["d3","norma"],"g":-19},{"s":"traco","em":["d4","media"],"g":-20},{"s":"confere","em":["d4","12"],"g":-18}]}]}

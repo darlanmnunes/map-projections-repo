@@ -62,6 +62,14 @@ Três princípios guiam todos os vídeos:
 | [V5](aula10_transporte_coordenadas/v05_problema_inverso/) | Problema inverso, contra-azimute e os três arcos da UFPR | 11, 15 e 18 | 2 min 47 s |
 | [V6](aula10_transporte_coordenadas/v06_quanto_vale/) | Quanto vale cada correção e quando simplificar | 19, 22 e 23 | 2 min 20 s |
 
+### Aula 11 · Sistemas de coordenadas locais · vídeos narrados
+
+| Vídeo | Tema | Slides | Duração |
+|---|---|---|---|
+| [V1](aula11_sistemas_locais/v01_por_que_plano_local/) | Por que coordenadas locais e até onde vale o plano | 3 a 5, 7 e 17 a 20 | 3 min 14 s |
+| [V2](aula11_sistemas_locais/v02_terna_topocentrica/) | Do geocêntrico ao topocêntrico: a matriz T | 14 a 16 e 22 | 3 min 53 s |
+| [V3](aula11_sistemas_locais/v03_utm_para_plano_local/) | Do UTM ao plano local: rigoroso, similaridade e polar | 26 a 29 e 31 a 35 | 3 min 37 s |
+
 Cada pasta tem um README com o objetivo didático, as cenas, as equações usadas e a tabela
 de conferência dos números. Os MP4 finais ficam no Google Drive da disciplina; o
 repositório guarda só o código que os gera.

@@ -1,0 +1,22 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "No campo, o GNSS entrega latitude, longitude e altitude geométrica. Para chegar a um plano local, o primeiro passo é sair do elipsoide e ir para o espaço: as coordenadas geocêntricas X, Y e Z.",
+  "a2": "A origem fica no centro da Terra. O eixo Z aponta para o polo norte, o eixo X para o meridiano de Greenwich, no equador, e o eixo Y completa a terna, noventa graus a leste.",
+  "a3": "A equação vinte e nove faz a conversão, com o raio do primeiro vertical, N, e a altitude h. Para a origem do exemplo, em Viçosa, X dá cerca de quatro mil trezentos e setenta e dois quilômetros. Y e Z são negativos, porque o ponto fica a oeste de Greenwich e no hemisfério sul.",
+  "b1": "Só que coordenadas geocêntricas são números de milhões de metros, em eixos que nada têm a ver com o terreno. O que queremos é uma terna presa à origem O: um eixo para leste, um para norte e um na normal ao elipsoide.",
+  "b2": "Essa é a terna topocêntrica. Primeiro, subtraímos as coordenadas da origem, e a terna passa a nascer em O. Falta girá-la.",
+  "c1": "A rotação é feita em dois giros, com a latitude e a longitude da origem.",
+  "c2": "No primeiro giro, em torno do eixo Z, de noventa graus mais lambda zero, o eixo X passa a apontar para leste.",
+  "c3": "No segundo giro, em torno desse novo eixo X, de noventa graus menos fi zero, o eixo Z deita até coincidir com a normal em O, e o eixo Y passa a apontar para o norte.",
+  "c4": "O produto dos dois giros é a matriz T, da equação trinta e um. Cada linha de T é um vetor unitário: leste, norte e normal. E T é ortogonal: para voltar, basta usar a transposta.",
+  "d1": "Vamos a um ponto. P1 está a mil e oitocentos metros da origem, com azimute geodésico de trinta e cinco graus e altitude de setecentos e doze metros.",
+  "d2": "Pela equação trinta, x L dá mil e trinta e dois metros para leste, e y L, mil quatrocentos e setenta e cinco metros para norte. O pyproj dá o mesmo resultado.",
+  "d3": "A distância no plano é de mil e oitocentos metros e vinte centímetros, e o azimute continua sendo trinta e cinco graus.",
+  "d4": "E o z L? O ponto está doze metros acima da origem, mas z L dá onze metros e setenta e cinco centímetros. O quarto de metro que falta é a curvatura: a mil e oitocentos metros, a superfície já desceu abaixo do plano tangente.",
+  "e1": "Último cuidado: a orientação. O eixo y L aponta para o norte geográfico só no meridiano da origem.",
+  "e2": "A leste ou a oeste, os meridianos convergem para o polo, e o norte geográfico se afasta do eixo y L. É a convergência no plano local, gama L: aproximadamente x L vezes a tangente de fi zero, dividido pelo raio médio.",
+  "e3": "Em Viçosa, são cerca de doze segundos por quilômetro. Na borda de um plano de trinta e cinco quilômetros, a dezessete quilômetros e meio da origem, chega a três minutos e meio. Por isso, o memorial deve dizer se o azimute é do plano ou geodésico."
+ }
+}

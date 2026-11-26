@@ -1,0 +1,28 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "O levantamento chegou em coordenadas UTM, mas a obra vai ser locada num plano topográfico local. Como passar de um sistema para o outro?",
+  "a2": "São três mudanças, e todas você já conhece. Primeiro, a origem: subtraímos as coordenadas UTM do ponto de origem, em Viçosa.",
+  "a3": "Depois, a orientação. No plano local, o eixo Y aponta para o norte geográfico; na grade, para o norte de quadrícula. A diferença é a convergência meridiana na origem: menos quarenta e quatro minutos e cinquenta segundos.",
+  "a4": "Por fim, a escala. Na origem, a grade estica as distâncias pelo fator combinado: oitenta e seis milímetros por quilômetro. No fim, somamos as constantes do plano, cento e cinquenta mil e duzentos e cinquenta mil metros.",
+  "a5": "Há três caminhos para fazer essas contas: o método rigoroso, a similaridade e o método polar.",
+  "b1": "O método rigoroso não faz nenhuma aproximação de plano. Vamos acompanhar o ponto P1, a mil e oitocentos metros da origem.",
+  "b2": "Primeiro passo: das coordenadas UTM para latitude e longitude, pelo problema inverso da projeção TM.",
+  "b3": "Segundo passo: latitude, longitude e altitude viram coordenadas geocêntricas X, Y e Z. Atenção: o ponto e a origem são levados à altitude do plano, setecentos metros.",
+  "b4": "Terceiro passo: a matriz de rotação T gira a diferença entre os dois vetores para a terna local. Saem x para leste, y para norte e z na normal.",
+  "b5": "O z vale menos vinte e cinco centímetros: é a queda da superfície abaixo do plano tangente. Ele é descartado, porque o plano local é só planimétrico.",
+  "b6": "Quarto passo: somamos as constantes. Estas são as coordenadas de P1 no plano local, e elas servem de referência para os outros dois métodos.",
+  "c1": "O primeiro atalho é a similaridade em duas dimensões. Ela aplica as três mudanças com valores fixos, calculados uma única vez na origem.",
+  "c2": "Tiramos a origem, giramos pela convergência e dividimos pelo fator combinado. É uma transformação de Helmert com parâmetros calculados, e não ajustados.",
+  "c3": "Em P1, o resultado erra oito milímetros. Por quê? Porque, longe da origem, o fator de escala e a convergência já não são os da origem.",
+  "d1": "O segundo atalho é o método polar. Para cada ponto, usamos a distância e o azimute a partir da origem, com as reduções da aula dez.",
+  "d2": "A corda na grade é dividida pelo fator de escala da linha e volta a mil e oitocentos metros, no elipsoide. O fator de elevação leva essa distância ao plano.",
+  "d3": "O azimute da corda recebe a redução angular e a convergência na origem, e volta a trinta e cinco graus, o azimute geodésico.",
+  "d4": "Com distância e azimute, as coordenadas saem como na topografia. Em P1, o erro cai para seis décimos de milímetro.",
+  "e1": "Quanto vale cada escolha? A similaridade erra três milímetros a um quilômetro da origem, doze milímetros a dois quilômetros e setenta milímetros a cinco quilômetros.",
+  "e2": "Na borda do plano, a dezessete quilômetros e meio, o erro chega a quase noventa centímetros. Já o método polar fica em torno de um milímetro nos três pontos do exemplo.",
+  "e3": "E o erro mais grave é esquecer a convergência: só em P1, o ponto se desloca vinte e três metros.",
+  "e4": "Em resumo: a similaridade serve para um ou dois quilômetros em torno da origem. Acima disso, use o método rigoroso ou o método polar."
+ }
+}

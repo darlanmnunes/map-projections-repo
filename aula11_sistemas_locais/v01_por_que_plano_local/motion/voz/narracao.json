@@ -1,0 +1,21 @@
+{
+ "voz": "Charon",
+ "estilo": "Professor universitário brasileiro explicando com calma a uma turma de engenharia. Ritmo pausado e didático, tom acolhedor e seguro, pausas curtas entre as frases.",
+ "falas": {
+  "a1": "Imagine um loteamento em Viçosa. O projeto foi desenhado na grade UTM, e a obra vai ser locada com a estação total, que mede distâncias no terreno.",
+  "a2": "Na Aula dez vimos que a grade não tem a escala do terreno. Aqui, juntando a projeção e a altitude, a grade UTM estica cada quilômetro em oitenta e seis milímetros.",
+  "a3": "Se o projeto está na grade e a medida está no terreno, cada distância erra k menos um vezes o comprimento. Numa quadra de cem metros, quase nove milímetros; num alinhamento de dois quilômetros, dezessete centímetros.",
+  "a4": "E não basta trocar de projeção. A RTM e a LTM têm escala quase igual a um no elipsoide, mas a setecentos metros de altitude ainda sobram cerca de cem milímetros por quilômetro, para menos. Só zera quem compensa a altitude: o plano topográfico local e uma transversa de Mercator municipal.",
+  "b1": "Por isso existem os sistemas locais. São três famílias, e o que muda entre elas é a superfície onde as coordenadas são calculadas.",
+  "b2": "No sistema geodésico local, o plano é tangente ao elipsoide na origem, e o eixo z segue a normal. É o sistema que o INCRA usa para calcular a área dos imóveis rurais.",
+  "b3": "No sistema topográfico local, o plano é o mesmo, mas o eixo z segue a vertical, o fio de prumo. É o plano da estação total nivelada.",
+  "b4": "E as projeções locais são transversas de Mercator com outros parâmetros: o meridiano central na cidade e o fator de escala ajustado à altitude.",
+  "c1": "Vamos olhar o plano topográfico de perto. Ele é tangente na origem, mas não fica no nível do elipsoide: fica elevado à altitude média do terreno.",
+  "c2": "Assim, a distância calculada no plano é igual à medida no campo. O fator de elevação é o raio médio mais a altitude, dividido pelo raio médio. A setecentos metros, ele acrescenta cento e dez milímetros por quilômetro: é o inverso do fator de altitude da Aula dez.",
+  "c3": "A origem recebe as coordenadas cento e cinquenta mil e duzentos e cinquenta mil metros, para que todos os pontos do levantamento fiquem positivos.",
+  "d1": "Mas um plano não acompanha a curvatura. Longe da origem, a superfície cai abaixo do plano, e essa queda cresce com o quadrado da distância. A dezessete quilômetros e meio, são vinte e quatro metros.",
+  "d2": "Na planimetria o efeito é bem menor e cresce com o cubo: a diferença entre o arco e a sua projeção no plano é de só vinte e dois milímetros, na mesma distância.",
+  "d3": "Por isso a norma de levantamentos topográficos limita o plano a trinta e cinco quilômetros de diagonal e a cento e cinquenta metros entre o ponto mais alto e o mais baixo.",
+  "d4": "E quem pesa é a altitude. Com o plano na altitude média, o pior ponto fica a setenta e cinco metros dele, e a distância erra quase doze milímetros por quilômetro. No próximo vídeo, vamos ver como se calculam essas coordenadas."
+ }
+}

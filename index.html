@@ -179,6 +179,18 @@ const AULAS = [
         title: 'Quanto vale cada correção e quando simplificar',
         desc: 'Esquecer γ custa 38 m; m e Fₕ, dezenas de centímetros; ψ, 7 mm. A regra d ≈ D²E′/2R² e as três perguntas.' },
     ] },
+  { id: 'aula11', n: '11', tema: 'Sistemas de Coordenadas Locais', sub: 'Do UTM ao plano topográfico local: por que, como e com que erro (vídeos narrados)',
+    videos: [
+      { v: 'aula11_sistemas_locais/v01_por_que_plano_local', t: 120, n: 'V1', slides: '3 a 5, 7 e 17 a 20', dur: '3 min 14 s',
+        title: 'Por que coordenadas locais e até onde vale o plano',
+        desc: 'Na grade UTM cada medida erra (k − 1) vezes o comprimento; o plano na altitude média, F_L, e os limites de 35 km e 150 m.' },
+      { v: 'aula11_sistemas_locais/v02_terna_topocentrica', t: 120, n: 'V2', slides: '14 a 16 e 22', dur: '3 min 53 s',
+        title: 'Do geocêntrico ao topocêntrico: a matriz T',
+        desc: 'X, Y, Z pela eq. (29), dois giros com φ₀ e λ₀, o ponto P1 na terna local e a convergência dos meridianos no plano.' },
+      { v: 'aula11_sistemas_locais/v03_utm_para_plano_local', t: 56, n: 'V3', slides: '26 a 29 e 31 a 35', dur: '3 min 37 s',
+        title: 'Do UTM ao plano local: rigoroso, similaridade e polar',
+        desc: 'Translação, rotação γ₀ e escala k; o exemplo de Viçosa pelos três métodos e quanto erra a similaridade longe da origem.' },
+    ] },
 ];
 
 const nav = document.getElementById('nav'), box = document.getElementById('aulas');

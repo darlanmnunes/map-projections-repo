@@ -1,0 +1,2422 @@
+{
+"a1": {
+"dur": 10.272,
+"words": [
+{
+"text": "Imagine",
+"start": 0.15,
+"end": 0.49
+},
+{
+"text": "um",
+"start": 0.49,
+"end": 0.63
+},
+{
+"text": "loteamento",
+"start": 0.63,
+"end": 1.35
+},
+{
+"text": "em",
+"start": 1.35,
+"end": 1.47
+},
+{
+"text": "Viçosa.",
+"start": 1.47,
+"end": 2.12
+},
+{
+"text": "O",
+"start": 2.68,
+"end": 2.83
+},
+{
+"text": "projeto",
+"start": 2.83,
+"end": 2.88
+},
+{
+"text": "foi",
+"start": 2.88,
+"end": 3.16
+},
+{
+"text": "desenhado",
+"start": 3.16,
+"end": 4.03
+},
+{
+"text": "na",
+"start": 4.03,
+"end": 4.19
+},
+{
+"text": "grade",
+"start": 4.19,
+"end": 4.66
+},
+{
+"text": "UTM",
+"start": 4.66,
+"end": 4.99
+},
+{
+"text": "e",
+"start": 4.99,
+"end": 5.07
+},
+{
+"text": "a",
+"start": 5.07,
+"end": 5.35
+},
+{
+"text": "obra",
+"start": 5.35,
+"end": 5.44
+},
+{
+"text": "vai",
+"start": 5.44,
+"end": 5.67
+},
+{
+"text": "ser",
+"start": 5.67,
+"end": 5.96
+},
+{
+"text": "locada",
+"start": 5.96,
+"end": 6.36
+},
+{
+"text": "com",
+"start": 6.36,
+"end": 6.59
+},
+{
+"text": "a",
+"start": 6.59,
+"end": 6.66
+},
+{
+"text": "estação",
+"start": 6.66,
+"end": 7.19
+},
+{
+"text": "total,",
+"start": 7.19,
+"end": 8.16
+},
+{
+"text": "que",
+"start": 8.16,
+"end": 8.36
+},
+{
+"text": "mede",
+"start": 8.36,
+"end": 8.56
+},
+{
+"text": "distâncias",
+"start": 8.56,
+"end": 9.15
+},
+{
+"text": "no",
+"start": 9.15,
+"end": 9.18
+},
+{
+"text": "terreno.",
+"start": 9.18,
+"end": 9.74
+}
+]
+},
+"a2": {
+"dur": 12.504,
+"words": [
+{
+"text": "Na",
+"start": 0.0,
+"end": 0.43
+},
+{
+"text": "aula",
+"start": 0.43,
+"end": 0.47
+},
+{
+"text": "10,",
+"start": 0.47,
+"end": 1.01
+},
+{
+"text": "vimos",
+"start": 1.01,
+"end": 1.48
+},
+{
+"text": "que",
+"start": 1.48,
+"end": 1.59
+},
+{
+"text": "a",
+"start": 1.59,
+"end": 1.66
+},
+{
+"text": "grade",
+"start": 1.66,
+"end": 2.02
+},
+{
+"text": "não",
+"start": 2.02,
+"end": 2.24
+},
+{
+"text": "tem",
+"start": 2.24,
+"end": 2.46
+},
+{
+"text": "a",
+"start": 2.46,
+"end": 2.53
+},
+{
+"text": "escala",
+"start": 2.53,
+"end": 2.97
+},
+{
+"text": "do",
+"start": 2.97,
+"end": 3.13
+},
+{
+"text": "terreno.",
+"start": 3.13,
+"end": 3.92
+},
+{
+"text": "Aqui,",
+"start": 4.74,
+"end": 4.74
+},
+{
+"text": "juntando",
+"start": 4.74,
+"end": 5.21
+},
+{
+"text": "a",
+"start": 5.21,
+"end": 5.3
+},
+{
+"text": "projeção",
+"start": 5.3,
+"end": 6.11
+},
+{
+"text": "e",
+"start": 6.11,
+"end": 6.2
+},
+{
+"text": "a",
+"start": 6.2,
+"end": 6.22
+},
+{
+"text": "altitude,",
+"start": 6.22,
+"end": 7.18
+},
+{
+"text": "a",
+"start": 7.18,
+"end": 7.27
+},
+{
+"text": "grade",
+"start": 7.27,
+"end": 7.73
+},
+{
+"text": "UTM",
+"start": 7.73,
+"end": 8.0
+},
+{
+"text": "estica",
+"start": 8.0,
+"end": 8.56
+},
+{
+"text": "cada",
+"start": 8.56,
+"end": 8.88
+},
+{
+"text": "quilômetro",
+"start": 8.88,
+"end": 9.85
+},
+{
+"text": "em",
+"start": 9.85,
+"end": 10.22
+},
+{
+"text": "86",
+"start": 10.22,
+"end": 10.59
+},
+{
+"text": "milímetros.",
+"start": 10.59,
+"end": 11.86
+}
+]
+},
+"a3": {
+"dur": 15.36,
+"words": [
+{
+"text": "Se",
+"start": 0.01,
+"end": 0.15
+},
+{
+"text": "o",
+"start": 0.15,
+"end": 0.44
+},
+{
+"text": "projeto",
+"start": 0.44,
+"end": 0.76
+},
+{
+"text": "está",
+"start": 0.76,
+"end": 1.11
+},
+{
+"text": "na",
+"start": 1.11,
+"end": 1.24
+},
+{
+"text": "grade",
+"start": 1.24,
+"end": 1.59
+},
+{
+"text": "e",
+"start": 1.59,
+"end": 1.66
+},
+{
+"text": "a",
+"start": 1.66,
+"end": 1.72
+},
+{
+"text": "medida",
+"start": 1.72,
+"end": 2.19
+},
+{
+"text": "está",
+"start": 2.19,
+"end": 2.49
+},
+{
+"text": "no",
+"start": 2.49,
+"end": 2.64
+},
+{
+"text": "terreno,",
+"start": 2.64,
+"end": 3.4
+},
+{
+"text": "cada",
+"start": 3.4,
+"end": 3.85
+},
+{
+"text": "distância",
+"start": 3.85,
+"end": 4.85
+},
+{
+"text": "erra",
+"start": 4.85,
+"end": 5.29
+},
+{
+"text": "K-1",
+"start": 5.29,
+"end": 5.81
+},
+{
+"text": "vezes",
+"start": 5.81,
+"end": 6.4
+},
+{
+"text": "o",
+"start": 6.4,
+"end": 6.62
+},
+{
+"text": "comprimento.",
+"start": 6.62,
+"end": 7.14
+},
+{
+"text": "Numa",
+"start": 7.94,
+"end": 7.94
+},
+{
+"text": "quadra",
+"start": 7.94,
+"end": 7.95
+},
+{
+"text": "de",
+"start": 7.95,
+"end": 8.38
+},
+{
+"text": "100",
+"start": 8.38,
+"end": 8.66
+},
+{
+"text": "metros,",
+"start": 8.66,
+"end": 9.24
+},
+{
+"text": "quase",
+"start": 9.24,
+"end": 9.61
+},
+{
+"text": "9",
+"start": 9.61,
+"end": 10.05
+},
+{
+"text": "milímetros.",
+"start": 10.05,
+"end": 10.84
+},
+{
+"text": "Numa",
+"start": 11.56,
+"end": 11.56
+},
+{
+"text": "alinhamento",
+"start": 11.56,
+"end": 11.99
+},
+{
+"text": "de",
+"start": 11.99,
+"end": 12.04
+},
+{
+"text": "2",
+"start": 12.04,
+"end": 12.27
+},
+{
+"text": "quilômetros,",
+"start": 12.27,
+"end": 13.18
+},
+{
+"text": "17",
+"start": 13.18,
+"end": 13.71
+},
+{
+"text": "centímetros.",
+"start": 13.71,
+"end": 14.7
+}
+]
+},
+"a4": {
+"dur": 20.832,
+"words": [
+{
+"text": "E",
+"start": 0.0,
+"end": 0.07
+},
+{
+"text": "não",
+"start": 0.07,
+"end": 0.48
+},
+{
+"text": "basta",
+"start": 0.48,
+"end": 0.68
+},
+{
+"text": "trocar",
+"start": 0.68,
+"end": 1.14
+},
+{
+"text": "de",
+"start": 1.14,
+"end": 1.32
+},
+{
+"text": "projeção.",
+"start": 1.32,
+"end": 2.16
+},
+{
+"text": "A",
+"start": 2.74,
+"end": 2.74
+},
+{
+"text": "RTM",
+"start": 2.74,
+"end": 3.22
+},
+{
+"text": "e",
+"start": 3.22,
+"end": 3.34
+},
+{
+"text": "a",
+"start": 3.34,
+"end": 3.58
+},
+{
+"text": "LTM",
+"start": 3.58,
+"end": 4.32
+},
+{
+"text": "têm",
+"start": 4.32,
+"end": 4.52
+},
+{
+"text": "escala",
+"start": 4.52,
+"end": 4.9
+},
+{
+"text": "quase",
+"start": 4.9,
+"end": 5.49
+},
+{
+"text": "igual",
+"start": 5.49,
+"end": 5.6
+},
+{
+"text": "a",
+"start": 5.6,
+"end": 5.66
+},
+{
+"text": "1",
+"start": 5.66,
+"end": 5.89
+},
+{
+"text": "no",
+"start": 5.89,
+"end": 5.99
+},
+{
+"text": "elipsoide,",
+"start": 5.99,
+"end": 6.78
+},
+{
+"text": "mas",
+"start": 6.78,
+"end": 7.02
+},
+{
+"text": "a",
+"start": 7.02,
+"end": 7.26
+},
+{
+"text": "700",
+"start": 7.26,
+"end": 7.91
+},
+{
+"text": "metros",
+"start": 7.91,
+"end": 8.33
+},
+{
+"text": "de",
+"start": 8.33,
+"end": 8.49
+},
+{
+"text": "altitude",
+"start": 8.49,
+"end": 9.49
+},
+{
+"text": "ainda",
+"start": 9.49,
+"end": 9.53
+},
+{
+"text": "sobram",
+"start": 9.53,
+"end": 9.93
+},
+{
+"text": "cerca",
+"start": 9.93,
+"end": 10.16
+},
+{
+"text": "de",
+"start": 10.16,
+"end": 10.28
+},
+{
+"text": "100",
+"start": 10.28,
+"end": 10.85
+},
+{
+"text": "milímetros",
+"start": 10.85,
+"end": 11.48
+},
+{
+"text": "por",
+"start": 11.48,
+"end": 11.67
+},
+{
+"text": "quilômetro,",
+"start": 11.67,
+"end": 12.5
+},
+{
+"text": "para",
+"start": 12.5,
+"end": 12.78
+},
+{
+"text": "menos.",
+"start": 12.78,
+"end": 13.34
+},
+{
+"text": "Só",
+"start": 14.14,
+"end": 14.14
+},
+{
+"text": "zera",
+"start": 14.14,
+"end": 14.14
+},
+{
+"text": "quem",
+"start": 14.14,
+"end": 14.62
+},
+{
+"text": "compensa",
+"start": 14.62,
+"end": 14.89
+},
+{
+"text": "a",
+"start": 14.89,
+"end": 14.97
+},
+{
+"text": "altitude,",
+"start": 14.97,
+"end": 15.88
+},
+{
+"text": "o",
+"start": 15.88,
+"end": 15.97
+},
+{
+"text": "plano",
+"start": 15.97,
+"end": 16.44
+},
+{
+"text": "topográfico",
+"start": 16.44,
+"end": 17.46
+},
+{
+"text": "local",
+"start": 17.46,
+"end": 17.96
+},
+{
+"text": "e",
+"start": 17.96,
+"end": 18.02
+},
+{
+"text": "uma",
+"start": 18.02,
+"end": 18.22
+},
+{
+"text": "transversa",
+"start": 18.22,
+"end": 18.92
+},
+{
+"text": "de",
+"start": 18.92,
+"end": 19.02
+},
+{
+"text": "Mercator",
+"start": 19.02,
+"end": 19.56
+},
+{
+"text": "Municipal.",
+"start": 19.56,
+"end": 20.42
+}
+]
+},
+"b1": {
+"dur": 8.496,
+"words": [
+{
+"text": "Por",
+"start": 0.01,
+"end": 0.38
+},
+{
+"text": "isso,",
+"start": 0.38,
+"end": 0.58
+},
+{
+"text": "existem",
+"start": 0.58,
+"end": 1.04
+},
+{
+"text": "os",
+"start": 1.04,
+"end": 1.19
+},
+{
+"text": "sistemas",
+"start": 1.19,
+"end": 1.7
+},
+{
+"text": "locais.",
+"start": 1.7,
+"end": 2.32
+},
+{
+"text": "São",
+"start": 2.32,
+"end": 2.75
+},
+{
+"text": "três",
+"start": 2.75,
+"end": 3.0
+},
+{
+"text": "famílias,",
+"start": 3.0,
+"end": 3.85
+},
+{
+"text": "e",
+"start": 3.85,
+"end": 4.03
+},
+{
+"text": "o",
+"start": 4.03,
+"end": 4.08
+},
+{
+"text": "que",
+"start": 4.08,
+"end": 4.33
+},
+{
+"text": "muda",
+"start": 4.33,
+"end": 4.66
+},
+{
+"text": "entre",
+"start": 4.66,
+"end": 4.92
+},
+{
+"text": "elas",
+"start": 4.92,
+"end": 5.22
+},
+{
+"text": "é",
+"start": 5.22,
+"end": 5.38
+},
+{
+"text": "a",
+"start": 5.38,
+"end": 5.54
+},
+{
+"text": "superfície",
+"start": 5.54,
+"end": 6.17
+},
+{
+"text": "onde",
+"start": 6.17,
+"end": 6.38
+},
+{
+"text": "as",
+"start": 6.38,
+"end": 6.58
+},
+{
+"text": "coordenadas",
+"start": 6.58,
+"end": 7.09
+},
+{
+"text": "são",
+"start": 7.09,
+"end": 7.25
+},
+{
+"text": "calculadas.",
+"start": 7.25,
+"end": 8.0
+}
+]
+},
+"b2": {
+"dur": 11.28,
+"words": [
+{
+"text": "No",
+"start": 0.01,
+"end": 0.4
+},
+{
+"text": "sistema",
+"start": 0.4,
+"end": 0.77
+},
+{
+"text": "geodésico",
+"start": 0.77,
+"end": 1.4
+},
+{
+"text": "local,",
+"start": 1.4,
+"end": 2.0
+},
+{
+"text": "o",
+"start": 2.0,
+"end": 2.44
+},
+{
+"text": "plano",
+"start": 2.44,
+"end": 2.48
+},
+{
+"text": "é",
+"start": 2.48,
+"end": 2.58
+},
+{
+"text": "tangente",
+"start": 2.58,
+"end": 3.2
+},
+{
+"text": "ao",
+"start": 3.2,
+"end": 3.36
+},
+{
+"text": "elipsoide",
+"start": 3.36,
+"end": 4.08
+},
+{
+"text": "na",
+"start": 4.08,
+"end": 4.24
+},
+{
+"text": "origem,",
+"start": 4.24,
+"end": 4.93
+},
+{
+"text": "e",
+"start": 4.93,
+"end": 5.15
+},
+{
+"text": "o",
+"start": 5.15,
+"end": 5.2
+},
+{
+"text": "eixo",
+"start": 5.2,
+"end": 5.59
+},
+{
+"text": "Z",
+"start": 5.59,
+"end": 5.67
+},
+{
+"text": "segue",
+"start": 5.67,
+"end": 6.26
+},
+{
+"text": "a",
+"start": 6.26,
+"end": 6.38
+},
+{
+"text": "normal.",
+"start": 6.38,
+"end": 6.7
+},
+{
+"text": "É",
+"start": 7.32,
+"end": 7.32
+},
+{
+"text": "o",
+"start": 7.32,
+"end": 7.33
+},
+{
+"text": "sistema",
+"start": 7.33,
+"end": 7.34
+},
+{
+"text": "que",
+"start": 7.34,
+"end": 7.62
+},
+{
+"text": "o",
+"start": 7.62,
+"end": 7.72
+},
+{
+"text": "INCRA",
+"start": 7.72,
+"end": 7.97
+},
+{
+"text": "usa",
+"start": 7.97,
+"end": 8.18
+},
+{
+"text": "para",
+"start": 8.18,
+"end": 8.46
+},
+{
+"text": "calcular",
+"start": 8.46,
+"end": 9.02
+},
+{
+"text": "a",
+"start": 9.02,
+"end": 9.09
+},
+{
+"text": "área",
+"start": 9.09,
+"end": 9.37
+},
+{
+"text": "dos",
+"start": 9.37,
+"end": 9.72
+},
+{
+"text": "imóveis",
+"start": 9.72,
+"end": 10.07
+},
+{
+"text": "rurais.",
+"start": 10.07,
+"end": 10.78
+}
+]
+},
+"b3": {
+"dur": 9.504,
+"words": [
+{
+"text": "No",
+"start": 0.0,
+"end": 0.42
+},
+{
+"text": "sistema",
+"start": 0.42,
+"end": 0.71
+},
+{
+"text": "topográfico",
+"start": 0.71,
+"end": 1.62
+},
+{
+"text": "local,",
+"start": 1.62,
+"end": 2.1
+},
+{
+"text": "o",
+"start": 2.1,
+"end": 2.49
+},
+{
+"text": "plano",
+"start": 2.49,
+"end": 2.64
+},
+{
+"text": "é",
+"start": 2.64,
+"end": 2.65
+},
+{
+"text": "o",
+"start": 2.65,
+"end": 2.73
+},
+{
+"text": "mesmo,",
+"start": 2.73,
+"end": 3.36
+},
+{
+"text": "mas",
+"start": 3.36,
+"end": 3.69
+},
+{
+"text": "o",
+"start": 3.69,
+"end": 3.75
+},
+{
+"text": "eixo",
+"start": 3.75,
+"end": 4.02
+},
+{
+"text": "Z",
+"start": 4.02,
+"end": 4.1
+},
+{
+"text": "segue",
+"start": 4.1,
+"end": 4.53
+},
+{
+"text": "a",
+"start": 4.53,
+"end": 4.6
+},
+{
+"text": "vertical,",
+"start": 4.6,
+"end": 5.52
+},
+{
+"text": "o",
+"start": 5.52,
+"end": 6.08
+},
+{
+"text": "fio",
+"start": 6.08,
+"end": 6.2
+},
+{
+"text": "de",
+"start": 6.2,
+"end": 6.28
+},
+{
+"text": "prumo.",
+"start": 6.28,
+"end": 6.6
+},
+{
+"text": "É",
+"start": 7.1,
+"end": 7.1
+},
+{
+"text": "o",
+"start": 7.1,
+"end": 7.1
+},
+{
+"text": "plano",
+"start": 7.1,
+"end": 7.12
+},
+{
+"text": "da",
+"start": 7.12,
+"end": 7.52
+},
+{
+"text": "estação",
+"start": 7.52,
+"end": 7.79
+},
+{
+"text": "total",
+"start": 7.79,
+"end": 8.19
+},
+{
+"text": "nivelada.",
+"start": 8.19,
+"end": 9.04
+}
+]
+},
+"b4": {
+"dur": 9.432,
+"words": [
+{
+"text": "E",
+"start": 0.0,
+"end": 0.06
+},
+{
+"text": "as",
+"start": 0.06,
+"end": 0.37
+},
+{
+"text": "projeções",
+"start": 0.37,
+"end": 0.79
+},
+{
+"text": "locais",
+"start": 0.79,
+"end": 1.19
+},
+{
+"text": "são",
+"start": 1.19,
+"end": 1.39
+},
+{
+"text": "transversas",
+"start": 1.39,
+"end": 2.13
+},
+{
+"text": "de",
+"start": 2.13,
+"end": 2.26
+},
+{
+"text": "Mercator",
+"start": 2.26,
+"end": 2.83
+},
+{
+"text": "com",
+"start": 2.83,
+"end": 3.05
+},
+{
+"text": "outros",
+"start": 3.05,
+"end": 3.4
+},
+{
+"text": "parâmetros.",
+"start": 3.4,
+"end": 4.16
+},
+{
+"text": "O",
+"start": 4.7,
+"end": 4.7
+},
+{
+"text": "meridiano",
+"start": 4.7,
+"end": 5.07
+},
+{
+"text": "central",
+"start": 5.07,
+"end": 5.42
+},
+{
+"text": "na",
+"start": 5.42,
+"end": 5.57
+},
+{
+"text": "cidade",
+"start": 5.57,
+"end": 6.02
+},
+{
+"text": "e",
+"start": 6.02,
+"end": 6.09
+},
+{
+"text": "o",
+"start": 6.09,
+"end": 6.16
+},
+{
+"text": "fator",
+"start": 6.16,
+"end": 6.53
+},
+{
+"text": "de",
+"start": 6.53,
+"end": 6.68
+},
+{
+"text": "escala",
+"start": 6.68,
+"end": 7.12
+},
+{
+"text": "ajustado",
+"start": 7.12,
+"end": 7.75
+},
+{
+"text": "à",
+"start": 7.75,
+"end": 7.78
+},
+{
+"text": "altitude.",
+"start": 7.78,
+"end": 8.7
+}
+]
+},
+"c1": {
+"dur": 9.936,
+"words": [
+{
+"text": "Vamos",
+"start": 0.01,
+"end": 0.45
+},
+{
+"text": "olhar",
+"start": 0.45,
+"end": 0.64
+},
+{
+"text": "o",
+"start": 0.64,
+"end": 0.71
+},
+{
+"text": "plano",
+"start": 0.71,
+"end": 1.11
+},
+{
+"text": "topográfico",
+"start": 1.11,
+"end": 1.72
+},
+{
+"text": "de",
+"start": 1.72,
+"end": 1.88
+},
+{
+"text": "perto.",
+"start": 1.88,
+"end": 2.44
+},
+{
+"text": "Ele",
+"start": 3.1,
+"end": 3.1
+},
+{
+"text": "é",
+"start": 3.1,
+"end": 3.1
+},
+{
+"text": "tangente",
+"start": 3.1,
+"end": 3.56
+},
+{
+"text": "na",
+"start": 3.56,
+"end": 3.73
+},
+{
+"text": "origem,",
+"start": 3.73,
+"end": 4.5
+},
+{
+"text": "mas",
+"start": 4.5,
+"end": 4.71
+},
+{
+"text": "não",
+"start": 4.71,
+"end": 4.98
+},
+{
+"text": "fica",
+"start": 4.98,
+"end": 5.21
+},
+{
+"text": "no",
+"start": 5.21,
+"end": 5.35
+},
+{
+"text": "nível",
+"start": 5.35,
+"end": 5.7
+},
+{
+"text": "do",
+"start": 5.7,
+"end": 5.85
+},
+{
+"text": "elipsoide.",
+"start": 5.85,
+"end": 6.76
+},
+{
+"text": "Fica",
+"start": 7.24,
+"end": 7.24
+},
+{
+"text": "elevado",
+"start": 7.24,
+"end": 7.63
+},
+{
+"text": "à",
+"start": 7.63,
+"end": 7.69
+},
+{
+"text": "altitude",
+"start": 7.69,
+"end": 8.22
+},
+{
+"text": "média",
+"start": 8.22,
+"end": 8.63
+},
+{
+"text": "do",
+"start": 8.63,
+"end": 8.76
+},
+{
+"text": "terreno.",
+"start": 8.76,
+"end": 9.52
+}
+]
+},
+"c2": {
+"dur": 17.928,
+"words": [
+{
+"text": "Assim,",
+"start": 0.35,
+"end": 0.53
+},
+{
+"text": "a",
+"start": 0.53,
+"end": 0.6
+},
+{
+"text": "distância",
+"start": 0.6,
+"end": 1.31
+},
+{
+"text": "calculada",
+"start": 1.31,
+"end": 1.94
+},
+{
+"text": "no",
+"start": 1.94,
+"end": 2.09
+},
+{
+"text": "plano",
+"start": 2.09,
+"end": 2.47
+},
+{
+"text": "é",
+"start": 2.47,
+"end": 2.54
+},
+{
+"text": "igual",
+"start": 2.54,
+"end": 2.92
+},
+{
+"text": "à",
+"start": 2.92,
+"end": 2.99
+},
+{
+"text": "medida",
+"start": 2.99,
+"end": 3.44
+},
+{
+"text": "no",
+"start": 3.44,
+"end": 3.59
+},
+{
+"text": "campo.",
+"start": 3.59,
+"end": 4.26
+},
+{
+"text": "O",
+"start": 4.9,
+"end": 4.9
+},
+{
+"text": "fator",
+"start": 4.9,
+"end": 4.91
+},
+{
+"text": "de",
+"start": 4.91,
+"end": 5.22
+},
+{
+"text": "elevação",
+"start": 5.22,
+"end": 5.74
+},
+{
+"text": "é",
+"start": 5.74,
+"end": 5.83
+},
+{
+"text": "o",
+"start": 5.83,
+"end": 5.87
+},
+{
+"text": "raio",
+"start": 5.87,
+"end": 6.21
+},
+{
+"text": "médio",
+"start": 6.21,
+"end": 6.6
+},
+{
+"text": "mais",
+"start": 6.6,
+"end": 6.95
+},
+{
+"text": "a",
+"start": 6.95,
+"end": 7.03
+},
+{
+"text": "altitude",
+"start": 7.03,
+"end": 7.84
+},
+{
+"text": "dividido",
+"start": 7.84,
+"end": 8.46
+},
+{
+"text": "pelo",
+"start": 8.46,
+"end": 8.77
+},
+{
+"text": "raio",
+"start": 8.77,
+"end": 9.07
+},
+{
+"text": "médio.",
+"start": 9.07,
+"end": 9.74
+},
+{
+"text": "A",
+"start": 10.36,
+"end": 10.37
+},
+{
+"text": "700",
+"start": 10.37,
+"end": 10.71
+},
+{
+"text": "metros,",
+"start": 10.71,
+"end": 11.01
+},
+{
+"text": "ele",
+"start": 11.01,
+"end": 11.33
+},
+{
+"text": "acrescenta",
+"start": 11.33,
+"end": 11.92
+},
+{
+"text": "110",
+"start": 11.92,
+"end": 12.56
+},
+{
+"text": "milímetros",
+"start": 12.56,
+"end": 13.26
+},
+{
+"text": "por",
+"start": 13.26,
+"end": 13.47
+},
+{
+"text": "quilômetro.",
+"start": 13.47,
+"end": 14.44
+},
+{
+"text": "É",
+"start": 14.92,
+"end": 14.92
+},
+{
+"text": "o",
+"start": 14.92,
+"end": 14.93
+},
+{
+"text": "inverso",
+"start": 14.93,
+"end": 15.22
+},
+{
+"text": "do",
+"start": 15.22,
+"end": 15.27
+},
+{
+"text": "fator",
+"start": 15.27,
+"end": 15.58
+},
+{
+"text": "de",
+"start": 15.58,
+"end": 15.89
+},
+{
+"text": "altitude",
+"start": 15.89,
+"end": 16.3
+},
+{
+"text": "da",
+"start": 16.3,
+"end": 16.44
+},
+{
+"text": "aula",
+"start": 16.44,
+"end": 16.8
+},
+{
+"text": "10.",
+"start": 16.8,
+"end": 17.44
+}
+]
+},
+"c3": {
+"dur": 8.904,
+"words": [
+{
+"text": "A",
+"start": 0.0,
+"end": 0.38
+},
+{
+"text": "origem",
+"start": 0.38,
+"end": 0.56
+},
+{
+"text": "recebe",
+"start": 0.56,
+"end": 1.04
+},
+{
+"text": "as",
+"start": 1.04,
+"end": 1.2
+},
+{
+"text": "coordenadas",
+"start": 1.2,
+"end": 2.08
+},
+{
+"text": "150",
+"start": 2.08,
+"end": 2.81
+},
+{
+"text": "mil",
+"start": 2.81,
+"end": 3.1
+},
+{
+"text": "e",
+"start": 3.1,
+"end": 3.43
+},
+{
+"text": "250",
+"start": 3.43,
+"end": 4.2
+},
+{
+"text": "mil",
+"start": 4.2,
+"end": 4.56
+},
+{
+"text": "metros,",
+"start": 4.56,
+"end": 5.2
+},
+{
+"text": "para",
+"start": 5.6,
+"end": 5.6
+},
+{
+"text": "que",
+"start": 5.6,
+"end": 5.92
+},
+{
+"text": "todos",
+"start": 5.92,
+"end": 5.98
+},
+{
+"text": "os",
+"start": 5.98,
+"end": 6.04
+},
+{
+"text": "pontos",
+"start": 6.04,
+"end": 6.41
+},
+{
+"text": "do",
+"start": 6.41,
+"end": 6.53
+},
+{
+"text": "levantamento",
+"start": 6.53,
+"end": 7.27
+},
+{
+"text": "fiquem",
+"start": 7.27,
+"end": 7.63
+},
+{
+"text": "positivos.",
+"start": 7.63,
+"end": 8.42
+}
+]
+},
+"d1": {
+"dur": 13.344,
+"words": [
+{
+"text": "Mas",
+"start": 0.02,
+"end": 0.35
+},
+{
+"text": "um",
+"start": 0.35,
+"end": 0.38
+},
+{
+"text": "plano",
+"start": 0.38,
+"end": 0.82
+},
+{
+"text": "não",
+"start": 0.82,
+"end": 1.0
+},
+{
+"text": "acompanha",
+"start": 1.0,
+"end": 1.69
+},
+{
+"text": "a",
+"start": 1.69,
+"end": 1.76
+},
+{
+"text": "curvatura.",
+"start": 1.76,
+"end": 2.5
+},
+{
+"text": "Longe",
+"start": 3.24,
+"end": 3.24
+},
+{
+"text": "da",
+"start": 3.24,
+"end": 3.25
+},
+{
+"text": "origem,",
+"start": 3.25,
+"end": 3.78
+},
+{
+"text": "a",
+"start": 3.78,
+"end": 3.86
+},
+{
+"text": "superfície",
+"start": 3.86,
+"end": 4.71
+},
+{
+"text": "cai",
+"start": 4.71,
+"end": 4.97
+},
+{
+"text": "abaixo",
+"start": 4.97,
+"end": 5.55
+},
+{
+"text": "do",
+"start": 5.55,
+"end": 5.66
+},
+{
+"text": "plano",
+"start": 5.66,
+"end": 6.13
+},
+{
+"text": "e",
+"start": 6.13,
+"end": 6.42
+},
+{
+"text": "essa",
+"start": 6.42,
+"end": 6.56
+},
+{
+"text": "queda",
+"start": 6.56,
+"end": 6.95
+},
+{
+"text": "cresce",
+"start": 6.95,
+"end": 7.58
+},
+{
+"text": "com",
+"start": 7.58,
+"end": 7.64
+},
+{
+"text": "o",
+"start": 7.64,
+"end": 7.73
+},
+{
+"text": "quadrado",
+"start": 7.73,
+"end": 8.38
+},
+{
+"text": "da",
+"start": 8.38,
+"end": 8.54
+},
+{
+"text": "distância.",
+"start": 8.54,
+"end": 9.06
+},
+{
+"text": "A",
+"start": 9.7,
+"end": 9.71
+},
+{
+"text": "17,5",
+"start": 9.71,
+"end": 10.52
+},
+{
+"text": "km",
+"start": 10.52,
+"end": 10.67
+},
+{
+"text": "são",
+"start": 10.67,
+"end": 11.08
+},
+{
+"text": "24",
+"start": 11.08,
+"end": 11.73
+},
+{
+"text": "metros.",
+"start": 11.73,
+"end": 12.8
+}
+]
+},
+"d2": {
+"dur": 10.656,
+"words": [
+{
+"text": "Na",
+"start": 0.0,
+"end": 0.36
+},
+{
+"text": "planimetria,",
+"start": 0.36,
+"end": 1.17
+},
+{
+"text": "o",
+"start": 1.17,
+"end": 1.25
+},
+{
+"text": "efeito",
+"start": 1.25,
+"end": 1.72
+},
+{
+"text": "é",
+"start": 1.72,
+"end": 1.85
+},
+{
+"text": "bem",
+"start": 1.85,
+"end": 2.04
+},
+{
+"text": "menor",
+"start": 2.04,
+"end": 2.47
+},
+{
+"text": "e",
+"start": 2.47,
+"end": 2.75
+},
+{
+"text": "cresce",
+"start": 2.75,
+"end": 3.01
+},
+{
+"text": "com",
+"start": 3.01,
+"end": 3.24
+},
+{
+"text": "o",
+"start": 3.24,
+"end": 3.33
+},
+{
+"text": "cubo.",
+"start": 3.33,
+"end": 3.88
+},
+{
+"text": "A",
+"start": 4.34,
+"end": 4.65
+},
+{
+"text": "diferença",
+"start": 4.65,
+"end": 4.7
+},
+{
+"text": "entre",
+"start": 4.7,
+"end": 5.04
+},
+{
+"text": "o",
+"start": 5.04,
+"end": 5.11
+},
+{
+"text": "arco",
+"start": 5.11,
+"end": 5.41
+},
+{
+"text": "e",
+"start": 5.41,
+"end": 5.48
+},
+{
+"text": "a",
+"start": 5.48,
+"end": 5.55
+},
+{
+"text": "sua",
+"start": 5.55,
+"end": 5.78
+},
+{
+"text": "projeção",
+"start": 5.78,
+"end": 6.39
+},
+{
+"text": "no",
+"start": 6.39,
+"end": 6.54
+},
+{
+"text": "plano",
+"start": 6.54,
+"end": 7.09
+},
+{
+"text": "é",
+"start": 7.09,
+"end": 7.13
+},
+{
+"text": "de",
+"start": 7.13,
+"end": 7.31
+},
+{
+"text": "só",
+"start": 7.31,
+"end": 7.49
+},
+{
+"text": "22",
+"start": 7.49,
+"end": 8.04
+},
+{
+"text": "milímetros",
+"start": 8.04,
+"end": 8.96
+},
+{
+"text": "na",
+"start": 8.96,
+"end": 9.13
+},
+{
+"text": "mesma",
+"start": 9.13,
+"end": 9.62
+},
+{
+"text": "distância.",
+"start": 9.62,
+"end": 10.14
+}
+]
+},
+"d3": {
+"dur": 9.96,
+"words": [
+{
+"text": "Por",
+"start": 0.0,
+"end": 0.37
+},
+{
+"text": "isso,",
+"start": 0.37,
+"end": 0.56
+},
+{
+"text": "a",
+"start": 0.56,
+"end": 0.64
+},
+{
+"text": "norma",
+"start": 0.64,
+"end": 0.93
+},
+{
+"text": "de",
+"start": 0.93,
+"end": 1.05
+},
+{
+"text": "levantamentos",
+"start": 1.05,
+"end": 1.88
+},
+{
+"text": "topográficos",
+"start": 1.88,
+"end": 2.94
+},
+{
+"text": "limita",
+"start": 2.94,
+"end": 3.16
+},
+{
+"text": "o",
+"start": 3.16,
+"end": 3.23
+},
+{
+"text": "plano",
+"start": 3.23,
+"end": 3.6
+},
+{
+"text": "a",
+"start": 3.6,
+"end": 3.67
+},
+{
+"text": "35",
+"start": 3.67,
+"end": 4.11
+},
+{
+"text": "quilômetros",
+"start": 4.11,
+"end": 4.91
+},
+{
+"text": "de",
+"start": 4.91,
+"end": 5.05
+},
+{
+"text": "diagonal",
+"start": 5.05,
+"end": 5.7
+},
+{
+"text": "e",
+"start": 5.7,
+"end": 5.77
+},
+{
+"text": "a",
+"start": 5.77,
+"end": 6.07
+},
+{
+"text": "150",
+"start": 6.07,
+"end": 6.51
+},
+{
+"text": "metros",
+"start": 6.51,
+"end": 6.96
+},
+{
+"text": "entre",
+"start": 6.96,
+"end": 7.33
+},
+{
+"text": "o",
+"start": 7.33,
+"end": 7.4
+},
+{
+"text": "ponto",
+"start": 7.4,
+"end": 7.77
+},
+{
+"text": "mais",
+"start": 7.77,
+"end": 8.07
+},
+{
+"text": "alto",
+"start": 8.07,
+"end": 8.37
+},
+{
+"text": "e",
+"start": 8.37,
+"end": 8.51
+},
+{
+"text": "o",
+"start": 8.51,
+"end": 8.69
+},
+{
+"text": "mais",
+"start": 8.69,
+"end": 8.81
+},
+{
+"text": "baixo.",
+"start": 8.81,
+"end": 9.48
+}
+]
+},
+"d4": {
+"dur": 14.136,
+"words": [
+{
+"text": "E",
+"start": 0.01,
+"end": 0.33
+},
+{
+"text": "quem",
+"start": 0.33,
+"end": 0.4
+},
+{
+"text": "pesa",
+"start": 0.4,
+"end": 0.75
+},
+{
+"text": "é",
+"start": 0.75,
+"end": 0.8
+},
+{
+"text": "a",
+"start": 0.8,
+"end": 0.88
+},
+{
+"text": "altitude.",
+"start": 0.88,
+"end": 1.8
+},
+{
+"text": "Com",
+"start": 2.44,
+"end": 2.44
+},
+{
+"text": "o",
+"start": 2.44,
+"end": 2.45
+},
+{
+"text": "plano",
+"start": 2.45,
+"end": 2.68
+},
+{
+"text": "na",
+"start": 2.68,
+"end": 2.77
+},
+{
+"text": "altitude",
+"start": 2.77,
+"end": 3.33
+},
+{
+"text": "média,",
+"start": 3.33,
+"end": 3.92
+},
+{
+"text": "o",
+"start": 3.92,
+"end": 4.03
+},
+{
+"text": "pior",
+"start": 4.03,
+"end": 4.35
+},
+{
+"text": "ponto",
+"start": 4.35,
+"end": 4.89
+},
+{
+"text": "fica",
+"start": 4.89,
+"end": 5.17
+},
+{
+"text": "a",
+"start": 5.17,
+"end": 5.22
+},
+{
+"text": "75",
+"start": 5.22,
+"end": 5.74
+},
+{
+"text": "metros",
+"start": 5.74,
+"end": 6.26
+},
+{
+"text": "dele.",
+"start": 6.26,
+"end": 6.66
+},
+{
+"text": "E",
+"start": 7.0,
+"end": 7.0
+},
+{
+"text": "a",
+"start": 7.0,
+"end": 7.01
+},
+{
+"text": "distância",
+"start": 7.01,
+"end": 7.33
+},
+{
+"text": "erra",
+"start": 7.33,
+"end": 7.56
+},
+{
+"text": "quase",
+"start": 7.56,
+"end": 7.86
+},
+{
+"text": "12",
+"start": 7.86,
+"end": 8.23
+},
+{
+"text": "milímetros",
+"start": 8.23,
+"end": 8.84
+},
+{
+"text": "por",
+"start": 8.84,
+"end": 9.0
+},
+{
+"text": "quilômetro.",
+"start": 9.0,
+"end": 9.88
+},
+{
+"text": "No",
+"start": 10.5,
+"end": 10.5
+},
+{
+"text": "próximo",
+"start": 10.5,
+"end": 10.82
+},
+{
+"text": "vídeo,",
+"start": 10.82,
+"end": 11.03
+},
+{
+"text": "vamos",
+"start": 11.03,
+"end": 11.29
+},
+{
+"text": "ver",
+"start": 11.29,
+"end": 11.49
+},
+{
+"text": "como",
+"start": 11.49,
+"end": 11.76
+},
+{
+"text": "se",
+"start": 11.76,
+"end": 11.89
+},
+{
+"text": "calculam",
+"start": 11.89,
+"end": 12.42
+},
+{
+"text": "essas",
+"start": 12.42,
+"end": 12.95
+},
+{
+"text": "coordenadas.",
+"start": 12.95,
+"end": 13.78
+}
+]
+}
+}

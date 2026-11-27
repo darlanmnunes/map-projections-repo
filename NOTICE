@@ -1,0 +1,38 @@
+Projeções Cartográficas em movimento: animações e vídeos narrados da disciplina EAM 431, Projeções Cartográficas (UFV)
+Copyright (C) 2026 Darlan Miranda Nunes
+Universidade Federal de Viçosa, Departamento de Engenharia Civil, Setor de Engenharia de Agrimensura e Cartográfica
+https://orcid.org/0000-0001-5566-7919
+https://github.com/darlanmnunes/map-projections-repo
+
+Escopo: vídeos animados das aulas teóricas de EAM 431 (Projeções Cartográficas), o código que os
+desenha no navegador e os gera em MP4, os scripts que calculam e conferem os números mostrados
+e os roteiros e narrações. Galeria em https://darlanmnunes.github.io/map-projections-repo/
+
+Duas licenças, conforme o tipo de material:
+
+1. Código, sob a licença MIT (arquivo LICENSE):
+   - ferramentas/ (player, renderizador, montagem do áudio, narração), exceto o que está listado
+     no item 3;
+   - os arquivos .py, .js, .css e .html, inclusive python/ e motion/*.js de cada vídeo;
+   - os dados gerados (motion/*-dados.json e motion/scenes.json).
+
+2. Conteúdo didático, sob a licença Creative Commons Atribuição-NãoComercial 4.0 Internacional
+   (CC BY-NC 4.0; arquivo LICENSE-CONTEUDO):
+   - os vídeos, isto é, as animações que o código produz e os MP4 renderizados a partir dele;
+   - roteiros (roteiro.md), textos das narrações (motion/voz/narracao.json), READMEs das aulas
+     e dos vídeos;
+   - as faixas de narração e de áudio de cada vídeo (motion/voz/*.mp3 e motion/audio.mp3).
+   O mesmo vale para os slides da disciplina, que já trazem a marca CC BY-NC 4.0.
+
+3. Itens NÃO cobertos pelas licenças acima:
+   - Marcas e logotipos da UFV e da Engenharia de Agrimensura e Cartográfica
+     (ferramentas/identidade/logos/): uso restrito à identificação institucional deste material.
+     Não entram no pacote de código do release (.gitattributes).
+   - Trilha sonora ferramentas/audio/trilha_eam431.mp3: "Ambient Piano Guitar Texture E", de
+     deadrobotmusic (Freesound, CC0 1.0). Ver ferramentas/audio/CREDITOS.md.
+   - Linhas de costa e limites: Natural Earth (domínio público).
+
+Narração: voz sintetizada (Gemini TTS, voz Charon) a partir dos textos do autor. Efeitos sonoros
+(ferramentas/audio/sons/) sintetizados por código para este projeto, sob CC BY-NC 4.0.
+
+Este material é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA.

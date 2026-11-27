@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite-o conforme os metadados abaixo."
+type: software
+title: "Projeções Cartográficas em movimento: animações e vídeos narrados da disciplina EAM 431, Projeções Cartográficas (UFV)"
+abstract: "Vídeos animados das aulas teóricas de Projeções Cartográficas do curso de Engenharia de Agrimensura e Cartográfica da Universidade Federal de Viçosa, com o código que os desenha no navegador e os gera em MP4. Toda curva, reticulado e indicatriz é calculada pelas equações das projeções (esfera ou elipsoide GRS80), e cada vídeo tem um script em Python que recalcula e confere os números mostrados. Cobre projeções conformes, os sistemas TM (UTM, RTM e LTM), o transporte de coordenadas UTM e os sistemas de coordenadas locais; os vídeos das aulas 10 e 11 são narrados."
+version: "1.0.0"
+date-released: "2026-11-26"
+license:
+  - MIT
+  - CC-BY-NC-4.0
+repository-code: "https://github.com/darlanmnunes/map-projections-repo"
+url: "https://darlanmnunes.github.io/map-projections-repo/"
+authors:
+  - family-names: "Nunes"
+    given-names: "Darlan Miranda"
+    orcid: "https://orcid.org/0000-0001-5566-7919"
+    email: "darlan.nunes@ufv.br"
+    affiliation: "Universidade Federal de Viçosa, Departamento de Engenharia Civil"
+keywords:
+  - projeções cartográficas
+  - cartografia
+  - geodésia
+  - UTM
+  - transversa de Mercator
+  - transporte de coordenadas
+  - sistema topográfico local
+  - material didático
+  - animação
+  - Engenharia de Agrimensura e Cartográfica

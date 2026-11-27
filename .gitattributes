@@ -1,0 +1,6 @@
+# Fora do pacote de código (zip do release no GitHub, que o Zenodo arquiva).
+# O site continua usando estes arquivos; eles só não entram no arquivamento.
+ferramentas/identidade/logos/   export-ignore
+.github/                        export-ignore
+.gitignore                      export-ignore
+.gitattributes                  export-ignore

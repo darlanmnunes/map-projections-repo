@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html _site/
-          cp -r ferramentas aula* _site/
+          cp -r ferramentas aulas _site/
           find _site -name '*.py' -delete
           find _site -type d \( -name export -o -name __pycache__ \) -prune -exec rm -rf {} +
       - uses: actions/configure-pages@v5

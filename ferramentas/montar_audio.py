@@ -16,7 +16,7 @@ Lê motion/scenes.json e motion/voz/falas.json (duração e palavras de cada fal
    e gravado em motion/audio.mp3 (scenes.json → audio).
 
 Uso (na raiz do repositório):
-    python ferramentas/montar_audio.py aula10_transporte_coordenadas/v01_terreno_grade [--so-tempos]
+    python ferramentas/montar_audio.py aulas/aula10_transporte_coordenadas/v01_terreno_grade [--so-tempos]
 """
 
 import argparse

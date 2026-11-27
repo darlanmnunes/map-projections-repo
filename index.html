@@ -34,11 +34,20 @@
   nav.aulas a:hover, nav.aulas a:focus-visible { border-color:var(--accent); outline:none; }
   nav.aulas a span { font-weight:400; color:var(--muted); margin-left:6px; }
 
-  section.aula { padding-top:34px; }
+  details.aula { margin-top:18px; border:1px solid var(--line); border-radius:12px; background:var(--ground); }
+  details.aula[open] { padding-bottom:24px; }
+  details.aula > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:18px; padding:18px 22px; border-radius:12px; }
+  details.aula > summary::-webkit-details-marker { display:none; }
+  details.aula > summary:hover, details.aula > summary:focus-visible { background:var(--panel); outline:none; }
+  details.aula > summary h2 { flex:1; min-width:0; }
+  details.aula > summary .seta { flex:none; width:34px; height:34px; border-radius:50%; border:1px solid var(--line); display:grid; place-items:center; transition:transform .2s; }
+  details.aula > summary .seta::before { content:""; width:9px; height:9px; border-right:2.5px solid var(--main); border-bottom:2.5px solid var(--main); transform:translateY(-2px) rotate(45deg); }
+  details.aula[open] > summary .seta { transform:rotate(180deg); }
+  details.aula > .sub, details.aula > .grid { margin-left:22px; margin-right:22px; }
   .aula h2 { margin:0; font-size:26px; line-height:1.2; }
   .aula h2 small { display:flex; gap:10px; align-items:baseline; font-size:14px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:4px; }
   .aula h2 small em { font-style:normal; font-weight:400; letter-spacing:.02em; text-transform:none; color:var(--muted); }
-  .sub { display:inline-block; margin:12px 0 20px; padding:6px 14px; background:var(--panel); color:var(--second); font-style:italic; font-weight:700; font-size:16px; }
+  .sub { display:inline-block; margin:4px 0 20px; padding:6px 14px; background:var(--panel); color:var(--second); font-style:italic; font-weight:700; font-size:16px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:22px; }
   .card { display:flex; flex-direction:column; border:1px solid var(--line); border-radius:10px; overflow:hidden; text-decoration:none; color:inherit; background:var(--ground); transition:border-color .15s, box-shadow .15s; }
   .card:hover, .card:focus-visible { border-color:var(--accent); box-shadow:0 6px 20px rgba(31,56,100,.12); outline:none; }
@@ -86,7 +95,7 @@
 
 <header class="hero wrap">
   <h1>Projeções Cartográficas em movimento</h1>
-  <p class="lead">Animações curtas das aulas teóricas, para ver em movimento o que é difícil de enxergar numa figura parada. Cada vídeo roda aqui no navegador, desenhado a partir do código e das equações das projeções: use a barra de tempo para avançar, voltar e pausar onde quiser.</p>
+  <p class="lead">Animações das aulas teóricas, algumas narradas, para ver em movimento o que é difícil de enxergar numa figura parada. Cada vídeo roda aqui no navegador, desenhado a partir do código e das equações das projeções: use a barra de tempo para avançar, voltar e pausar onde quiser.</p>
   <p class="who">Universidade Federal de Viçosa, Setor de Engenharia de Agrimensura e Cartográfica. Viçosa, MG, 2026.</p>
 </header>
 
@@ -108,8 +117,8 @@
 <footer>
   <div class="wrap">
     <p>Contornos: Natural Earth 1:110m e 1:50m (domínio público). Trilha: “Ambient Piano Guitar Texture E”, de deadrobotmusic (<a href="https://freesound.org/people/deadrobotmusic/sounds/703137/">Freesound</a>, CC0).</p>
-    <p>Narração dos vídeos da Aula 10: voz sintetizada (Gemini TTS). Efeitos sonoros sintetizados por código.</p>
-    <p>Código sob a licença MIT, no <a href="https://github.com/darlanmnunes/map-projections-repo">repositório do GitHub</a>.</p>
+    <p>Narração dos vídeos das Aulas 10 e 11: voz sintetizada (Gemini TTS). Efeitos sonoros sintetizados por código.</p>
+    <p>Código e vídeos no <a href="https://github.com/darlanmnunes/map-projections-repo">repositório do GitHub</a>; licenças e forma de citar no README.</p>
   </div>
 </footer>
 
@@ -118,76 +127,76 @@
 const AULAS = [
   { id: 'aula08', n: '08', tema: 'Projeções Conformes', sub: 'Mercator, Lambert, estereográfica e o caminho até o UTM',
     videos: [
-      { v: 'aula08_projecoes_conformes/v01_conforme_x_equivalente', t: 31, n: 'V1', slides: '3 e 4', dur: '50 s',
+      { v: 'aulas/aula08_projecoes_conformes/v01_conforme_x_equivalente', t: 31, n: 'V1', slides: '3 e 4', dur: '50 s',
         title: 'Conforme × equivalente: o que acontece com um círculo infinitesimal',
         desc: 'Na Mercator o círculo só muda de tamanho; na Lambert cilíndrica, de forma. Conformidade é escala igual em todas as direções, não escala igual a 1.' },
-      { v: 'aula08_projecoes_conformes/v02_latitude_isometrica', t: 37, n: 'V2', slides: '5', dur: '55 s',
+      { v: 'aulas/aula08_projecoes_conformes/v02_latitude_isometrica', t: 37, n: 'V2', slides: '5', dur: '55 s',
         title: 'Latitude isométrica: do retângulo ao quadrado',
         desc: 'Por que trocar φ por ψ, e por que ψ explode perto do polo.' },
-      { v: 'aula08_projecoes_conformes/v03_cilindro_cone_plano', t: 64, n: 'V3', slides: '8 e 9', dur: '65 s',
+      { v: 'aulas/aula08_projecoes_conformes/v03_cilindro_cone_plano', t: 64, n: 'V3', slides: '8 e 9', dur: '65 s',
         title: 'Uma família, três superfícies: cilindro, cone e plano',
         desc: 'Mercator, Lambert e estereográfica polar são o mesmo modelo ρ = C·e^(−nψ); só a constante n muda.' },
-      { v: 'aula08_projecoes_conformes/v04_lambert_1pp_2pp', t: 47, n: 'V4', slides: '11 a 13', dur: '65 s',
+      { v: 'aulas/aula08_projecoes_conformes/v04_lambert_1pp_2pp', t: 47, n: 'V4', slides: '11 a 13', dur: '65 s',
         title: 'Lambert com 1 e 2 paralelos padrão: do cone tangente ao secante',
         desc: 'Por que o cone secante distribui melhor a distorção, e de onde vem m = 0,94995 em Viçosa.' },
-      { v: 'aula08_projecoes_conformes/v05_loxodromia_ortodromia', t: 30, n: 'V5', slides: '17 e 18', dur: '60 s',
+      { v: 'aulas/aula08_projecoes_conformes/v05_loxodromia_ortodromia', t: 30, n: 'V5', slides: '17 e 18', dur: '60 s',
         title: 'Loxodromia × ortodromia: São Paulo → Joanesburgo',
         desc: 'Rumo constante não é caminho mais curto: a Mercator endireita uma linha, a gnomônica a outra.' },
-      { v: 'aula08_projecoes_conformes/v06_estereografica_ups', t: 59, n: 'V6', slides: '20 e 21', dur: '60 s',
+      { v: 'aulas/aula08_projecoes_conformes/v06_estereografica_ups', t: 59, n: 'V6', slides: '20 e 21', dur: '60 s',
         title: 'Estereográfica: perspectiva do antípoda e o plano secante do UPS',
         desc: 'A construção perspectiva, a preservação de círculos e o efeito de k₀ = 0,994.' },
-      { v: 'aula08_projecoes_conformes/v07_mercator_tm_utm', t: 8, n: 'V7', slides: '22 a 24', dur: '72 s',
+      { v: 'aulas/aula08_projecoes_conformes/v07_mercator_tm_utm', t: 8, n: 'V7', slides: '22 a 24', dur: '72 s',
         title: 'Da Mercator à Transversa de Mercator e ao UTM',
         desc: 'O giro do cilindro, o fuso de 6° e o efeito de k₀ = 0,9996.' },
     ] },
   { id: 'aula09', n: '09', tema: 'Sistemas TM: UTM, RTM e LTM', sub: 'Uma só projeção, vários conjuntos de parâmetros',
     videos: [
-      { v: 'aula09_sistemas_tm/v01_fusos_utm', t: 5.5, n: 'V1', slides: '7 a 13', dur: '62 s',
+      { v: 'aulas/aula09_sistemas_tm/v01_fusos_utm', t: 5.5, n: 'V1', slides: '7 a 13', dur: '62 s',
         title: '60 fusos: do globo ao fuso de Viçosa',
         desc: 'O cilindro transverso secante gira 6° por vez e cada giro revela um fuso; o fuso de um ponto é quantos blocos de 6° cabem desde 180°, mais um.' },
-      { v: 'aula09_sistemas_tm/v02_coordenadas_planas', t: 45, n: 'V2', slides: '10 e 11', dur: '62 s',
+      { v: 'aulas/aula09_sistemas_tm/v02_coordenadas_planas', t: 45, n: 'V2', slides: '10 e 11', dur: '62 s',
         title: 'Coordenadas planas do fuso: origem, falso leste e falso norte',
         desc: 'Cada fuso tem o seu plano; a falsa origem tira os negativos, e por isso o mesmo par (E, N) existe em todos os fusos.' },
-      { v: 'aula09_sistemas_tm/v03_fator_escala', t: 33, n: 'V3', slides: '15 a 17', dur: '65 s',
+      { v: 'aulas/aula09_sistemas_tm/v03_fator_escala', t: 33, n: 'V3', slides: '15 a 17', dur: '65 s',
         title: 'Fator de escala no fuso UTM e linhas de secância',
         desc: 'De 0,9996 no MC a 1,00098 na borda: em longitude a secância se abre para o sul; na grade, fica a ≈ 180 km do MC.' },
-      { v: 'aula09_sistemas_tm/v04_convergencia_meridiana', t: 24, n: 'V4', slides: '19 e 20', dur: '66 s',
+      { v: 'aulas/aula09_sistemas_tm/v04_convergencia_meridiana', t: 24, n: 'V4', slides: '19 e 20', dur: '66 s',
         title: 'Convergência meridiana: norte de quadrícula × norte geográfico',
         desc: 'O sinal de γ nos quatro quadrantes, γ ≈ Δλ sen φ e o azimute de quadrícula em Viçosa.' },
-      { v: 'aula09_sistemas_tm/v05_utm_rtm_ltm', t: 36, n: 'V5', slides: '24 a 27', dur: '65 s',
+      { v: 'aulas/aula09_sistemas_tm/v05_utm_rtm_ltm', t: 36, n: 'V5', slides: '24 a 27', dur: '65 s',
         title: 'UTM, RTM e LTM: a mesma TM com outros parâmetros',
         desc: 'Cinco parâmetros mudam e as fórmulas ficam: menos distorção, mais limites de fuso sobre Minas Gerais.' },
     ] },
   { id: 'aula10', n: '10', tema: 'Transporte de Coordenadas UTM', sub: 'Do terreno à grade: reduções, problema direto e problema inverso (vídeos narrados)',
     videos: [
-      { v: 'aula10_transporte_coordenadas/v01_terreno_grade', t: 132, n: 'V1', slides: '3 e 5', dur: '2 min 47 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v01_terreno_grade', t: 132, n: 'V1', slides: '3 e 5', dur: '2 min 47 s',
         title: 'Do terreno à grade: por que transportar coordenadas',
         desc: 'Medidas no terreno, coordenadas no plano UTM: a distância passa por Fₕ e m₁₂; as direções, por ψ e γ.' },
-      { v: 'aula10_transporte_coordenadas/v02_reducoes_lineares', t: 100, n: 'V2', slides: '6 a 8', dur: '2 min 31 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v02_reducoes_lineares', t: 100, n: 'V2', slides: '6 a 8', dur: '2 min 31 s',
         title: 'Reduções lineares: Fₕ, m₁₂ e o fator combinado',
         desc: 'Em Viçosa, a projeção estica 210 mm/km e a altitude encolhe 105 mm/km; a regra de Simpson dá o fator da linha.' },
-      { v: 'aula10_transporte_coordenadas/v03_geodesica_corda_psi', t: 64, n: 'V3', slides: '9 e 10', dur: '2 min 08 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v03_geodesica_corda_psi', t: 64, n: 'V3', slides: '9 e 10', dur: '2 min 08 s',
         title: 'Geodésica projetada, corda e a redução angular ψ',
         desc: 'Três azimutes para a mesma linha; ψ é zero no MC e em linhas leste-oeste e vale 1,7″ em 3 km em Viçosa.' },
-      { v: 'aula10_transporte_coordenadas/v04_problema_direto', t: 133, n: 'V4', slides: '12, 14, 16, 17 e 20', dur: '2 min 37 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v04_problema_direto', t: 133, n: 'V4', slides: '12, 14, 16, 17 e 20', dur: '2 min 37 s',
         title: 'Problema direto, passo a passo',
         desc: 'O exemplo de Viçosa em cinco passos, até E₃ e N₃; o mesmo roteiro reproduz o exemplo da UFPR a menos de 1 mm.' },
-      { v: 'aula10_transporte_coordenadas/v05_problema_inverso', t: 102, n: 'V5', slides: '11, 15 e 18', dur: '2 min 47 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v05_problema_inverso', t: 102, n: 'V5', slides: '11, 15 e 18', dur: '2 min 47 s',
         title: 'Problema inverso, contra-azimute e os três arcos da UFPR',
         desc: 'Da grade ao azimute geodésico e às distâncias; por que o contra-azimute não é Az + 180°; equador, MC e borda do fuso.' },
-      { v: 'aula10_transporte_coordenadas/v06_quanto_vale', t: 51, n: 'V6', slides: '19, 22 e 23', dur: '2 min 20 s',
+      { v: 'aulas/aula10_transporte_coordenadas/v06_quanto_vale', t: 51, n: 'V6', slides: '19, 22 e 23', dur: '2 min 20 s',
         title: 'Quanto vale cada correção e quando simplificar',
         desc: 'Esquecer γ custa 38 m; m e Fₕ, dezenas de centímetros; ψ, 7 mm. A regra d ≈ D²E′/2R² e as três perguntas.' },
     ] },
   { id: 'aula11', n: '11', tema: 'Sistemas de Coordenadas Locais', sub: 'Do UTM ao plano topográfico local: por que, como e com que erro (vídeos narrados)',
     videos: [
-      { v: 'aula11_sistemas_locais/v01_por_que_plano_local', t: 120, n: 'V1', slides: '3 a 5, 7 e 17 a 20', dur: '3 min 14 s',
+      { v: 'aulas/aula11_sistemas_locais/v01_por_que_plano_local', t: 120, n: 'V1', slides: '3 a 5, 7 e 17 a 20', dur: '3 min 14 s',
         title: 'Por que coordenadas locais e até onde vale o plano',
         desc: 'Na grade UTM cada medida erra (k − 1) vezes o comprimento; o plano na altitude média, F_L, e os limites de 35 km e 150 m.' },
-      { v: 'aula11_sistemas_locais/v02_terna_topocentrica', t: 120, n: 'V2', slides: '14 a 16 e 22', dur: '3 min 53 s',
+      { v: 'aulas/aula11_sistemas_locais/v02_terna_topocentrica', t: 120, n: 'V2', slides: '14 a 16 e 22', dur: '3 min 53 s',
         title: 'Do geocêntrico ao topocêntrico: a matriz T',
         desc: 'X, Y, Z pela eq. (29), dois giros com φ₀ e λ₀, o ponto P1 na terna local e a convergência dos meridianos no plano.' },
-      { v: 'aula11_sistemas_locais/v03_utm_para_plano_local', t: 56, n: 'V3', slides: '26 a 29 e 31 a 35', dur: '3 min 37 s',
+      { v: 'aulas/aula11_sistemas_locais/v03_utm_para_plano_local', t: 56, n: 'V3', slides: '26 a 29 e 31 a 35', dur: '3 min 37 s',
         title: 'Do UTM ao plano local: rigoroso, similaridade e polar',
         desc: 'Translação, rotação γ₀ e escala k; o exemplo de Viçosa pelos três métodos e quanto erra a similaridade longe da origem.' },
     ] },
@@ -201,9 +210,9 @@ for (const a of AULAS) {
   link.querySelector('span').textContent = a.tema;
   nav.append(link);
 
-  const sec = document.createElement('section');
+  const sec = document.createElement('details');
   sec.className = 'aula'; sec.id = a.id;
-  sec.innerHTML = '<h2><small></small></h2><p class="sub"></p><div class="grid"></div>';
+  sec.innerHTML = '<summary><h2><small></small></h2><span class="seta" aria-hidden="true"></span></summary><p class="sub"></p><div class="grid"></div>';
   sec.querySelector('small').append('Aula ' + a.n);
   const nv = document.createElement('em');
   nv.textContent = a.videos.length + (a.videos.length > 1 ? ' vídeos' : ' vídeo');
@@ -229,6 +238,20 @@ for (const a of AULAS) {
   }
   box.append(sec);
 }
+// Abre a aula do endereço (#aula11, como nos links dos slides) ou, sem endereço, a mais recente
+function abrir(id, rolar) {
+  const alvo = document.getElementById(id);
+  if (!alvo || alvo.tagName !== 'DETAILS') return;
+  alvo.open = true;
+  if (rolar) alvo.scrollIntoView({ block: 'start' });
+}
+const inicial = location.hash.slice(1);
+if (document.getElementById(inicial)) abrir(inicial, true); else box.lastElementChild.open = true;
+window.addEventListener('hashchange', () => abrir(location.hash.slice(1), true));
+nav.addEventListener('click', ev => {
+  const a = ev.target.closest('a'); if (!a) return;
+  abrir(a.getAttribute('href').slice(1), false);
+});
 // Miniaturas: o quadro de 1920 × 1080 do player, reduzido à largura do cartão
 const ro = new ResizeObserver(entries => {
   for (const e of entries) e.target.querySelector('iframe').style.transform = 'scale(' + e.target.clientWidth / 1920 + ')';

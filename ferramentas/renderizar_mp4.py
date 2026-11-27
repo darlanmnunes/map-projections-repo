@@ -10,7 +10,7 @@ já mixada por ferramentas/montar_audio.py entra como está.
 Requisitos: Google Chrome e ffmpeg instalados; só biblioteca padrão do Python.
 
 Uso (na raiz do repositório):
-    python ferramentas/renderizar_mp4.py aula08_projecoes_conformes/v01_conforme_x_equivalente \
+    python ferramentas/renderizar_mp4.py aulas/aula08_projecoes_conformes/v01_conforme_x_equivalente \
         [--fps 30] [--saida video.mp4] [--sem-som]
 """
 

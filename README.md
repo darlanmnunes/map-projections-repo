@@ -89,98 +89,133 @@ Três princípios guiam todos os vídeos:
 | [V3](aulas/aula11_sistemas_locais/v03_utm_para_plano_local/) | Do UTM ao plano local: rigoroso, similaridade e polar | 26 a 29 e 31 a 35 | 3 min 37 s |
 
 Cada pasta tem um README com o objetivo didático, as cenas, as equações usadas e a tabela
-de conferência dos números. Os MP4 finais ficam no Google Drive da disciplina; o
-repositório guarda só o código que os gera.
+de conferência dos números.
+
+## Como um vídeo é feito
+
+Cada vídeo nasce de um roteiro e é código do começo ao fim: o Python calcula e confere os
+números, o JavaScript desenha cada instante, e o mesmo código serve à galeria e ao MP4.
+
+```mermaid
+flowchart LR
+    A["1 Roteiro<br/><i>slides da aula</i>"] --> B["2 Dados<br/><i>Python + pyproj</i>"]
+    B --> C["3 Cenas<br/><i>JavaScript</i>"]
+    A --> D["4 Narração<br/><i>aulas 10 e 11</i>"]
+    D --> E["5 Áudio<br/><i>voz, trilha e efeitos</i>"]
+    C --> F["6 Galeria<br/><i>navegador</i>"]
+    E --> F
+    C --> G["7 MP4<br/><i>slides e Drive</i>"]
+    E --> G
+```
+
+1. **Roteiro.** O que o vídeo precisa mostrar, cena a cena, a partir dos slides (`roteiro.md`).
+2. **Dados.** `python/gerar_dados.py` calcula com `pyproj` e `numpy` as curvas, os reticulados e
+   os valores que aparecem na tela, confere cada um com os slides e grava `motion/vN-dados.json`.
+3. **Cenas.** Cada cena é um arquivo `motion/scene-<id>.js`: `init()` monta os elementos e
+   `render(t)` desenha o instante `t`. Nada é desenhado à mão.
+4. **Narração.** Nos vídeos narrados, o texto de cada fala fica em `motion/voz/narracao.json`;
+   a voz é sintetizada, cortada fala a fala e conferida por transcrição (`ferramentas/narracao/`).
+5. **Áudio.** `ferramentas/montar_audio.py` acerta a duração das cenas pelas falas e mistura a
+   narração, a trilha (que abaixa sob a voz) e os efeitos em `motion/audio.mp3`.
+6. **Galeria.** O navegador executa as cenas na hora, com barra de tempo e som; nada é
+   pré-renderizado.
+7. **MP4.** `ferramentas/renderizar_mp4.py` grava o vídeo quadro a quadro (1920 × 1080, 30 fps)
+   para os slides e o Drive da disciplina.
 
 ## Galeria no navegador
 
-A galeria está publicada em
-**https://darlanmnunes.github.io/map-projections-repo/**.
+A galeria está em **https://darlanmnunes.github.io/map-projections-repo/**. Cada aula é um menu
+que se expande com todos os seus vídeos; a mais recente abre aberta, e um endereço com
+`#aula11` (como nos botões dos slides) abre a aula correspondente. Cada cartão mostra uma
+miniatura desenhada ao vivo e abre o vídeo no player, com barra de tempo, pausa na barra de
+espaço e som que pode ser desligado.
 
-O arquivo [index.html](index.html) é uma galeria com os vídeos, organizada por aula: cada aula é
-um menu que se expande com todos os seus vídeos (a mais recente abre aberta, e um link como
-`#aula11` abre a aula correspondente); cada cartão mostra uma miniatura desenhada ao vivo e abre o vídeo no
-player, com barra de tempo, reprodução e pausa (barra de espaço) e a trilha sonora, que pode
-ser desligada. Nada é pré-renderizado: o navegador executa o código das cenas e
-lê os dados JSON de cada vídeo.
+---
 
-O workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) publica a galeria no
-GitHub Pages a cada push em `main` (pasta `_site` com `index.html`, `ferramentas/` e as
-pastas das aulas, sem scripts Python nem MP4). Um vídeo novo entra na galeria quando é
-acrescentado à lista `AULAS` do `index.html` (uma aula nova é um item novo da lista).
+## Para quem mantém o repositório
 
-## Estrutura do repositório
+<details>
+<summary><b>Como o repositório está organizado</b></summary>
 
+| Pasta ou arquivo | Conteúdo |
+| --- | --- |
+| `index.html` | Galeria, página inicial do GitHub Pages; a lista `AULAS` define aulas e vídeos |
+| `aulas/aulaNN_tema/` | Uma pasta por aula, com `README.md` e, quando há, `comum/` (código compartilhado pelos vídeos) |
+| `aulas/aulaNN_tema/vNN_tema/` | Uma pasta por vídeo: `README.md`, `roteiro.md`, `python/` e `motion/` |
+| `…/motion/` | `scenes.json` (cenas, durações, trilha), `shared.js`, `scene-*.js`, `base.css`, dados JSON, `voz/` e `audio.mp3` |
+| `…/export/` | MP4 renderizado; fica fora do git |
+| `ferramentas/preview/` | Player usado pela galeria e pelo renderizador |
+| `ferramentas/identidade/` | Moldura comum dos vídeos e logotipos institucionais |
+| `ferramentas/audio/` | Trilha da série e efeitos sonoros, com os créditos |
+| `ferramentas/narracao/` | Síntese da voz, corte em falas, conferência e quadros de revisão |
+| `ferramentas/montar_audio.py`, `renderizar_mp4.py` | Faixa de áudio dos vídeos narrados e renderização em MP4 |
+| `.github/workflows/pages.yml` | Publicação da galeria a cada push em `main` |
+
+Os MP4 finais ficam no Google Drive da disciplina; o repositório guarda o código que os gera.
+</details>
+
+<details>
+<summary><b>Rodar e renderizar no computador</b></summary>
+
+Requisitos: Python 3.9 ou mais recente com `numpy`, `scipy`, `shapely`, `pyogrio` e `pyproj`,
+além de Google Chrome e ffmpeg para o MP4.
+
+```bash
+# dados e conferência dos números de um vídeo
+python aulas/aula08_projecoes_conformes/v07_mercator_tm_utm/python/gerar_dados.py
+
+# galeria e player no navegador, a partir da raiz do repositório
+python -m http.server 8000
+# http://localhost:8000/  ou  http://localhost:8000/ferramentas/preview/?v=aulas/aula08_projecoes_conformes/v07_mercator_tm_utm
+
+# MP4 em export/ (--sem-som para vídeo mudo)
+python ferramentas/renderizar_mp4.py aulas/aula08_projecoes_conformes/v07_mercator_tm_utm
 ```
-aulas/aula08_projecoes_conformes/      uma pasta por aula (aulas/aula09_sistemas_tm/, ...)
-  README.md                      lista dos vídeos da aula
-  v01_conforme_x_equivalente/    uma pasta por vídeo
-    README.md                    objetivo, cenas, geometria e conferência dos números
-    roteiro.md                   roteiro original do vídeo
-    python/gerar_dados.py        dados geométricos (linhas de costa, curvas) e conferência
-    motion/
-      scenes.json                cenas, durações, paleta, fontes e início do trecho da trilha
-      base.css                   identidade visual
-      shared.js                  projeções e desenho comuns às cenas
-      scene-<id>.js              uma cena por arquivo: init() monta, render(t) desenha o instante t
-      v1-dados.json              dados gerados pelo Python
-    export/                      MP4 renderizado (fora do controle de versão)
-index.html                       galeria dos vídeos (página inicial do GitHub Pages)
-.github/workflows/pages.yml      publicação da galeria no GitHub Pages
-ferramentas/
-  preview/index.html             player no navegador, com barra de tempo e som
-  identidade/moldura.css         moldura comum a todos os vídeos (identidade dos slides)
-  audio/trilha_eam431.mp3        trilha da série (CC0; ver audio/CREDITOS.md)
-  audio/sons/                    efeitos sonoros curtos (Aula 10 em diante)
-  montar_audio.py                faixa dos vídeos narrados: narração, trilha e efeitos
-  renderizar_mp4.py              renderização quadro a quadro em MP4, com a trilha mixada
-  empacotar_motion.py            empacota a pasta motion/ para o editor de revisão
+</details>
+
+<details>
+<summary><b>Vídeos narrados</b></summary>
+
+```bash
+TTS_ENGINE=<caminho do audio.mjs> python ferramentas/narracao/gerar_voz.py aulas/<aula>/<vídeo> gemini-2.5-flash-preview-tts
+python ferramentas/narracao/qa_voz.py aulas/<aula>/<vídeo>      # transcreve cada fala e compara com o texto
+python ferramentas/narracao/palavras.py aulas/<aula>/<vídeo>    # instante de cada palavra
+python ferramentas/montar_audio.py aulas/<aula>/<vídeo>         # durações das cenas e audio.mp3
 ```
 
-## Como reproduzir
+Uma só requisição de voz por vídeo (voz Charon); o áudio é cortado nas pausas entre as falas e
+cada corte é conferido por transcrição. As cenas sincronizam os elementos com as palavras por
+`kit.em('fala', 'palavra')`. Detalhes em [ferramentas/narracao/README.md](ferramentas/narracao/README.md).
+</details>
 
-Requisitos: Python 3.9 ou mais recente com `numpy`, `scipy`, `shapely`, `pyogrio` e
-`pyproj` (para gerar os dados), além de Google Chrome e ffmpeg (para o MP4).
+<details>
+<summary><b>Identidade visual e som</b></summary>
 
-1. Gerar os dados e conferir os números de um vídeo:
+| Elemento | Padrão |
+| --- | --- |
+| Moldura | Três traços nas cores da UFV no canto superior esquerdo; "EAM 431 \| Projeções Cartográficas \| 2026" e "Prof. Dr. Darlan M. Nunes" no direito (`ferramentas/identidade/moldura.css`) |
+| Cores | Fundo branco; azul-marinho `#1F3864` (elementos e equações); azul `#0432FF` (títulos); laranja `#E8711A` (destaques); cinza `#9A9A9A` (meridianos e paralelos); vermelho `#C0392B` a 55 % (indicatrizes de Tissot) |
+| Tipografia | Arimo (mesma métrica do Arial dos slides) e STIX Two Text nas equações |
+| Notação | φ, λ, λ₀, ψ, m, σ, ϖ, k₀, ρ e γ; "sen" em vez de "sin"; x para leste e y para norte |
+| Trilha | Uma só para a série, sóbria, sem sons de natureza: "Ambient Piano Guitar Texture E", de deadrobotmusic (Freesound, CC0); cada vídeo usa um trecho diferente |
+| Narração e efeitos | Voz sintetizada (Gemini TTS, Charon), um professor explicando com calma; efeitos curtos sintetizados por código, sincronizados com as palavras |
 
-   ```bash
-   python aulas/aula08_projecoes_conformes/v07_mercator_tm_utm/python/gerar_dados.py
-   ```
+Créditos em [ferramentas/audio/CREDITOS.md](ferramentas/audio/CREDITOS.md). Linhas de costa e
+limites: Natural Earth 1:110m e 1:50m (domínio público).
+</details>
 
-2. Pré-visualizar no navegador, a partir da raiz do repositório:
+<details>
+<summary><b>Acrescentar uma aula ou um vídeo</b></summary>
 
-   ```bash
-   python -m http.server 8000
-   ```
+1. Crie `aulas/aulaNN_tema/vNN_tema/` com `roteiro.md`, `python/gerar_dados.py` e `motion/`
+   (a forma mais rápida é copiar um vídeo parecido).
+2. Gere os dados, confira os números e veja o vídeo no player.
+3. Acrescente o vídeo à lista `AULAS` do `index.html` (uma aula nova é um item novo da lista) e
+   à tabela de [Conteúdo](#conteúdo).
+4. Faça o push: o workflow publica a galeria. Para uma versão nova com DOI, publique um release.
+</details>
 
-   e abrir `http://localhost:8000/` (galeria) ou
-   `http://localhost:8000/ferramentas/preview/?v=aulas/aula08_projecoes_conformes/v07_mercator_tm_utm`.
-
-3. Renderizar o MP4 (1920 × 1080, 30 fps, com a trilha; `--sem-som` para vídeo mudo), gravado em `export/`:
-
-   ```bash
-   python ferramentas/renderizar_mp4.py aulas/aula08_projecoes_conformes/v07_mercator_tm_utm
-   ```
-
-As linhas de costa e os limites vêm do Natural Earth 1:110m e 1:50m (domínio público).
-
-## Identidade visual e som
-
-Todo vídeo leva a moldura dos slides da disciplina, desenhada pelo player por cima das cenas
-(`ferramentas/identidade/moldura.css`): no canto superior esquerdo, três traços nas cores da
-UFV (azul-marinho `#1F3864`, vermelho `#8C1A1D` e dourado `#C9A227`); no canto superior
-direito, "EAM 431 | Projeções Cartográficas | 2026" e, abaixo, "Prof. Dr. Darlan M. Nunes".
-Dentro das cenas: fundo branco, azul-marinho
-`#1F3864` para elementos principais e equações, laranja `#E8711A` para destaques, azul
-`#0432FF` para títulos, cinza `#9A9A9A` para meridianos e paralelos e vermelho `#C0392B` a
-55 % para as indicatrizes de Tissot. Texto em Arimo (mesma métrica do Arial dos slides) e
-equações em STIX Two Text. Notação da disciplina: φ, λ, λ₀, ψ, m, σ, ϖ, k₀, ρ e γ; "sen"
-em vez de "sin"; x para leste e y para norte.
-
-A trilha é uma só para a série, um ambiente sóbrio de piano e guitarra sem sons de natureza
-("Ambient Piano Guitar Texture E", deadrobotmusic, Freesound, CC0); cada vídeo usa um trecho
-diferente. Detalhes em [ferramentas/audio/CREDITOS.md](ferramentas/audio/CREDITOS.md).
+---
 
 ## Como citar
 
@@ -211,3 +246,15 @@ Universidade Federal de Viçosa.
   (CC0, de deadrobotmusic) e os contornos do Natural Earth (domínio público).
 
 Detalhes em [NOTICE](NOTICE).
+
+---
+
+<p align="center">
+  <img src="ferramentas/identidade/logos/ufv.png" alt="Universidade Federal de Viçosa" height="48">&nbsp;&nbsp;&nbsp;
+  <img src="ferramentas/identidade/logos/eam_nome.png" alt="Engenharia de Agrimensura e Cartográfica" height="48">
+</p>
+
+<p align="center">
+  Engenharia de Agrimensura e Cartográfica | Departamento de Engenharia Civil | Universidade Federal de Viçosa<br>
+  Desenvolvido por <b>Prof. Dr. Darlan Miranda Nunes</b>
+</p>

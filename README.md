@@ -19,9 +19,9 @@
 
 <p align="center">
   <a href="https://github.com/darlanmnunes/map-projections-repo/releases/latest"><img alt="Versão" src="https://img.shields.io/github/v/release/darlanmnunes/map-projections-repo?label=vers%C3%A3o&color=1F3864"></a>
-  <a href="https://darlanmnunes.github.io/map-projections-repo/"><img alt="Site no ar" src="https://img.shields.io/website?url=https%3A%2F%2Fdarlanmnunes.github.io%2Fmap-projections-repo%2F&label=galeria&up_message=no%20ar&up_color=8C1A1D"></a>
+  <a href="https://darlanmnunes.github.io/map-projections-repo/"><img alt="Galeria no navegador" src="https://img.shields.io/badge/galeria-no%20navegador-8C1A1D"></a>
   <img alt="4 aulas, 21 vídeos" src="https://img.shields.io/badge/v%C3%ADdeos-4%20aulas%20%7C%2021%20v%C3%ADdeos-C9A227">
-  <a href="https://doi.org/10.5281/zenodo.24574295"><img alt="DOI" src="https://zenodo.org/badge/github/1429663054.svg"></a>
+  <a href="https://doi.org/10.5281/zenodo.24574295"><img alt="DOI 10.5281/zenodo.24574295" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24574295-0F6FB6"></a>
   <img alt="Licenças: MIT (código) e CC BY-NC 4.0 (conteúdo)" src="https://img.shields.io/badge/licen%C3%A7as-MIT%20%2B%20CC%20BY--NC%204.0-56607A">
 </p>
 

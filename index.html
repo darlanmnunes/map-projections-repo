@@ -27,6 +27,12 @@
   h1 { margin:0; font-size:clamp(30px, 5vw, 44px); line-height:1.1; letter-spacing:-.01em; }
   .lead { margin:14px 0 0; max-width:780px; font-size:18px; }
   .who { margin:10px 0 0; font-size:15px; color:var(--muted); }
+  .doi { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 0; }
+  .doi a { display:inline-flex; align-items:stretch; border-radius:6px; overflow:hidden; text-decoration:none; font-size:14px; line-height:1; border:1px solid var(--line); }
+  .doi a span { padding:7px 10px; }
+  .doi a span:first-child { background:var(--main); color:#fff; font-weight:700; letter-spacing:.03em; }
+  .doi a span:last-child { background:var(--panel); color:var(--main); }
+  .doi a:hover, .doi a:focus-visible { border-color:var(--accent); outline:none; }
 
   nav.aulas { position:sticky; top:0; z-index:5; background:color-mix(in srgb, var(--ground) 94%, transparent); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
   nav.aulas .wrap { display:flex; gap:10px; padding-top:12px; padding-bottom:12px; overflow-x:auto; }
@@ -97,6 +103,10 @@
   <h1>Projeções Cartográficas em movimento</h1>
   <p class="lead">Animações das aulas teóricas, algumas narradas, para ver em movimento o que é difícil de enxergar numa figura parada. Cada vídeo roda aqui no navegador, desenhado a partir do código e das equações das projeções: use a barra de tempo para avançar, voltar e pausar onde quiser.</p>
   <p class="who">Universidade Federal de Viçosa, Setor de Engenharia de Agrimensura e Cartográfica. Viçosa, MG, 2026.</p>
+  <p class="doi">
+    <a href="https://doi.org/10.5281/zenodo.24574295" title="DOI de todas as versões (leva sempre à mais recente)"><span>DOI</span><span>10.5281/zenodo.24574295</span></a>
+    <a href="https://doi.org/10.5281/zenodo.24574296" title="DOI da versão 1.0.1"><span>Versão 1.0.1</span><span>10.5281/zenodo.24574296</span></a>
+  </p>
 </header>
 
 <nav class="aulas" aria-label="Aulas"><div class="wrap" id="nav"></div></nav>

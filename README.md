@@ -47,7 +47,10 @@ Três princípios guiam todos os vídeos:
 
 ## Conteúdo
 
-### Aula 08 · Projeções Conformes
+Clique numa aula para ver os vídeos.
+
+<details>
+<summary><b>Aula 08 - Projeções Conformes</b></summary>
 
 | Vídeo | Tema | Slides | Duração |
 |---|---|---|---|
@@ -58,8 +61,10 @@ Três princípios guiam todos os vídeos:
 | [V5](aulas/aula08_projecoes_conformes/v05_loxodromia_ortodromia/) | Loxodromia × ortodromia: São Paulo → Joanesburgo | 17 e 18 | 60 s |
 | [V6](aulas/aula08_projecoes_conformes/v06_estereografica_ups/) | Estereográfica: perspectiva do antípoda e o plano secante do UPS | 20 e 21 | 60 s |
 | [V7](aulas/aula08_projecoes_conformes/v07_mercator_tm_utm/) | Da Mercator à Transversa de Mercator e ao UTM | 22 a 24 | 72 s |
+</details>
 
-### Aula 09 · Sistemas de Projeção Transversa de Mercator (TM, UTM, RTM e LTM)
+<details>
+<summary><b>Aula 09 - Sistemas de Projeção Transversa de Mercator (TM, UTM, RTM e LTM)</b></summary>
 
 | Vídeo | Tema | Slides | Duração |
 |---|---|---|---|
@@ -68,8 +73,10 @@ Três princípios guiam todos os vídeos:
 | [V3](aulas/aula09_sistemas_tm/v03_fator_escala/) | Fator de escala no fuso UTM e linhas de secância | 15 a 17 | 65 s |
 | [V4](aulas/aula09_sistemas_tm/v04_convergencia_meridiana/) | Convergência meridiana: norte de quadrícula × norte geográfico | 19 e 20 | 66 s |
 | [V5](aulas/aula09_sistemas_tm/v05_utm_rtm_ltm/) | UTM, RTM e LTM: a mesma TM com outros parâmetros | 24 a 27 | 65 s |
+</details>
 
-### Aula 10 · Transporte de coordenadas UTM (problemas direto e inverso) · vídeos narrados
+<details>
+<summary><b>Aula 10 - Transporte de coordenadas UTM (problemas direto e inverso) - vídeos narrados</b></summary>
 
 | Vídeo | Tema | Slides | Duração |
 |---|---|---|---|
@@ -79,14 +86,17 @@ Três princípios guiam todos os vídeos:
 | [V4](aulas/aula10_transporte_coordenadas/v04_problema_direto/) | Problema direto, passo a passo (Viçosa e UFPR) | 12, 14, 16, 17 e 20 | 2 min 37 s |
 | [V5](aulas/aula10_transporte_coordenadas/v05_problema_inverso/) | Problema inverso, contra-azimute e os três arcos da UFPR | 11, 15 e 18 | 2 min 47 s |
 | [V6](aulas/aula10_transporte_coordenadas/v06_quanto_vale/) | Quanto vale cada correção e quando simplificar | 19, 22 e 23 | 2 min 20 s |
+</details>
 
-### Aula 11 · Sistemas de coordenadas locais · vídeos narrados
+<details>
+<summary><b>Aula 11 - Sistemas de coordenadas locais - vídeos narrados</b></summary>
 
 | Vídeo | Tema | Slides | Duração |
 |---|---|---|---|
 | [V1](aulas/aula11_sistemas_locais/v01_por_que_plano_local/) | Por que coordenadas locais e até onde vale o plano | 3 a 5, 7 e 17 a 20 | 3 min 14 s |
 | [V2](aulas/aula11_sistemas_locais/v02_terna_topocentrica/) | Do geocêntrico ao topocêntrico: a matriz T | 14 a 16 e 22 | 3 min 53 s |
 | [V3](aulas/aula11_sistemas_locais/v03_utm_para_plano_local/) | Do UTM ao plano local: rigoroso, similaridade e polar | 26 a 29 e 31 a 35 | 3 min 37 s |
+</details>
 
 Cada pasta tem um README com o objetivo didático, as cenas, as equações usadas e a tabela
 de conferência dos números.
@@ -223,10 +233,10 @@ Se usar estes vídeos ou o código, cite o repositório. Os metadados estão em
 [CITATION.cff](CITATION.cff) (o GitHub mostra a citação pronta em "Cite this repository"):
 
 > NUNES, D. M. **Projeções Cartográficas em movimento**: animações e vídeos narrados da disciplina
-> EAM 431, Projeções Cartográficas (UFV). Versão 1.0.0. Viçosa: Universidade Federal de Viçosa, 2026.
+> EAM 431, Projeções Cartográficas (UFV). Versão 1.0.1. Viçosa: Universidade Federal de Viçosa, 2026.
 > Disponível em: https://github.com/darlanmnunes/map-projections-repo.
 
-O DOI do Zenodo será indicado aqui assim que a versão 1.0.0 for arquivada.
+O DOI do Zenodo será indicado aqui assim que a versão for arquivada.
 
 ## Autor
 

@@ -3,8 +3,8 @@ message: "Se usar este material, cite-o conforme os metadados abaixo."
 type: software
 title: "Projeções Cartográficas em movimento: animações e vídeos narrados da disciplina EAM 431, Projeções Cartográficas (UFV)"
 abstract: "Vídeos animados das aulas teóricas de Projeções Cartográficas do curso de Engenharia de Agrimensura e Cartográfica da Universidade Federal de Viçosa, com o código que os desenha no navegador e os gera em MP4. Toda curva, reticulado e indicatriz é calculada pelas equações das projeções (esfera ou elipsoide GRS80), e cada vídeo tem um script em Python que recalcula e confere os números mostrados. Cobre projeções conformes, os sistemas TM (UTM, RTM e LTM), o transporte de coordenadas UTM e os sistemas de coordenadas locais; os vídeos das aulas 10 e 11 são narrados."
-version: "1.0.0"
-date-released: "2026-11-26"
+version: "1.0.1"
+date-released: "2026-11-27"
 license:
   - MIT
   - CC-BY-NC-4.0
